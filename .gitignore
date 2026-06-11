@@ -234,3 +234,6 @@ nginx/prod-active.conf
 
 # Данные БД (Docker named volume — не хранить в проекте)
 pgdata/
+
+# nginx auth file (содержит пароль — не в git)
+nginx/.htpasswd
