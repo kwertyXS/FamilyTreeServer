@@ -1,7 +1,6 @@
 services:
   backend:
     build: ./backend
-    container_name: backend
     env_file:
       - .env
     depends_on:
@@ -13,7 +12,6 @@ services:
 
   nginx:
     image: nginx:1.25
-    container_name: nginx
     ports:
       - "80:80"
       - "443:443"
@@ -30,7 +28,6 @@ services:
 
   db:
     image: postgres:16
-    container_name: db
     env_file:
       - ./.env
     volumes:
