@@ -1,9 +1,13 @@
 import uvicorn
 from fastapi import FastAPI
 from core.cors import setup_cors
-from api import admin, places, chat, suggestions
+from api import admin #, places, chat, suggestions
 
-app = FastAPI(title="Places API")
+app = FastAPI(
+    title="Places API",
+    docs_url="/api/docs",
+    openapi_url="/api/openapi.json",
+)
 
 setup_cors(app)
 

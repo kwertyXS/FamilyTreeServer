@@ -1,10 +1,18 @@
-from fastapi import APIRouter
-from models.geocode import GeocodeIn, GeocodeOut
-from services.geocode_service import geocode_address
+from fastapi import APIRouter, UploadFile
+from models.admin import *
+# from services.geocode_service import geocode_address
+from db.session import engine, session
+
 
 router = APIRouter(prefix="/api/admin")
 
-@router.post("/login", response_model=GeocodeOut)
-async def api_geocode(body: GeocodeIn):
-    lat, lng = await geocode_address(body.address)
-    return GeocodeOut(lat=lat, lng=lng)
+@router.post("/load_file")
+async def load_file(file: UploadFile):
+    data = await file.read()
+    return {"status": "ok",
+            "text": data}
+
+
+@router.get("/test")
+async def load_file():
+    return {"status": "ok"}
