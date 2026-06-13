@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import GraphPage from '@/views/GraphPage.vue'
 import EventsPage from '@/views/EventsPage.vue'
+import AdminPage from '@/views/AdminPage.vue'
 
 const routes = [
   {
@@ -14,6 +15,12 @@ const routes = [
     name: 'events',
     component: EventsPage,
     meta: { title: 'Хронология событий' }
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: AdminPage,
+    meta: { title: 'Администрирование' }
   }
 ]
 
