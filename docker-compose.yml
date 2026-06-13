@@ -1,4 +1,12 @@
 services:
+  frontend-build:
+    image: node:20
+    working_dir: /html
+    volumes:
+      - ./html:/html
+      - frontend:/html/dist
+    command: sh -c "npm install && npm run build"
+
   backend:
     build: ./backend
     env_file:
@@ -18,10 +26,11 @@ services:
       - "80:80"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
-      - ./html:/usr/share/nginx/html:ro
+      - frontend:/usr/share/nginx/html:ro
       - photos:/var/photos
     depends_on:
       - backend
+      - frontend-build
     restart: unless-stopped
 
   db:
@@ -42,3 +51,4 @@ services:
 volumes:
   pgdata:
   photos:
+  frontend:
