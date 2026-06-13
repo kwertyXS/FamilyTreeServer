@@ -2,7 +2,7 @@ import uvicorn
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from core.cors import setup_cors
-from api import admin, family
+from api import admin, family, test
 from db.database import engine
 from db.models import Base
 from services.htpasswd_manager import ensure_htpasswd
@@ -20,7 +20,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Places API",
+    title="FamilyTreeServer",
     docs_url="/api/docs",
     openapi_url="/api/openapi.json",
     lifespan=lifespan,
@@ -30,8 +30,7 @@ setup_cors(app)
 
 app.include_router(admin.router)
 app.include_router(family.router)
-# app.include_router(chat.router)
-# app.include_router(suggestions.router)
+app.include_router(test.router)
 
 
 if __name__ == "__main__":

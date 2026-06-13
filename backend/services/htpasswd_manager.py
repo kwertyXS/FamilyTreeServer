@@ -48,10 +48,17 @@ def ensure_htpasswd() -> str | None:
     return password
 
 
-def change_password(user: str, new_password: str) -> None:
-    """Сменить пароль в .htpasswd."""
-    entry = f"{user}:{_apr1_hash(new_password)}\n"
-    os.makedirs(os.path.dirname(HTPASSWD_PATH), exist_ok=True)
+def change_account(login: str | None, password: str | None) -> None:
+    """Сменить логин и/или пароль в .htpasswd."""
+    with open(HTPASSWD_PATH, "r") as f:
+        parts = f.read().strip().split(":", 1)
+    current_user = parts[0]
+    current_hash = parts[1] if len(parts) > 1 else ""
+
+    new_user = login if login is not None else current_user
+    new_hash = _apr1_hash(password) if password is not None else current_hash
+
+    entry = f"{new_user}:{new_hash}\n"
     with open(HTPASSWD_PATH, "w") as f:
         f.write(entry)
-    logger.info("Пароль для %s изменён", user)
+    logger.info("Учётная запись обновлена: %s", new_user)

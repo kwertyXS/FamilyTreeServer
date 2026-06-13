@@ -37,7 +37,6 @@ async def parse_and_save(xml_bytes: bytes):
 
     async with async_session_factory() as session:
         async with session.begin():
-            # --- очистка старых данных ---
             for table in (person_relation_table, person_event_table):
                 await session.execute(table.delete())
             for model in (Person, Event, Place, Family):
