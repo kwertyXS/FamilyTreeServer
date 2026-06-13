@@ -30,10 +30,6 @@ def ensure_htpasswd() -> str | None:
     if os.path.isfile(HTPASSWD_PATH):
         return None
 
-    # Если Docker создал директорию вместо файла (bind mount несуществующего пути)
-    if os.path.isdir(HTPASSWD_PATH):
-        os.rmdir(HTPASSWD_PATH)
-
     password = secrets.token_urlsafe(12)
     user = DEFAULT_USER
     entry = f"{user}:{_apr1_hash(password)}\n"
