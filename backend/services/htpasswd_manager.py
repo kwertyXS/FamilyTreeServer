@@ -27,8 +27,12 @@ def _apr1_hash(password: str, salt: str | None = None) -> str:
 def ensure_htpasswd() -> str | None:
     """Создать .htpasswd с паролем по умолчанию, если файла нет.
     Возвращает пароль, если был создан, иначе None."""
-    if os.path.exists(HTPASSWD_PATH):
+    if os.path.isfile(HTPASSWD_PATH):
         return None
+
+    # Если Docker создал директорию вместо файла (bind mount несуществующего пути)
+    if os.path.isdir(HTPASSWD_PATH):
+        os.rmdir(HTPASSWD_PATH)
 
     password = secrets.token_urlsafe(12)
     user = DEFAULT_USER
