@@ -12,6 +12,7 @@ services:
       - .env
     volumes:
       - /var/lib/familytree/auth:/app/auth
+      - /var/lib/familytree/photos:/var/photos
     depends_on:
       db:
         condition: service_healthy
@@ -27,6 +28,7 @@ services:
     volumes:
       - ./nginx/prod.conf:/etc/nginx/conf.d/default.conf:ro
       - /var/lib/familytree/auth:/auth:ro
+      - /var/lib/familytree/photos:/var/photos:ro
       - ./html/dist:/usr/share/nginx/html:ro
       - /var/lib/familytree/certbot/www:/var/www/certbot:ro
       - /var/lib/familytree/certbot/conf:/etc/letsencrypt:ro
