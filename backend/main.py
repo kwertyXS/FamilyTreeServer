@@ -2,9 +2,10 @@ import uvicorn
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from core.cors import setup_cors
-from api import admin, family  #, places, chat, suggestions
+from api import admin, family
 from db.database import engine
 from db.models import Base
+from services.htpasswd_manager import ensure_htpasswd
 
 
 @asynccontextmanager
@@ -12,6 +13,8 @@ async def lifespan(app: FastAPI):
     # при старте — создать таблицы, если их нет
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
+    # при старте — создать .htpasswd, если его нет
+    ensure_htpasswd()
     yield
     await engine.dispose()
 

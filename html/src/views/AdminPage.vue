@@ -8,6 +8,10 @@ const xmlStatus = ref({ type: '', text: '' })
 const zipStatus = ref({ type: '', text: '' })
 const uploading = ref({ xml: false, zip: false })
 
+const newPassword = ref('')
+const passwdStatus = ref({ type: '', text: '' })
+const changingPass = ref(false)
+
 function onXmlChange(e) {
   xmlFile.value = e.target.files[0] || null
   xmlStatus.value = { type: '', text: '' }
@@ -63,6 +67,27 @@ function removeXml() {
 function removeZip() {
   zipFile.value = null
   zipStatus.value = { type: '', text: '' }
+}
+
+
+async function changePasswd() {
+  const pwd = newPassword.value.trim()
+  if (!pwd || pwd.length < 4) {
+    passwdStatus.value = { type: 'error', text: 'Пароль должен быть минимум 4 символа' }
+    return
+  }
+  changingPass.value = true
+  passwdStatus.value = { type: 'loading', text: 'Смена пароля…' }
+  try {
+    const res = await axios.post('/api/admin/change_password', { password: pwd })
+    passwdStatus.value = { type: 'ok', text: res.data.message || 'Пароль изменён' }
+    newPassword.value = ''
+  } catch (e) {
+    const msg = e.response?.data?.detail || e.message
+    passwdStatus.value = { type: 'error', text: `Ошибка: ${msg}` }
+  } finally {
+    changingPass.value = false
+  }
 }
 </script>
 
@@ -169,7 +194,43 @@ function removeZip() {
           {{ zipStatus.text }}
         </div>
       </div>
+
+      <!-- ─── Смена пароля ─── -->
+      <div class="admin-card glass">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+               stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <h2 class="card-title">Смена пароля</h2>
+        <p class="card-desc">Измените пароль для входа в админ-панель</p>
+
+        <div class="passwd-form">
+          <div class="passwd-input-wrap">
+            <input
+              class="passwd-input"
+              type="text"
+              placeholder="Введите новый пароль"
+              v-model="newPassword"
+              @keyup.enter="changePasswd"
+            />
+          </div>
+          <button class="btn btn-primary" :disabled="changingPass || !newPassword.trim()" @click="changePasswd">
+            <span v-if="changingPass" class="btn-spinner"></span>
+            <span v-else>Сменить</span>
+          </button>
+        </div>
+
+        <div v-if="passwdStatus.type" class="status-msg" :class="passwdStatus.type">
+          <span v-if="passwdStatus.type === 'loading'" class="status-spinner"></span>
+          {{ passwdStatus.text }}
+        </div>
+      </div>
     </div>
+
   </div>
 </template>
 
@@ -364,5 +425,33 @@ function removeZip() {
 
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+/* ─── Смена пароля ─── */
+.passwd-form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.passwd-input-wrap {
+  flex: 1;
+}
+.passwd-input {
+  width: 100%;
+  padding: 9px 14px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--hairline);
+  background: var(--glass-thin);
+  color: var(--ink);
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color .15s var(--ease-out);
+}
+.passwd-input:focus {
+  border-color: var(--tint);
+}
+.passwd-input::placeholder {
+  color: var(--ink-4);
 }
 </style>

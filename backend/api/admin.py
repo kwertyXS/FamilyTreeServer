@@ -4,7 +4,13 @@ from io import BytesIO
 from zipfile import ZipFile, BadZipFile
 
 from fastapi import APIRouter, UploadFile, HTTPException
+from pydantic import BaseModel
 from services.xml_parser import parse_and_save
+from services.htpasswd_manager import change_password, DEFAULT_USER
+
+
+class ChangePasswordIn(BaseModel):
+    password: str
 
 OUTPUT_PHOTOS = "/var/photos"
 
@@ -59,3 +65,11 @@ async def load_photos(file: UploadFile):
 @router.get("/test")
 async def test():
     return {"status": "ok"}
+
+
+@router.post("/change_password")
+async def change_admin_password(body: ChangePasswordIn):
+    if len(body.password) < 4:
+        raise HTTPException(400, "Пароль должен быть минимум 4 символа")
+    change_password(DEFAULT_USER, body.password)
+    return {"status": "ok", "message": "Пароль изменён"}
