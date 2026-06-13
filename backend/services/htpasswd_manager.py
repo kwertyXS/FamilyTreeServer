@@ -4,8 +4,7 @@ import string
 import subprocess
 import logging
 
-HTPASSWD_PATH = os.getenv("HTPASSWD_PATH", "/app/auth/.htpasswd")
-DEFAULT_USER = os.getenv("HTPASSWD_USER", "admin")
+from core.config import HTPASSWD_PATH, DEFAULT_USER
 
 logger = logging.getLogger(__name__)
 
@@ -53,7 +52,7 @@ def change_account(login: str | None, password: str | None) -> None:
     with open(HTPASSWD_PATH, "r") as f:
         parts = f.read().strip().split(":", 1)
     current_user = parts[0]
-    current_hash = parts[1] if len(parts) > 1 else ""
+    current_hash = parts[1]
 
     new_user = login if login is not None else current_user
     new_hash = _apr1_hash(password) if password is not None else current_hash

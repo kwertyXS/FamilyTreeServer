@@ -31,6 +31,15 @@ def _extract_year(date_str: str | None) -> int | None:
     return None
 
 
+def _parse_sex(raw: str | None) -> bool | None:
+    """М → True (муж), Ж → False (жен), остальное → None."""
+    if raw == "М":
+        return True
+    if raw == "Ж":
+        return False
+    return None
+
+
 async def parse_and_save(xml_bytes: bytes):
     """Парсит XML и сохраняет всё в БД. Если данные уже есть — перезаписывает."""
     root = etree.fromstring(xml_bytes)
@@ -141,7 +150,7 @@ async def parse_and_save(xml_bytes: bytes):
 
                 person = Person(
                     id=pid,
-                    sex=el.get("sex"),
+                    sex=_parse_sex(el.get("sex")),
                     surname=el.get("sn"),
                     maiden_surname=el.get("msn"),
                     first_name=el.get("fn"),
@@ -249,7 +258,8 @@ async def _process_nearest(
 
         # Родительские relcode: F (отец), M (мать) — у потомка relcode будет S (сын) или D (дочь)
         if relcode in ("F", "M"):
-            child_relcode = "S" if persons_in_xml[person_id].get("sex") == "М" else "D"
+            child_sex = persons_in_xml[person_id].get("sex")
+            child_relcode = "S" if _parse_sex(child_sex) is True else "D"
             child_label = "Сын" if child_relcode == "S" else "Дочь"
             await _add_relation(rel_person_id, person_id, child_relcode, child_label)
 
@@ -265,7 +275,7 @@ async def _process_nearest(
                 if not child_id or child_id not in persons_in_xml:
                     continue
                 child_sex = persons_in_xml[child_id].get("sex")
-                child_relcode = "S" if child_sex == "М" else "D"
+                child_relcode = "S" if _parse_sex(child_sex) is True else "D"
                 child_label = "Сын" if child_relcode == "S" else "Дочь"
 
                 # связь: отец -> ребёнок

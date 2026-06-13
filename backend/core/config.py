@@ -14,6 +14,9 @@ POSTGRES_DB = os.getenv("POSTGRES_DB", "familytree")
 
 OUTPUT_PHOTOS = "/var/photos"
 
+HTPASSWD_PATH = os.getenv("HTPASSWD_PATH", "/app/auth/.htpasswd")
+DEFAULT_USER = os.getenv("HTPASSWD_USER", "admin")
+
 
 DATABASE_URL = (
     f"postgresql+asyncpg://{POSTGRES_USER}:{POSTGRES_PASSWORD}"

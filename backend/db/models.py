@@ -36,7 +36,7 @@ class Person(Base):
     __tablename__ = "persons"
 
     id = Column(String, primary_key=True)                     # XML id (число, но храним строкой)
-    sex = Column(String(1), nullable=True)
+    sex = Column(Boolean, nullable=True)  # True=муж, False=жен, None=не указан
     surname = Column(String, nullable=True)                   # sn
     maiden_surname = Column(String, nullable=True)            # msn (девичья фамилия)
     first_name = Column(String, nullable=True)                # fn

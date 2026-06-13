@@ -17,4 +17,3 @@ def extract_photos(data: bytes):
                     shutil.rmtree(entry_path)
         os.makedirs(OUTPUT_PHOTOS, exist_ok=True)
         zip_file.extractall(OUTPUT_PHOTOS)
-        files = zip_file.namelist()
