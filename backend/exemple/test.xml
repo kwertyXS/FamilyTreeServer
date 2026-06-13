@@ -1,0 +1,2124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created with Древо Жизни: https://genery.com/ru/-->
+<agelongtree guid="589eca02-25a7-49b6-ad0c-16a307b21c72" lang="ru" datalang="ru" date="08.06.2026" dateformat="DD.MM.YYYY">
+	<persons>
+		<person id="18" sex="М" fullname="Ганнибал Абрам (Ибрагим) Петрович" sn="Ганнибал" fn="Абрам (Ибрагим)" mn="Петрович" occu="Военный инженер" bdate="Около 1696" ddate="25.05.1781" lifespan="Около 85">
+			<family id="2">Ганнибал</family>
+			<comment>&amp;quot;Арап Петра Великого&amp;quot;, африканец.
+http://ru.wikipedia.org/wiki/Ганнибал,_Абрам_Петрович</comment>
+			<nearest>
+				<person id="17" rel="Жена" relcode="B" fullname="Шеберг Христина Матвеевна">
+					<person id="28" rel="Сын" relcode="S" fullname="Ганнибал Иван Абрамович" />
+					<person id="14" rel="Сын" relcode="S" fullname="Ганнибал Осип Абрамович" />
+				</person>
+			</nearest>
+			<events>
+				<event id="29" role="Родился" />
+				<event id="65" role="Отец" />
+				<event id="53" role="Муж" />
+				<event id="27" role="Отец" />
+				<event id="30" role="Умер" />
+			</events>
+			<documents>
+				<document id="14" ismain="1" />
+			</documents>
+		</person>
+		<person id="28" sex="М" fullname="Ганнибал Иван Абрамович" sn="Ганнибал" fn="Иван" mn="Абрамович" occu="Военнослужащий" bdate="16.06.1735" ddate="24.10.1801" dreason="от горячки" lifespan="66">
+			<place id="4">Санкт-Петербург</place>
+			<dplace id="4">Санкт-Петербург</dplace>
+			<family id="2">Ганнибал</family>
+			<comment>https://ru.wikipedia.org/wiki/Ганнибал,_Иван_Абрамович</comment>
+			<nearest>
+				<person id="18" rel="Отец" relcode="F" fullname="Ганнибал Абрам (Ибрагим) Петрович" />
+				<person id="17" rel="Мать" relcode="M" fullname="Шеберг Христина Матвеевна" />
+				<person id="14" rel="Брат" relcode="FS" fullname="Ганнибал Осип Абрамович" />
+			</nearest>
+			<events>
+				<event id="65" role="Родился" />
+				<event id="66" role="Умер" />
+			</events>
+			<documents>
+				<document id="13" ismain="1" />
+			</documents>
+		</person>
+		<person id="14" sex="М" fullname="Ганнибал Осип Абрамович" sn="Ганнибал" fn="Осип" mn="Абрамович" occu="Капитан 2-го ранга морск. артилл." bdate="31.01.1744" ddate="24.10.1806" lifespan="62">
+			<place id="14">Михайловское</place>
+			<family id="2">Ганнибал</family>
+			<comment>Владел с. Михайловским
+https://ru.wikipedia.org/wiki/Ганнибал,_Осип_Абрамович</comment>
+			<nearest>
+				<person id="18" rel="Отец" relcode="F" fullname="Ганнибал Абрам (Ибрагим) Петрович" />
+				<person id="17" rel="Мать" relcode="M" fullname="Шеберг Христина Матвеевна" />
+				<person id="28" rel="Брат" relcode="FS" fullname="Ганнибал Иван Абрамович" />
+				<person id="10" rel="Жена" relcode="B" fullname="Ганнибал (Пушкина) Мария Алексеевна">
+					<person id="13" rel="Дочь" relcode="D" fullname="Пушкина (Ганнибал) Надежда Осиповна " />
+				</person>
+			</nearest>
+			<events>
+				<event id="27" role="Родился" />
+				<event id="52" role="Муж" />
+				<event id="25" role="Отец" />
+				<event id="28" role="Умер" />
+			</events>
+		</person>
+		<person id="10" sex="Ж" fullname="Ганнибал (Пушкина) Мария Алексеевна" sn="Ганнибал" msn="Пушкина" fn="Мария" mn="Алексеевна" bdate="31.01.1745" ddate="09.07.1818" lifespan="73">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="8" rel="Отец" relcode="F" fullname="Пушкин Алексей Фёдорович" />
+				<person id="20" rel="Мать" relcode="M" fullname="Пушкина (Ржевская) Сарра" />
+				<person id="14" rel="Муж" relcode="A" fullname="Ганнибал Осип Абрамович">
+					<person id="13" rel="Дочь" relcode="D" fullname="Пушкина (Ганнибал) Надежда Осиповна " />
+				</person>
+			</nearest>
+			<events>
+				<event id="19" role="Родилась" />
+				<event id="52" role="Жена" />
+				<event id="25" role="Мать" />
+				<event id="20" role="Умерла" />
+			</events>
+		</person>
+		<person id="29" sex="М" fullname="Гартунг Леонид Николаевич" sn="Гартунг" fn="Леонид" mn="Николаевич" bdate="1834" ddate="1877" lifespan="Около 43">
+			<nearest>
+				<person id="12" rel="Жена" relcode="B" fullname="Гартунг (Пушкина) Мария Александровна" />
+			</nearest>
+			<events>
+				<event id="69" role="Родился" />
+				<event id="67" role="Муж" />
+				<event id="68" role="Умер" />
+			</events>
+		</person>
+		<person id="12" sex="Ж" fullname="Гартунг (Пушкина) Мария Александровна" sn="Гартунг" msn="Пушкина" fn="Мария" mn="Александровна" bdate="31.05.1832" ddate="07.03.1919" lifespan="86">
+			<place id="2">Москва</place>
+			<bplace id="4">Санкт-Петербург</bplace>
+			<dplace id="6">Москва</dplace>
+			<family id="1">Пушкины</family>
+			<comment>https://ru.wikipedia.org/wiki/Гартунг,_Мария_Александровна</comment>
+			<nearest>
+				<person id="2" rel="Отец" relcode="F" fullname="Пушкин Александр Сергеевич" />
+				<person id="22" rel="Мать" relcode="M" fullname="Пушкина (Гончарова) Наталья Николаевна" />
+				<person id="6" rel="Брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="4" rel="Брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="11" rel="Сестра" relcode="FD" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна" />
+				<person id="29" rel="Муж" relcode="A" fullname="Гартунг Леонид Николаевич" />
+			</nearest>
+			<events>
+				<event id="17" role="Родилась" />
+				<event id="67" role="Жена" />
+				<event id="18" role="Умерла" />
+			</events>
+			<documents>
+				<document id="3" ismain="1" />
+			</documents>
+		</person>
+		<person id="19" sex="Ж" fullname="Головина Евдокия Ивановна" sn="Головина" fn="Евдокия" mn="Ивановна" bdate="Предположительно 1703" ddate="1725" lifespan="Около 22">
+			<nearest>
+				<person id="5" rel="Муж" relcode="A" fullname="Пушкин Александр Петрович">
+					<person id="1" rel="Сын" relcode="S" fullname="Пушкин Лев Александрович" />
+				</person>
+			</nearest>
+			<events>
+				<event id="35" role="Родилась" />
+				<event id="50" role="Жена" />
+				<event id="1" role="Мать" />
+				<event id="36" role="Умерла" />
+			</events>
+		</person>
+		<person id="51" sex="Ж" fullname="Де Торби (Меренберг) София Николаевна" sn="Де Торби" msn="Меренберг" fn="София" mn="Николаевна" bdate="01.06.1868" ddate="14.09.1927" lifespan="59">
+			<place id="10">Лондон</place>
+			<dplace id="10">Лондон</dplace>
+			<comment>http://ru.wikipedia.org/wiki/Меренберг,_Софья_Николаевна</comment>
+			<nearest>
+				<person id="34" rel="Отец" relcode="F" fullname="Нассауский Николай-Вильгельм" />
+				<person id="11" rel="Мать" relcode="M" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна" />
+				<person id="52" rel="Сестра" relcode="FD" fullname="(Меренберг) Александра Николаевна" />
+				<person id="53" rel="Брат" relcode="FS" fullname="Меренберг Георгий Николаевич" />
+				<person id="48" rel="Единоутробная сестра" relcode="MD" fullname="Дубельт-Бессель (Дубельт) Наталья Михайловна" />
+				<person id="49" rel="Единоутробный брат" relcode="MS" fullname="Дубельт Леонтий Михайлович" />
+				<person id="50" rel="Единоутробная сестра" relcode="MD" fullname="Дубельт-Кондырева (Дубельт) Анна Михайловна" />
+			</nearest>
+			<events>
+				<event id="117" role="Родилась" />
+				<event id="118" role="Умерла" />
+			</events>
+			<documents>
+				<document id="15" ismain="1" />
+			</documents>
+		</person>
+		<person id="49" sex="М" fullname="Дубельт Леонтий Михайлович" sn="Дубельт" fn="Леонтий" mn="Михайлович" bdate="1855" ddate="1894" lifespan="Около 39">
+			<nearest>
+				<person id="33" rel="Отец" relcode="F" fullname="Дубельт Михаил Леонтьевич" />
+				<person id="11" rel="Мать" relcode="M" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна" />
+				<person id="48" rel="Сестра" relcode="FD" fullname="Дубельт-Бессель (Дубельт) Наталья Михайловна" />
+				<person id="50" rel="Сестра" relcode="FD" fullname="Дубельт-Кондырева (Дубельт) Анна Михайловна" />
+				<person id="51" rel="Единоутробная сестра" relcode="MD" fullname="Де Торби (Меренберг) София Николаевна" />
+				<person id="52" rel="Единоутробная сестра" relcode="MD" fullname="(Меренберг) Александра Николаевна" />
+				<person id="53" rel="Единоутробный брат" relcode="MS" fullname="Меренберг Георгий Николаевич" />
+			</nearest>
+			<events>
+				<event id="113" role="Родился" />
+				<event id="114" role="Умер" />
+			</events>
+		</person>
+		<person id="33" sex="М" fullname="Дубельт Михаил Леонтьевич" sn="Дубельт" fn="Михаил" mn="Леонтьевич" occu="военнослужащий" bdate="21.02.1822" ddate="19.04.1900" lifespan="78">
+			<place id="4">Санкт-Петербург</place>
+			<comment>https://ru.wikipedia.org/wiki/Дубельт,_Михаил_Леонтьевич</comment>
+			<nearest>
+				<person id="11" rel="Бывшая жена" relcode="L" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна">
+					<person id="48" rel="Дочь" relcode="D" fullname="Дубельт-Бессель (Дубельт) Наталья Михайловна" />
+					<person id="49" rel="Сын" relcode="S" fullname="Дубельт Леонтий Михайлович" />
+					<person id="50" rel="Дочь" relcode="D" fullname="Дубельт-Кондырева (Дубельт) Анна Михайловна" />
+				</person>
+			</nearest>
+			<events>
+				<event id="80" role="Родился" />
+				<event id="78" role="Муж" />
+				<event id="81" role="Бывший муж" />
+				<event id="111" role="Отец" />
+				<event id="113" role="Отец" />
+				<event id="115" role="Отец" />
+				<event id="79" role="Умер" />
+			</events>
+			<documents>
+				<document id="18" ismain="1" />
+			</documents>
+		</person>
+		<person id="48" sex="Ж" fullname="Дубельт-Бессель (Дубельт) Наталья Михайловна" sn="Дубельт-Бессель" msn="Дубельт" fn="Наталья" mn="Михайловна" bdate="1854" ddate="1925" lifespan="Около 71">
+			<nearest>
+				<person id="33" rel="Отец" relcode="F" fullname="Дубельт Михаил Леонтьевич" />
+				<person id="11" rel="Мать" relcode="M" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна" />
+				<person id="49" rel="Брат" relcode="FS" fullname="Дубельт Леонтий Михайлович" />
+				<person id="50" rel="Сестра" relcode="FD" fullname="Дубельт-Кондырева (Дубельт) Анна Михайловна" />
+				<person id="51" rel="Единоутробная сестра" relcode="MD" fullname="Де Торби (Меренберг) София Николаевна" />
+				<person id="52" rel="Единоутробная сестра" relcode="MD" fullname="(Меренберг) Александра Николаевна" />
+				<person id="53" rel="Единоутробный брат" relcode="MS" fullname="Меренберг Георгий Николаевич" />
+			</nearest>
+			<events>
+				<event id="111" role="Родилась" />
+				<event id="112" role="Умерла" />
+			</events>
+		</person>
+		<person id="50" sex="Ж" fullname="Дубельт-Кондырева (Дубельт) Анна Михайловна" sn="Дубельт-Кондырева" msn="Дубельт" fn="Анна" mn="Михайловна" bdate="1861" ddate="1919" lifespan="Около 58">
+			<nearest>
+				<person id="33" rel="Отец" relcode="F" fullname="Дубельт Михаил Леонтьевич" />
+				<person id="11" rel="Мать" relcode="M" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна" />
+				<person id="48" rel="Сестра" relcode="FD" fullname="Дубельт-Бессель (Дубельт) Наталья Михайловна" />
+				<person id="49" rel="Брат" relcode="FS" fullname="Дубельт Леонтий Михайлович" />
+				<person id="51" rel="Единоутробная сестра" relcode="MD" fullname="Де Торби (Меренберг) София Николаевна" />
+				<person id="52" rel="Единоутробная сестра" relcode="MD" fullname="(Меренберг) Александра Николаевна" />
+				<person id="53" rel="Единоутробный брат" relcode="MS" fullname="Меренберг Георгий Николаевич" />
+			</nearest>
+			<events>
+				<event id="115" role="Родилась" />
+				<event id="116" role="Умерла" />
+			</events>
+		</person>
+		<person id="31" sex="Ж" fullname="Ланская Софья Александровна" sn="Ланская" fn="Софья" mn="Александровна" bdate="1838" ddate="1875" lifespan="Около 37">
+			<nearest>
+				<person id="6" rel="Муж" relcode="A" fullname="Пушкин Александр Александрович">
+					<person id="37" rel="Сын" relcode="S" fullname="Пушкин Пётр Александрович" />
+					<person id="38" rel="Дочь" relcode="D" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+					<person id="39" rel="Дочь" relcode="D" fullname="Пушкина София Александровна" />
+					<person id="40" rel="Дочь" relcode="D" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+					<person id="41" rel="Сын" relcode="S" fullname="Пушкин Александр Александрович" />
+					<person id="42" rel="Дочь" relcode="D" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+					<person id="43" rel="Дочь" relcode="D" fullname="Пушкина Анна Александровна" />
+					<person id="44" rel="Сын" relcode="S" fullname="Пушкин Григорий Александрович" />
+					<person id="45" rel="Дочь" relcode="D" fullname="Пушкина Надежда Александровна" />
+					<person id="46" rel="Дочь" relcode="D" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+					<person id="47" rel="Сын" relcode="S" fullname="Пушкин Сергей Александрович" />
+				</person>
+			</nearest>
+			<events>
+				<event id="75" role="Родилась" />
+				<event id="73" role="Жена" />
+				<event id="89" role="Мать" />
+				<event id="91" role="Мать" />
+				<event id="93" role="Мать" />
+				<event id="95" role="Мать" />
+				<event id="97" role="Мать" />
+				<event id="99" role="Мать" />
+				<event id="101" role="Мать" />
+				<event id="103" role="Мать" />
+				<event id="105" role="Мать" />
+				<event id="107" role="Мать" />
+				<event id="109" role="Мать" />
+				<event id="74" role="Умерла" />
+			</events>
+		</person>
+		<person id="52" sex="Ж" fullname="(Меренберг) Александра Николаевна" msn="Меренберг" fn="Александра" mn="Николаевна" bdate="1869" ddate="1950" lifespan="Около 81">
+			<nearest>
+				<person id="34" rel="Отец" relcode="F" fullname="Нассауский Николай-Вильгельм" />
+				<person id="11" rel="Мать" relcode="M" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна" />
+				<person id="51" rel="Сестра" relcode="FD" fullname="Де Торби (Меренберг) София Николаевна" />
+				<person id="53" rel="Брат" relcode="FS" fullname="Меренберг Георгий Николаевич" />
+				<person id="48" rel="Единоутробная сестра" relcode="MD" fullname="Дубельт-Бессель (Дубельт) Наталья Михайловна" />
+				<person id="49" rel="Единоутробный брат" relcode="MS" fullname="Дубельт Леонтий Михайлович" />
+				<person id="50" rel="Единоутробная сестра" relcode="MD" fullname="Дубельт-Кондырева (Дубельт) Анна Михайловна" />
+			</nearest>
+			<events>
+				<event id="119" role="Родилась" />
+				<event id="120" role="Умерла" />
+			</events>
+		</person>
+		<person id="53" sex="М" fullname="Меренберг Георгий Николаевич" sn="Меренберг" fn="Георгий" mn="Николаевич" bdate="25.02.1871" ddate="31.05.1948" lifespan="77">
+			<place id="12">Висбаден</place>
+			<comment>http://ru.wikipedia.org/wiki/Меренберг,_Георг-Николай</comment>
+			<nearest>
+				<person id="34" rel="Отец" relcode="F" fullname="Нассауский Николай-Вильгельм" />
+				<person id="11" rel="Мать" relcode="M" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна" />
+				<person id="51" rel="Сестра" relcode="FD" fullname="Де Торби (Меренберг) София Николаевна" />
+				<person id="52" rel="Сестра" relcode="FD" fullname="(Меренберг) Александра Николаевна" />
+				<person id="48" rel="Единоутробная сестра" relcode="MD" fullname="Дубельт-Бессель (Дубельт) Наталья Михайловна" />
+				<person id="49" rel="Единоутробный брат" relcode="MS" fullname="Дубельт Леонтий Михайлович" />
+				<person id="50" rel="Единоутробная сестра" relcode="MD" fullname="Дубельт-Кондырева (Дубельт) Анна Михайловна" />
+			</nearest>
+			<events>
+				<event id="121" role="Родился" />
+				<event id="122" role="Умер" />
+			</events>
+			<documents>
+				<document id="16" ismain="1" />
+			</documents>
+		</person>
+		<person id="32" sex="Ж" fullname="Мошкова (Мельникова) Варвара Алексеевна" sn="Мошкова" msn="Мельникова" fn="Варвара" mn="Алексеевна" ddate="1935">
+			<nearest>
+				<person id="4" rel="Муж" relcode="A" fullname="Пушкин Григорий Александрович" />
+			</nearest>
+			<events>
+				<event id="76" role="Жена" />
+				<event id="77" role="Умерла" />
+			</events>
+		</person>
+		<person id="34" sex="М" fullname="Нассауский Николай-Вильгельм" sn="Нассауский" fn="Николай-Вильгельм" bdate="02.10.1832" ddate="30.09.1905" lifespan="72">
+			<place id="12">Висбаден</place>
+			<dplace id="12">Висбаден</dplace>
+			<comment>http://en.wikipedia.org/wiki/Prince_Nikolaus_Wilhelm_of_Nassau</comment>
+			<nearest>
+				<person id="11" rel="Жена" relcode="B" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна">
+					<person id="51" rel="Дочь" relcode="D" fullname="Де Торби (Меренберг) София Николаевна" />
+					<person id="52" rel="Дочь" relcode="D" fullname="(Меренберг) Александра Николаевна" />
+					<person id="53" rel="Сын" relcode="S" fullname="Меренберг Георгий Николаевич" />
+				</person>
+			</nearest>
+			<events>
+				<event id="84" role="Родился" />
+				<event id="82" role="Муж" />
+				<event id="117" role="Отец" />
+				<event id="119" role="Отец" />
+				<event id="121" role="Отец" />
+				<event id="83" role="Умер" />
+			</events>
+			<documents>
+				<document id="17" ismain="1" />
+			</documents>
+		</person>
+		<person id="30" sex="Ж" fullname="Павлова Мария Александровна" sn="Павлова" fn="Мария" mn="Александровна" bdate="1852" ddate="1919" lifespan="Около 67">
+			<nearest>
+				<person id="6" rel="Муж" relcode="A" fullname="Пушкин Александр Александрович">
+					<person id="35" rel="Сын" relcode="S" fullname="Пушкин Николай Александрович" />
+					<person id="36" rel="Дочь" relcode="D" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+				</person>
+			</nearest>
+			<events>
+				<event id="72" role="Родилась" />
+				<event id="70" role="Жена" />
+				<event id="85" role="Мать" />
+				<event id="87" role="Мать" />
+				<event id="71" role="Умерла" />
+			</events>
+		</person>
+		<person id="23" sex="Ж" fullname="Приклонская Лукерья Васильевна" sn="Приклонская" msn="Приклонская" fn="Лукерья" mn="Васильевна" bdate="06.03.1705" ddate="11.03.1765" lifespan="60">
+			<nearest>
+				<person id="15" rel="Муж" relcode="A" fullname="Чичерин Василий Иванович">
+					<person id="16" rel="Дочь" relcode="D" fullname="Чичерина Ольга Васильевна" />
+				</person>
+			</nearest>
+			<events>
+				<event id="41" role="Родилась" />
+				<event id="51" role="Жена" />
+				<event id="33" role="Мать" />
+				<event id="42" role="Умерла" />
+			</events>
+		</person>
+		<person id="6" sex="М" fullname="Пушкин Александр Александрович" sn="Пушкин" fn="Александр" mn="Александрович" occu="Военный" bdate="18.07.1833" ddate="01.08.1914" lifespan="81">
+			<place id="2">Москва</place>
+			<bplace id="4">Санкт-Петербург</bplace>
+			<family id="1">Пушкины</family>
+			<comment>http://ru.wikipedia.org/wiki/Пушкин,_Александр_Александрович</comment>
+			<nearest>
+				<person id="2" rel="Отец" relcode="F" fullname="Пушкин Александр Сергеевич" />
+				<person id="22" rel="Мать" relcode="M" fullname="Пушкина (Гончарова) Наталья Николаевна" />
+				<person id="12" rel="Сестра" relcode="FD" fullname="Гартунг (Пушкина) Мария Александровна" />
+				<person id="4" rel="Брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="11" rel="Сестра" relcode="FD" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна" />
+				<person id="31" rel="Жена" relcode="B" fullname="Ланская Софья Александровна">
+					<person id="37" rel="Сын" relcode="S" fullname="Пушкин Пётр Александрович" />
+					<person id="38" rel="Дочь" relcode="D" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+					<person id="39" rel="Дочь" relcode="D" fullname="Пушкина София Александровна" />
+					<person id="40" rel="Дочь" relcode="D" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+					<person id="41" rel="Сын" relcode="S" fullname="Пушкин Александр Александрович" />
+					<person id="42" rel="Дочь" relcode="D" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+					<person id="43" rel="Дочь" relcode="D" fullname="Пушкина Анна Александровна" />
+					<person id="44" rel="Сын" relcode="S" fullname="Пушкин Григорий Александрович" />
+					<person id="45" rel="Дочь" relcode="D" fullname="Пушкина Надежда Александровна" />
+					<person id="46" rel="Дочь" relcode="D" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+					<person id="47" rel="Сын" relcode="S" fullname="Пушкин Сергей Александрович" />
+				</person>
+				<person id="30" rel="Жена" relcode="B" fullname="Павлова Мария Александровна">
+					<person id="35" rel="Сын" relcode="S" fullname="Пушкин Николай Александрович" />
+					<person id="36" rel="Дочь" relcode="D" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+				</person>
+			</nearest>
+			<events>
+				<event id="11" role="Родился" />
+				<event id="73" role="Муж" />
+				<event id="89" role="Отец" />
+				<event id="91" role="Отец" />
+				<event id="93" role="Отец" />
+				<event id="95" role="Отец" />
+				<event id="97" role="Отец" />
+				<event id="99" role="Отец" />
+				<event id="101" role="Отец" />
+				<event id="103" role="Отец" />
+				<event id="105" role="Отец" />
+				<event id="107" role="Отец" />
+				<event id="109" role="Отец" />
+				<event id="70" role="Муж" />
+				<event id="85" role="Отец" />
+				<event id="87" role="Отец" />
+				<event id="12" role="Умер" />
+			</events>
+			<documents>
+				<document id="7" ismain="1" />
+			</documents>
+		</person>
+		<person id="41" sex="М" fullname="Пушкин Александр Александрович" sn="Пушкин" fn="Александр" mn="Александрович" bdate="1863" ddate="1916" lifespan="Около 53">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="6" rel="Отец" relcode="F" fullname="Пушкин Александр Александрович" />
+				<person id="31" rel="Мать" relcode="M" fullname="Ланская Софья Александровна" />
+				<person id="37" rel="Брат" relcode="FS" fullname="Пушкин Пётр Александрович" />
+				<person id="38" rel="Сестра" relcode="FD" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+				<person id="39" rel="Сестра" relcode="FD" fullname="Пушкина София Александровна" />
+				<person id="40" rel="Сестра" relcode="FD" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+				<person id="42" rel="Сестра" relcode="FD" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+				<person id="43" rel="Сестра" relcode="FD" fullname="Пушкина Анна Александровна" />
+				<person id="44" rel="Брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="45" rel="Сестра" relcode="FD" fullname="Пушкина Надежда Александровна" />
+				<person id="46" rel="Сестра" relcode="FD" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+				<person id="47" rel="Брат" relcode="FS" fullname="Пушкин Сергей Александрович" />
+				<person id="35" rel="Единокровный брат" relcode="FS" fullname="Пушкин Николай Александрович" />
+				<person id="36" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+			</nearest>
+			<events>
+				<event id="97" role="Родился" />
+				<event id="98" role="Умер" />
+			</events>
+		</person>
+		<person id="5" sex="М" fullname="Пушкин Александр Петрович" sn="Пушкин" fn="Александр" mn="Петрович" occu="Богатый помещик" bdate="После 1686" ddate="1725" lifespan="Около 39">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="19" rel="Жена" relcode="B" fullname="Головина Евдокия Ивановна">
+					<person id="1" rel="Сын" relcode="S" fullname="Пушкин Лев Александрович" />
+				</person>
+			</nearest>
+			<events>
+				<event id="9" role="Родился" />
+				<event id="50" role="Муж" />
+				<event id="1" role="Отец" />
+				<event id="10" role="Умер" />
+			</events>
+		</person>
+		<person id="2" sex="М" fullname="Пушкин Александр Сергеевич" sn="Пушкин" fn="Александр" mn="Сергеевич" occu="Великий поэт" bdate="06.06.1799" ddate="10.02.1837" dreason="Рана, полученная 27 января на дуэли с Ж. Дантесом" fav="1" lifespan="37">
+			<place id="4">Санкт-Петербург</place>
+			<bplace id="2">Москва</bplace>
+			<dplace id="4">Санкт-Петербург</dplace>
+			<family id="1">Пушкины</family>
+			<comment>Родоначальник новой русской литературы, основоположник русского литературного языка. https://ru.wikipedia.org/wiki/Пушкин,_Александр_Сергеевич</comment>
+			<nearest>
+				<person id="3" rel="Отец" relcode="F" fullname="Пушкин Сергей Львович" />
+				<person id="13" rel="Мать" relcode="M" fullname="Пушкина (Ганнибал) Надежда Осиповна " />
+				<person id="9" rel="Сестра" relcode="FD" fullname="Пушкина-Павлищева (Пушкина) Ольга Сергеевна" />
+				<person id="7" rel="Брат" relcode="FS" fullname="Пушкин Лев Сергеевич" />
+				<person id="22" rel="Жена" relcode="B" fullname="Пушкина (Гончарова) Наталья Николаевна">
+					<person id="12" rel="Дочь" relcode="D" fullname="Гартунг (Пушкина) Мария Александровна" />
+					<person id="6" rel="Сын" relcode="S" fullname="Пушкин Александр Александрович" />
+					<person id="4" rel="Сын" relcode="S" fullname="Пушкин Григорий Александрович" />
+					<person id="11" rel="Дочь" relcode="D" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна" />
+				</person>
+			</nearest>
+			<events>
+				<event id="3" role="Родился" />
+				<event id="137" role="Участник" />
+				<event id="126" role="Путешественник" />
+				<event id="55" role="Участник" />
+				<event id="56" role="Участник" />
+				<event id="127" role="Путешественник" />
+				<event id="129" role="Путешественник" />
+				<event id="131" role="Сослан" />
+				<event id="130" role="Участник" />
+				<event id="138" role="Участник" />
+				<event id="132" role="Путешественник" />
+				<event id="133" role="Путешественник" />
+				<event id="134" role="Путешественник" />
+				<event id="47" role="Муж" />
+				<event id="17" role="Отец" />
+				<event id="135" role="Путешественник" />
+				<event id="11" role="Отец" />
+				<event id="136" role="Путешественник" />
+				<event id="7" role="Отец" />
+				<event id="23" role="Отец" />
+				<event id="4" role="Умер" />
+			</events>
+			<documents>
+				<document id="4" ismain="1" />
+			</documents>
+		</person>
+		<person id="8" sex="М" fullname="Пушкин Алексей Фёдорович" sn="Пушкин" fn="Алексей" mn="Фёдорович" occu="Помещик" bdate="1717" ddate="1777" lifespan="Около 60">
+			<family id="1">Пушкины</family>
+			<comment>Помещик Переяславского, Ярославского, Воронежского и Лебедянского уездов.</comment>
+			<nearest>
+				<person id="20" rel="Жена" relcode="B" fullname="Пушкина (Ржевская) Сарра">
+					<person id="10" rel="Дочь" relcode="D" fullname="Ганнибал (Пушкина) Мария Алексеевна" />
+				</person>
+			</nearest>
+			<events>
+				<event id="15" role="Родился" />
+				<event id="54" role="Муж" />
+				<event id="19" role="Отец" />
+				<event id="16" role="Умер" />
+			</events>
+		</person>
+		<person id="24" sex="М" fullname="Пушкин Василий Львович" sn="Пушкин" fn="Василий" mn="Львович" bdate="08.05.1766" ddate="01.09.1830" lifespan="64">
+			<place id="2">Москва</place>
+			<family id="1">Пушкины</family>
+			<comment>https://ru.wikipedia.org/wiki/Пушкин,_Василий_Львович</comment>
+			<nearest>
+				<person id="1" rel="Отец" relcode="F" fullname="Пушкин Лев Александрович" />
+				<person id="16" rel="Мать" relcode="M" fullname="Чичерина Ольга Васильевна" />
+				<person id="25" rel="Сестра" relcode="FD" fullname="Пушкина Анна Львовна" />
+				<person id="3" rel="Брат" relcode="FS" fullname="Пушкин Сергей Львович" />
+				<person id="26" rel="Сестра" relcode="FD" fullname="Сонцева (Пушкина) Елизавета Львовна" />
+			</nearest>
+			<events>
+				<event id="57" role="Родился" />
+				<event id="58" role="Умер" />
+			</events>
+			<documents>
+				<document id="12" ismain="1" />
+			</documents>
+		</person>
+		<person id="4" sex="М" fullname="Пушкин Григорий Александрович" sn="Пушкин" fn="Григорий" mn="Александрович" occu="Военный" bdate="26.05.1835" ddate="18.08.1905" lifespan="70">
+			<place id="14">Михайловское</place>
+			<bplace id="4">Санкт-Петербург</bplace>
+			<family id="1">Пушкины</family>
+			<comment>https://ru.wikipedia.org/wiki/Пушкин,_Григорий_Александрович_(1835—1905)</comment>
+			<nearest>
+				<person id="2" rel="Отец" relcode="F" fullname="Пушкин Александр Сергеевич" />
+				<person id="22" rel="Мать" relcode="M" fullname="Пушкина (Гончарова) Наталья Николаевна" />
+				<person id="12" rel="Сестра" relcode="FD" fullname="Гартунг (Пушкина) Мария Александровна" />
+				<person id="6" rel="Брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="11" rel="Сестра" relcode="FD" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна" />
+				<person id="32" rel="Жена" relcode="B" fullname="Мошкова (Мельникова) Варвара Алексеевна" />
+			</nearest>
+			<events>
+				<event id="7" role="Родился" />
+				<event id="76" role="Муж" />
+				<event id="8" role="Умер" />
+			</events>
+			<documents>
+				<document id="10" ismain="1" />
+			</documents>
+		</person>
+		<person id="44" sex="М" fullname="Пушкин Григорий Александрович" sn="Пушкин" fn="Григорий" mn="Александрович" bdate="27.09.1868" ddate="01.09.1940" lifespan="71">
+			<place id="4">Санкт-Петербург</place>
+			<dplace id="8">Москва</dplace>
+			<family id="1">Пушкины</family>
+			<comment>https://ru.wikipedia.org/wiki/Пушкин,_Григорий_Александрович_(1868—1940)</comment>
+			<nearest>
+				<person id="6" rel="Отец" relcode="F" fullname="Пушкин Александр Александрович" />
+				<person id="31" rel="Мать" relcode="M" fullname="Ланская Софья Александровна" />
+				<person id="37" rel="Брат" relcode="FS" fullname="Пушкин Пётр Александрович" />
+				<person id="38" rel="Сестра" relcode="FD" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+				<person id="39" rel="Сестра" relcode="FD" fullname="Пушкина София Александровна" />
+				<person id="40" rel="Сестра" relcode="FD" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+				<person id="41" rel="Брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="42" rel="Сестра" relcode="FD" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+				<person id="43" rel="Сестра" relcode="FD" fullname="Пушкина Анна Александровна" />
+				<person id="45" rel="Сестра" relcode="FD" fullname="Пушкина Надежда Александровна" />
+				<person id="46" rel="Сестра" relcode="FD" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+				<person id="47" rel="Брат" relcode="FS" fullname="Пушкин Сергей Александрович" />
+				<person id="35" rel="Единокровный брат" relcode="FS" fullname="Пушкин Николай Александрович" />
+				<person id="36" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+			</nearest>
+			<events>
+				<event id="103" role="Родился" />
+				<event id="104" role="Умер" />
+			</events>
+		</person>
+		<person id="1" sex="М" fullname="Пушкин Лев Александрович" sn="Пушкин" fn="Лев" mn="Александрович" occu="Артиллерист" bdate="28.02.1723" ddate="25.10.1790" lifespan="67">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="5" rel="Отец" relcode="F" fullname="Пушкин Александр Петрович" />
+				<person id="19" rel="Мать" relcode="M" fullname="Головина Евдокия Ивановна" />
+				<person id="16" rel="Жена" relcode="B" fullname="Чичерина Ольга Васильевна">
+					<person id="25" rel="Дочь" relcode="D" fullname="Пушкина Анна Львовна" />
+					<person id="24" rel="Сын" relcode="S" fullname="Пушкин Василий Львович" />
+					<person id="3" rel="Сын" relcode="S" fullname="Пушкин Сергей Львович" />
+					<person id="26" rel="Дочь" relcode="D" fullname="Сонцева (Пушкина) Елизавета Львовна" />
+				</person>
+			</nearest>
+			<events>
+				<event id="1" role="Родился" />
+				<event id="49" role="Муж" />
+				<event id="59" role="Отец" />
+				<event id="57" role="Отец" />
+				<event id="5" role="Отец" />
+				<event id="61" role="Отец" />
+				<event id="2" role="Умер" />
+			</events>
+		</person>
+		<person id="7" sex="М" fullname="Пушкин Лев Сергеевич" sn="Пушкин" fn="Лев" mn="Сергеевич" occu="военнослужащий, чиновник, таможенник" bdate="21.04.1805" ddate="31.07.1852" lifespan="47">
+			<place id="15">Одесса</place>
+			<bplace id="2">Москва</bplace>
+			<family id="1">Пушкины</family>
+			<comment>https://ru.wikipedia.org/wiki/Пушкин,_Лев_Сергеевич</comment>
+			<nearest>
+				<person id="3" rel="Отец" relcode="F" fullname="Пушкин Сергей Львович" />
+				<person id="13" rel="Мать" relcode="M" fullname="Пушкина (Ганнибал) Надежда Осиповна " />
+				<person id="9" rel="Сестра" relcode="FD" fullname="Пушкина-Павлищева (Пушкина) Ольга Сергеевна" />
+				<person id="2" rel="Брат" relcode="FS" fullname="Пушкин Александр Сергеевич" />
+			</nearest>
+			<events>
+				<event id="13" role="Родился" />
+				<event id="14" role="Умер" />
+			</events>
+			<documents>
+				<document id="5" ismain="1" />
+			</documents>
+		</person>
+		<person id="35" sex="М" fullname="Пушкин Николай Александрович" sn="Пушкин" fn="Николай" mn="Александрович" bdate="1885" ddate="1964" lifespan="Около 79">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="6" rel="Отец" relcode="F" fullname="Пушкин Александр Александрович" />
+				<person id="30" rel="Мать" relcode="M" fullname="Павлова Мария Александровна" />
+				<person id="37" rel="Единокровный брат" relcode="FS" fullname="Пушкин Пётр Александрович" />
+				<person id="38" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+				<person id="39" rel="Единокровная сестра" relcode="FD" fullname="Пушкина София Александровна" />
+				<person id="40" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+				<person id="41" rel="Единокровный брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="42" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+				<person id="43" rel="Единокровная сестра" relcode="FD" fullname="Пушкина Анна Александровна" />
+				<person id="44" rel="Единокровный брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="45" rel="Единокровная сестра" relcode="FD" fullname="Пушкина Надежда Александровна" />
+				<person id="46" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+				<person id="47" rel="Единокровный брат" relcode="FS" fullname="Пушкин Сергей Александрович" />
+				<person id="36" rel="Сестра" relcode="FD" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+			</nearest>
+			<events>
+				<event id="85" role="Родился" />
+				<event id="86" role="Умер" />
+			</events>
+		</person>
+		<person id="37" sex="М" fullname="Пушкин Пётр Александрович" sn="Пушкин" fn="Пётр" mn="Александрович" ddate="1870">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="6" rel="Отец" relcode="F" fullname="Пушкин Александр Александрович" />
+				<person id="31" rel="Мать" relcode="M" fullname="Ланская Софья Александровна" />
+				<person id="38" rel="Сестра" relcode="FD" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+				<person id="39" rel="Сестра" relcode="FD" fullname="Пушкина София Александровна" />
+				<person id="40" rel="Сестра" relcode="FD" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+				<person id="41" rel="Брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="42" rel="Сестра" relcode="FD" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+				<person id="43" rel="Сестра" relcode="FD" fullname="Пушкина Анна Александровна" />
+				<person id="44" rel="Брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="45" rel="Сестра" relcode="FD" fullname="Пушкина Надежда Александровна" />
+				<person id="46" rel="Сестра" relcode="FD" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+				<person id="47" rel="Брат" relcode="FS" fullname="Пушкин Сергей Александрович" />
+				<person id="35" rel="Единокровный брат" relcode="FS" fullname="Пушкин Николай Александрович" />
+				<person id="36" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+			</nearest>
+			<events>
+				<event id="89" role="Родился" />
+				<event id="90" role="Умер" />
+			</events>
+		</person>
+		<person id="47" sex="М" fullname="Пушкин Сергей Александрович" sn="Пушкин" fn="Сергей" mn="Александрович" bdate="1874" ddate="1898" dreason="Застрелился" lifespan="Около 24">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="6" rel="Отец" relcode="F" fullname="Пушкин Александр Александрович" />
+				<person id="31" rel="Мать" relcode="M" fullname="Ланская Софья Александровна" />
+				<person id="37" rel="Брат" relcode="FS" fullname="Пушкин Пётр Александрович" />
+				<person id="38" rel="Сестра" relcode="FD" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+				<person id="39" rel="Сестра" relcode="FD" fullname="Пушкина София Александровна" />
+				<person id="40" rel="Сестра" relcode="FD" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+				<person id="41" rel="Брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="42" rel="Сестра" relcode="FD" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+				<person id="43" rel="Сестра" relcode="FD" fullname="Пушкина Анна Александровна" />
+				<person id="44" rel="Брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="45" rel="Сестра" relcode="FD" fullname="Пушкина Надежда Александровна" />
+				<person id="46" rel="Сестра" relcode="FD" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+				<person id="35" rel="Единокровный брат" relcode="FS" fullname="Пушкин Николай Александрович" />
+				<person id="36" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+			</nearest>
+			<events>
+				<event id="109" role="Родился" />
+				<event id="110" role="Умер" />
+			</events>
+		</person>
+		<person id="3" sex="М" fullname="Пушкин Сергей Львович" sn="Пушкин" fn="Сергей" mn="Львович" occu="Статский советник" bdate="03.06.1770" ddate="10.07.1848" lifespan="78">
+			<place id="2">Москва</place>
+			<bplace id="4">Санкт-Петербург</bplace>
+			<dplace id="2">Москва</dplace>
+			<family id="1">Пушкины</family>
+			<comment>С детства был записан в армию. С 1817г. в отставке. В совершенстве владел французским языком, писал &amp;quot;салонные&amp;quot; стихи и каламбуры. https://ru.wikipedia.org/wiki/Пушкин,_Сергей_Львович</comment>
+			<nearest>
+				<person id="1" rel="Отец" relcode="F" fullname="Пушкин Лев Александрович" />
+				<person id="16" rel="Мать" relcode="M" fullname="Чичерина Ольга Васильевна" />
+				<person id="25" rel="Сестра" relcode="FD" fullname="Пушкина Анна Львовна" />
+				<person id="24" rel="Брат" relcode="FS" fullname="Пушкин Василий Львович" />
+				<person id="26" rel="Сестра" relcode="FD" fullname="Сонцева (Пушкина) Елизавета Львовна" />
+				<person id="13" rel="Жена" relcode="B" fullname="Пушкина (Ганнибал) Надежда Осиповна ">
+					<person id="9" rel="Дочь" relcode="D" fullname="Пушкина-Павлищева (Пушкина) Ольга Сергеевна" />
+					<person id="2" rel="Сын" relcode="S" fullname="Пушкин Александр Сергеевич" />
+					<person id="7" rel="Сын" relcode="S" fullname="Пушкин Лев Сергеевич" />
+				</person>
+			</nearest>
+			<events>
+				<event id="5" role="Родился" />
+				<event id="48" role="Муж" />
+				<event id="21" role="Отец" />
+				<event id="3" role="Отец" />
+				<event id="126" role="Путешественник" />
+				<event id="13" role="Отец" />
+				<event id="6" role="Умер" />
+			</events>
+			<documents>
+				<document id="9" ismain="1" />
+			</documents>
+		</person>
+		<person id="43" sex="Ж" fullname="Пушкина Анна Александровна" sn="Пушкина" msn="Пушкина" fn="Анна" mn="Александровна" bdate="1866" ddate="1949" lifespan="Около 83">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="6" rel="Отец" relcode="F" fullname="Пушкин Александр Александрович" />
+				<person id="31" rel="Мать" relcode="M" fullname="Ланская Софья Александровна" />
+				<person id="37" rel="Брат" relcode="FS" fullname="Пушкин Пётр Александрович" />
+				<person id="38" rel="Сестра" relcode="FD" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+				<person id="39" rel="Сестра" relcode="FD" fullname="Пушкина София Александровна" />
+				<person id="40" rel="Сестра" relcode="FD" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+				<person id="41" rel="Брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="42" rel="Сестра" relcode="FD" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+				<person id="44" rel="Брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="45" rel="Сестра" relcode="FD" fullname="Пушкина Надежда Александровна" />
+				<person id="46" rel="Сестра" relcode="FD" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+				<person id="47" rel="Брат" relcode="FS" fullname="Пушкин Сергей Александрович" />
+				<person id="35" rel="Единокровный брат" relcode="FS" fullname="Пушкин Николай Александрович" />
+				<person id="36" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+			</nearest>
+			<events>
+				<event id="101" role="Родилась" />
+				<event id="102" role="Умерла" />
+			</events>
+		</person>
+		<person id="25" sex="Ж" fullname="Пушкина Анна Львовна" sn="Пушкина" msn="Пушкина" fn="Анна" mn="Львовна" bdate="Около 1765" ddate="Около 1824" lifespan="Около 59">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="1" rel="Отец" relcode="F" fullname="Пушкин Лев Александрович" />
+				<person id="16" rel="Мать" relcode="M" fullname="Чичерина Ольга Васильевна" />
+				<person id="24" rel="Брат" relcode="FS" fullname="Пушкин Василий Львович" />
+				<person id="3" rel="Брат" relcode="FS" fullname="Пушкин Сергей Львович" />
+				<person id="26" rel="Сестра" relcode="FD" fullname="Сонцева (Пушкина) Елизавета Львовна" />
+			</nearest>
+			<events>
+				<event id="59" role="Родилась" />
+				<event id="60" role="Умерла" />
+			</events>
+		</person>
+		<person id="13" sex="Ж" fullname="Пушкина (Ганнибал) Надежда Осиповна " sn="Пушкина" msn="Ганнибал" fn="Надежда" mn="Осиповна " bdate="02.07.1775" ddate="29.03.1836" lifespan="60">
+			<place id="4">Санкт-Петербург</place>
+			<dplace id="4">Санкт-Петербург</dplace>
+			<family id="2">Ганнибал</family>
+			<comment>https://ru.wikipedia.org/wiki/Пушкина,_Надежда_Осиповна</comment>
+			<nearest>
+				<person id="14" rel="Отец" relcode="F" fullname="Ганнибал Осип Абрамович" />
+				<person id="10" rel="Мать" relcode="M" fullname="Ганнибал (Пушкина) Мария Алексеевна" />
+				<person id="3" rel="Муж" relcode="A" fullname="Пушкин Сергей Львович">
+					<person id="9" rel="Дочь" relcode="D" fullname="Пушкина-Павлищева (Пушкина) Ольга Сергеевна" />
+					<person id="2" rel="Сын" relcode="S" fullname="Пушкин Александр Сергеевич" />
+					<person id="7" rel="Сын" relcode="S" fullname="Пушкин Лев Сергеевич" />
+				</person>
+			</nearest>
+			<events>
+				<event id="25" role="Родилась" />
+				<event id="48" role="Жена" />
+				<event id="21" role="Мать" />
+				<event id="3" role="Мать" />
+				<event id="126" role="Путешественница" />
+				<event id="13" role="Мать" />
+				<event id="26" role="Умерла" />
+			</events>
+			<documents>
+				<document id="8" ismain="1" />
+			</documents>
+		</person>
+		<person id="22" sex="Ж" fullname="Пушкина (Гончарова) Наталья Николаевна" sn="Пушкина" msn="Гончарова" fn="Наталья" mn="Николаевна" bdate="08.09.1812" ddate="08.12.1863" lifespan="51">
+			<place id="4">Санкт-Петербург</place>
+			<comment>https://ru.wikipedia.org/wiki/Гончарова,_Наталья_Николаевна</comment>
+			<nearest>
+				<person id="2" rel="Муж" relcode="A" fullname="Пушкин Александр Сергеевич">
+					<person id="12" rel="Дочь" relcode="D" fullname="Гартунг (Пушкина) Мария Александровна" />
+					<person id="6" rel="Сын" relcode="S" fullname="Пушкин Александр Александрович" />
+					<person id="4" rel="Сын" relcode="S" fullname="Пушкин Григорий Александрович" />
+					<person id="11" rel="Дочь" relcode="D" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна" />
+				</person>
+			</nearest>
+			<events>
+				<event id="45" role="Родилась" />
+				<event id="47" role="Жена" />
+				<event id="17" role="Мать" />
+				<event id="11" role="Мать" />
+				<event id="7" role="Мать" />
+				<event id="23" role="Мать" />
+				<event id="46" role="Умерла" />
+			</events>
+			<documents>
+				<document id="2" ismain="1" />
+			</documents>
+		</person>
+		<person id="45" sex="Ж" fullname="Пушкина Надежда Александровна" sn="Пушкина" msn="Пушкина" fn="Надежда" mn="Александровна" bdate="1871" ddate="1915" lifespan="Около 44">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="6" rel="Отец" relcode="F" fullname="Пушкин Александр Александрович" />
+				<person id="31" rel="Мать" relcode="M" fullname="Ланская Софья Александровна" />
+				<person id="37" rel="Брат" relcode="FS" fullname="Пушкин Пётр Александрович" />
+				<person id="38" rel="Сестра" relcode="FD" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+				<person id="39" rel="Сестра" relcode="FD" fullname="Пушкина София Александровна" />
+				<person id="40" rel="Сестра" relcode="FD" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+				<person id="41" rel="Брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="42" rel="Сестра" relcode="FD" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+				<person id="43" rel="Сестра" relcode="FD" fullname="Пушкина Анна Александровна" />
+				<person id="44" rel="Брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="46" rel="Сестра" relcode="FD" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+				<person id="47" rel="Брат" relcode="FS" fullname="Пушкин Сергей Александрович" />
+				<person id="35" rel="Единокровный брат" relcode="FS" fullname="Пушкин Николай Александрович" />
+				<person id="36" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+			</nearest>
+			<events>
+				<event id="105" role="Родилась" />
+				<event id="106" role="Умерла" />
+			</events>
+		</person>
+		<person id="20" sex="Ж" fullname="Пушкина (Ржевская) Сарра" sn="Пушкина" msn="Ржевская" fn="Сарра" bdate="1721" ddate="После 1790" lifespan="Около 69">
+			<comment>дочь Юрия Ржевского, нижегородского воеводы.</comment>
+			<nearest>
+				<person id="8" rel="Муж" relcode="A" fullname="Пушкин Алексей Фёдорович">
+					<person id="10" rel="Дочь" relcode="D" fullname="Ганнибал (Пушкина) Мария Алексеевна" />
+				</person>
+			</nearest>
+			<events>
+				<event id="39" role="Родилась" />
+				<event id="54" role="Жена" />
+				<event id="19" role="Мать" />
+				<event id="40" role="Умерла" />
+			</events>
+		</person>
+		<person id="39" sex="Ж" fullname="Пушкина София Александровна" sn="Пушкина" fn="София" mn="Александровна" bdate="1860" ddate="1861" lifespan="Около 1">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="6" rel="Отец" relcode="F" fullname="Пушкин Александр Александрович" />
+				<person id="31" rel="Мать" relcode="M" fullname="Ланская Софья Александровна" />
+				<person id="37" rel="Брат" relcode="FS" fullname="Пушкин Пётр Александрович" />
+				<person id="38" rel="Сестра" relcode="FD" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+				<person id="40" rel="Сестра" relcode="FD" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+				<person id="41" rel="Брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="42" rel="Сестра" relcode="FD" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+				<person id="43" rel="Сестра" relcode="FD" fullname="Пушкина Анна Александровна" />
+				<person id="44" rel="Брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="45" rel="Сестра" relcode="FD" fullname="Пушкина Надежда Александровна" />
+				<person id="46" rel="Сестра" relcode="FD" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+				<person id="47" rel="Брат" relcode="FS" fullname="Пушкин Сергей Александрович" />
+				<person id="35" rel="Единокровный брат" relcode="FS" fullname="Пушкин Николай Александрович" />
+				<person id="36" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+			</nearest>
+			<events>
+				<event id="93" role="Родилась" />
+				<event id="94" role="Умерла" />
+			</events>
+		</person>
+		<person id="40" sex="Ж" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" sn="Пушкина-Быкова" msn="Пушкина" fn="Мария" mn="Александровна" bdate="1862" ddate="1939" lifespan="Около 77">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="6" rel="Отец" relcode="F" fullname="Пушкин Александр Александрович" />
+				<person id="31" rel="Мать" relcode="M" fullname="Ланская Софья Александровна" />
+				<person id="37" rel="Брат" relcode="FS" fullname="Пушкин Пётр Александрович" />
+				<person id="38" rel="Сестра" relcode="FD" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+				<person id="39" rel="Сестра" relcode="FD" fullname="Пушкина София Александровна" />
+				<person id="41" rel="Брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="42" rel="Сестра" relcode="FD" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+				<person id="43" rel="Сестра" relcode="FD" fullname="Пушкина Анна Александровна" />
+				<person id="44" rel="Брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="45" rel="Сестра" relcode="FD" fullname="Пушкина Надежда Александровна" />
+				<person id="46" rel="Сестра" relcode="FD" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+				<person id="47" rel="Брат" relcode="FS" fullname="Пушкин Сергей Александрович" />
+				<person id="35" rel="Единокровный брат" relcode="FS" fullname="Пушкин Николай Александрович" />
+				<person id="36" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+			</nearest>
+			<events>
+				<event id="95" role="Родилась" />
+				<event id="96" role="Умерла" />
+			</events>
+		</person>
+		<person id="38" sex="Ж" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" sn="Пушкина-Воронцова-Вельяминова" msn="Пушкина" fn="Наталия" mn="Александровна" bdate="17.08.1859" ddate="18.12.1912" dreason="Воспаление лёгких" lifespan="53">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="6" rel="Отец" relcode="F" fullname="Пушкин Александр Александрович" />
+				<person id="31" rel="Мать" relcode="M" fullname="Ланская Софья Александровна" />
+				<person id="37" rel="Брат" relcode="FS" fullname="Пушкин Пётр Александрович" />
+				<person id="39" rel="Сестра" relcode="FD" fullname="Пушкина София Александровна" />
+				<person id="40" rel="Сестра" relcode="FD" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+				<person id="41" rel="Брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="42" rel="Сестра" relcode="FD" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+				<person id="43" rel="Сестра" relcode="FD" fullname="Пушкина Анна Александровна" />
+				<person id="44" rel="Брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="45" rel="Сестра" relcode="FD" fullname="Пушкина Надежда Александровна" />
+				<person id="46" rel="Сестра" relcode="FD" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+				<person id="47" rel="Брат" relcode="FS" fullname="Пушкин Сергей Александрович" />
+				<person id="35" rel="Единокровный брат" relcode="FS" fullname="Пушкин Николай Александрович" />
+				<person id="36" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+			</nearest>
+			<events>
+				<event id="91" role="Родилась" />
+				<event id="92" role="Умерла" />
+			</events>
+		</person>
+		<person id="11" sex="Ж" fullname="Пушкина-Дубельт (Пушкина) Наталья Александровна" sn="Пушкина-Дубельт" msn="Пушкина" fn="Наталья" mn="Александровна" bdate="04.06.1836" ddate="23.03.1913" lifespan="76">
+			<place id="12">Висбаден</place>
+			<bplace id="4">Санкт-Петербург</bplace>
+			<family id="1">Пушкины</family>
+			<comment>http://ru.wikipedia.org/wiki/Пушкина,_Наталья_Александровна</comment>
+			<nearest>
+				<person id="2" rel="Отец" relcode="F" fullname="Пушкин Александр Сергеевич" />
+				<person id="22" rel="Мать" relcode="M" fullname="Пушкина (Гончарова) Наталья Николаевна" />
+				<person id="12" rel="Сестра" relcode="FD" fullname="Гартунг (Пушкина) Мария Александровна" />
+				<person id="6" rel="Брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="4" rel="Брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="33" rel="Бывший муж" relcode="K" fullname="Дубельт Михаил Леонтьевич">
+					<person id="48" rel="Дочь" relcode="D" fullname="Дубельт-Бессель (Дубельт) Наталья Михайловна" />
+					<person id="49" rel="Сын" relcode="S" fullname="Дубельт Леонтий Михайлович" />
+					<person id="50" rel="Дочь" relcode="D" fullname="Дубельт-Кондырева (Дубельт) Анна Михайловна" />
+				</person>
+				<person id="34" rel="Муж" relcode="A" fullname="Нассауский Николай-Вильгельм">
+					<person id="51" rel="Дочь" relcode="D" fullname="Де Торби (Меренберг) София Николаевна" />
+					<person id="52" rel="Дочь" relcode="D" fullname="(Меренберг) Александра Николаевна" />
+					<person id="53" rel="Сын" relcode="S" fullname="Меренберг Георгий Николаевич" />
+				</person>
+			</nearest>
+			<events>
+				<event id="23" role="Родилась" />
+				<event id="78" role="Жена" />
+				<event id="81" role="Бывшая жена" />
+				<event id="82" role="Жена" />
+				<event id="111" role="Мать" />
+				<event id="113" role="Мать" />
+				<event id="115" role="Мать" />
+				<event id="117" role="Мать" />
+				<event id="119" role="Мать" />
+				<event id="121" role="Мать" />
+				<event id="24" role="Умерла" />
+			</events>
+			<documents>
+				<document id="6" ismain="1" />
+			</documents>
+		</person>
+		<person id="46" sex="Ж" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" sn="Пушкина-Мезенцова" msn="Пушкина" fn="Вера" mn="Александровна" bdate="1872" ddate="1909" lifespan="Около 37">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="6" rel="Отец" relcode="F" fullname="Пушкин Александр Александрович" />
+				<person id="31" rel="Мать" relcode="M" fullname="Ланская Софья Александровна" />
+				<person id="37" rel="Брат" relcode="FS" fullname="Пушкин Пётр Александрович" />
+				<person id="38" rel="Сестра" relcode="FD" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+				<person id="39" rel="Сестра" relcode="FD" fullname="Пушкина София Александровна" />
+				<person id="40" rel="Сестра" relcode="FD" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+				<person id="41" rel="Брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="42" rel="Сестра" relcode="FD" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+				<person id="43" rel="Сестра" relcode="FD" fullname="Пушкина Анна Александровна" />
+				<person id="44" rel="Брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="45" rel="Сестра" relcode="FD" fullname="Пушкина Надежда Александровна" />
+				<person id="47" rel="Брат" relcode="FS" fullname="Пушкин Сергей Александрович" />
+				<person id="35" rel="Единокровный брат" relcode="FS" fullname="Пушкин Николай Александрович" />
+				<person id="36" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+			</nearest>
+			<events>
+				<event id="107" role="Родилась" />
+				<event id="108" role="Умерла" />
+			</events>
+		</person>
+		<person id="9" sex="Ж" fullname="Пушкина-Павлищева (Пушкина) Ольга Сергеевна" sn="Пушкина-Павлищева" msn="Пушкина" fn="Ольга" mn="Сергеевна" bdate="31.12.1797" ddate="14.05.1868" lifespan="70">
+			<place id="2">Москва</place>
+			<family id="1">Пушкины</family>
+			<comment>https://ru.wikipedia.org/wiki/Павлищева,_Ольга_Сергеевна</comment>
+			<nearest>
+				<person id="3" rel="Отец" relcode="F" fullname="Пушкин Сергей Львович" />
+				<person id="13" rel="Мать" relcode="M" fullname="Пушкина (Ганнибал) Надежда Осиповна " />
+				<person id="2" rel="Брат" relcode="FS" fullname="Пушкин Александр Сергеевич" />
+				<person id="7" rel="Брат" relcode="FS" fullname="Пушкин Лев Сергеевич" />
+			</nearest>
+			<events>
+				<event id="21" role="Родилась" />
+				<event id="22" role="Умерла" />
+			</events>
+			<documents>
+				<document id="1" ismain="1" />
+			</documents>
+		</person>
+		<person id="42" sex="Ж" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" sn="Пушкина-Павлова" msn="Пушкина" fn="Ольга" mn="Александровна" bdate="1864" ddate="После 1908" lifespan="Около 44">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="6" rel="Отец" relcode="F" fullname="Пушкин Александр Александрович" />
+				<person id="31" rel="Мать" relcode="M" fullname="Ланская Софья Александровна" />
+				<person id="37" rel="Брат" relcode="FS" fullname="Пушкин Пётр Александрович" />
+				<person id="38" rel="Сестра" relcode="FD" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+				<person id="39" rel="Сестра" relcode="FD" fullname="Пушкина София Александровна" />
+				<person id="40" rel="Сестра" relcode="FD" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+				<person id="41" rel="Брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="43" rel="Сестра" relcode="FD" fullname="Пушкина Анна Александровна" />
+				<person id="44" rel="Брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="45" rel="Сестра" relcode="FD" fullname="Пушкина Надежда Александровна" />
+				<person id="46" rel="Сестра" relcode="FD" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+				<person id="47" rel="Брат" relcode="FS" fullname="Пушкин Сергей Александрович" />
+				<person id="35" rel="Единокровный брат" relcode="FS" fullname="Пушкин Николай Александрович" />
+				<person id="36" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" />
+			</nearest>
+			<events>
+				<event id="99" role="Родилась" />
+				<event id="100" role="Умерла" />
+			</events>
+		</person>
+		<person id="36" sex="Ж" fullname="Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна" sn="Пушкина-Фон дер Розенмайер" msn="Пушкина" fn="Елена" mn="Александровна" bdate="1890" ddate="1943" lifespan="Около 53">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="6" rel="Отец" relcode="F" fullname="Пушкин Александр Александрович" />
+				<person id="30" rel="Мать" relcode="M" fullname="Павлова Мария Александровна" />
+				<person id="37" rel="Единокровный брат" relcode="FS" fullname="Пушкин Пётр Александрович" />
+				<person id="38" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна" />
+				<person id="39" rel="Единокровная сестра" relcode="FD" fullname="Пушкина София Александровна" />
+				<person id="40" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Быкова (Пушкина) Мария Александровна" />
+				<person id="41" rel="Единокровный брат" relcode="FS" fullname="Пушкин Александр Александрович" />
+				<person id="42" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Павлова (Пушкина) Ольга Александровна" />
+				<person id="43" rel="Единокровная сестра" relcode="FD" fullname="Пушкина Анна Александровна" />
+				<person id="44" rel="Единокровный брат" relcode="FS" fullname="Пушкин Григорий Александрович" />
+				<person id="45" rel="Единокровная сестра" relcode="FD" fullname="Пушкина Надежда Александровна" />
+				<person id="46" rel="Единокровная сестра" relcode="FD" fullname="Пушкина-Мезенцова (Пушкина) Вера Александровна" />
+				<person id="47" rel="Единокровный брат" relcode="FS" fullname="Пушкин Сергей Александрович" />
+				<person id="35" rel="Брат" relcode="FS" fullname="Пушкин Николай Александрович" />
+			</nearest>
+			<events>
+				<event id="87" role="Родилась" />
+				<event id="88" role="Умерла" />
+			</events>
+		</person>
+		<person id="27" sex="М" fullname="Сонцев Матвей Михаилович" sn="Сонцев" fn="Матвей" mn="Михаилович" bdate="22.06.1779" ddate="22.11.1847" lifespan="68">
+			<nearest>
+				<person id="26" rel="Жена" relcode="B" fullname="Сонцева (Пушкина) Елизавета Львовна">
+					<person id="54" rel="Дочь" relcode="D" fullname="Сонцева Екатерина Матвеевна" />
+				</person>
+			</nearest>
+			<events>
+				<event id="123" role="Родился" />
+				<event id="63" role="Муж" />
+				<event id="124" role="Отец" />
+				<event id="64" role="Умер" />
+			</events>
+		</person>
+		<person id="54" sex="Ж" fullname="Сонцева Екатерина Матвеевна" sn="Сонцева" fn="Екатерина" mn="Матвеевна" ddate="16.01.1864">
+			<nearest>
+				<person id="27" rel="Отец" relcode="F" fullname="Сонцев Матвей Михаилович" />
+				<person id="26" rel="Мать" relcode="M" fullname="Сонцева (Пушкина) Елизавета Львовна" />
+			</nearest>
+			<events>
+				<event id="124" role="Родилась" />
+				<event id="125" role="Умерла" />
+			</events>
+		</person>
+		<person id="26" sex="Ж" fullname="Сонцева (Пушкина) Елизавета Львовна" sn="Сонцева" msn="Пушкина" fn="Елизавета" mn="Львовна" bdate="24.08.1776" ddate="09.10.1848" lifespan="72">
+			<family id="1">Пушкины</family>
+			<nearest>
+				<person id="1" rel="Отец" relcode="F" fullname="Пушкин Лев Александрович" />
+				<person id="16" rel="Мать" relcode="M" fullname="Чичерина Ольга Васильевна" />
+				<person id="25" rel="Сестра" relcode="FD" fullname="Пушкина Анна Львовна" />
+				<person id="24" rel="Брат" relcode="FS" fullname="Пушкин Василий Львович" />
+				<person id="3" rel="Брат" relcode="FS" fullname="Пушкин Сергей Львович" />
+				<person id="27" rel="Муж" relcode="A" fullname="Сонцев Матвей Михаилович">
+					<person id="54" rel="Дочь" relcode="D" fullname="Сонцева Екатерина Матвеевна" />
+				</person>
+			</nearest>
+			<events>
+				<event id="61" role="Родилась" />
+				<event id="63" role="Жена" />
+				<event id="124" role="Мать" />
+				<event id="62" role="Умерла" />
+			</events>
+		</person>
+		<person id="15" sex="М" fullname="Чичерин Василий Иванович" sn="Чичерин" fn="Василий" mn="Иванович" bdate="28.03.1700" ddate="Между 1743 и 1748" lifespan="Около 44">
+			<nearest>
+				<person id="23" rel="Жена" relcode="B" fullname="Приклонская Лукерья Васильевна">
+					<person id="16" rel="Дочь" relcode="D" fullname="Чичерина Ольга Васильевна" />
+				</person>
+			</nearest>
+			<events>
+				<event id="31" role="Родился" />
+				<event id="51" role="Муж" />
+				<event id="33" role="Отец" />
+				<event id="32" role="Умер" />
+			</events>
+		</person>
+		<person id="16" sex="Ж" fullname="Чичерина Ольга Васильевна" sn="Чичерина" fn="Ольга" mn="Васильевна" bdate="16.06.1737" ddate="03.02.1802" lifespan="64">
+			<nearest>
+				<person id="15" rel="Отец" relcode="F" fullname="Чичерин Василий Иванович" />
+				<person id="23" rel="Мать" relcode="M" fullname="Приклонская Лукерья Васильевна" />
+				<person id="1" rel="Муж" relcode="A" fullname="Пушкин Лев Александрович">
+					<person id="25" rel="Дочь" relcode="D" fullname="Пушкина Анна Львовна" />
+					<person id="24" rel="Сын" relcode="S" fullname="Пушкин Василий Львович" />
+					<person id="3" rel="Сын" relcode="S" fullname="Пушкин Сергей Львович" />
+					<person id="26" rel="Дочь" relcode="D" fullname="Сонцева (Пушкина) Елизавета Львовна" />
+				</person>
+			</nearest>
+			<events>
+				<event id="33" role="Родилась" />
+				<event id="49" role="Жена" />
+				<event id="59" role="Мать" />
+				<event id="57" role="Мать" />
+				<event id="5" role="Мать" />
+				<event id="61" role="Мать" />
+				<event id="34" role="Умерла" />
+			</events>
+		</person>
+		<person id="17" sex="Ж" fullname="Шеберг Христина Матвеевна" sn="Шеберг" msn="Шеберг" fn="Христина" mn="Матвеевна" bdate="Около 1717" ddate="1781" lifespan="Около 64">
+			<nearest>
+				<person id="18" rel="Муж" relcode="A" fullname="Ганнибал Абрам (Ибрагим) Петрович">
+					<person id="28" rel="Сын" relcode="S" fullname="Ганнибал Иван Абрамович" />
+					<person id="14" rel="Сын" relcode="S" fullname="Ганнибал Осип Абрамович" />
+				</person>
+			</nearest>
+			<events>
+				<event id="37" role="Родилась" />
+				<event id="65" role="Мать" />
+				<event id="53" role="Жена" />
+				<event id="27" role="Мать" />
+				<event id="38" role="Умерла" />
+			</events>
+		</person>
+	</persons>
+	<events>
+		<event id="29" type="Рождение" date="Около 1696" passed="Около 330">
+			<persons>
+				<person id="18" role="Родился">Ганнибал Абрам (Ибрагим) Петрович</person>
+			</persons>
+		</event>
+		<event id="65" type="Рождение" date="16.06.1735" daysleft="8" passed="290">
+			<persons>
+				<person id="28" role="Родился">Ганнибал Иван Абрамович</person>
+				<person id="18" role="Отец">Ганнибал Абрам (Ибрагим) Петрович</person>
+				<person id="17" role="Мать">Шеберг Христина Матвеевна</person>
+			</persons>
+		</event>
+		<event id="53" type="Свадьба" date="1736" passed="Около 290">
+			<persons>
+				<person id="18" role="Муж">Ганнибал Абрам (Ибрагим) Петрович</person>
+				<person id="17" role="Жена">Шеберг Христина Матвеевна</person>
+			</persons>
+		</event>
+		<event id="27" type="Рождение" date="31.01.1744" daysleft="237" passed="282">
+			<persons>
+				<person id="14" role="Родился">Ганнибал Осип Абрамович</person>
+				<person id="18" role="Отец">Ганнибал Абрам (Ибрагим) Петрович</person>
+				<person id="17" role="Мать">Шеберг Христина Матвеевна</person>
+			</persons>
+		</event>
+		<event id="30" type="Смерть" date="25.05.1781" daysleft="351" passed="245">
+			<persons>
+				<person id="18" role="Умер">Ганнибал Абрам (Ибрагим) Петрович</person>
+			</persons>
+		</event>
+		<event id="66" type="Смерть" date="24.10.1801" daysleft="138" passed="224" deathreason="от горячки">
+			<place id="4">Санкт-Петербург</place>
+			<persons>
+				<person id="28" role="Умер">Ганнибал Иван Абрамович</person>
+			</persons>
+		</event>
+		<event id="52" type="Свадьба">
+			<persons>
+				<person id="14" role="Муж">Ганнибал Осип Абрамович</person>
+				<person id="10" role="Жена">Ганнибал (Пушкина) Мария Алексеевна</person>
+			</persons>
+		</event>
+		<event id="25" type="Рождение" date="02.07.1775" daysleft="24" passed="250">
+			<persons>
+				<person id="13" role="Родилась">Пушкина (Ганнибал) Надежда Осиповна </person>
+				<person id="14" role="Отец">Ганнибал Осип Абрамович</person>
+				<person id="10" role="Мать">Ганнибал (Пушкина) Мария Алексеевна</person>
+			</persons>
+		</event>
+		<event id="28" type="Смерть" date="24.10.1806" daysleft="138" passed="219">
+			<comment>Погребен в Святогорском монастыре</comment>
+			<persons>
+				<person id="14" role="Умер">Ганнибал Осип Абрамович</person>
+			</persons>
+		</event>
+		<event id="19" type="Рождение" date="31.01.1745" daysleft="237" passed="281">
+			<persons>
+				<person id="10" role="Родилась">Ганнибал (Пушкина) Мария Алексеевна</person>
+				<person id="8" role="Отец">Пушкин Алексей Фёдорович</person>
+				<person id="20" role="Мать">Пушкина (Ржевская) Сарра</person>
+			</persons>
+		</event>
+		<event id="20" type="Смерть" date="09.07.1818" daysleft="31" passed="207">
+			<persons>
+				<person id="10" role="Умерла">Ганнибал (Пушкина) Мария Алексеевна</person>
+			</persons>
+		</event>
+		<event id="69" type="Рождение" date="1834" passed="Около 192">
+			<persons>
+				<person id="29" role="Родился">Гартунг Леонид Николаевич</person>
+			</persons>
+		</event>
+		<event id="67" type="Свадьба">
+			<persons>
+				<person id="29" role="Муж">Гартунг Леонид Николаевич</person>
+				<person id="12" role="Жена">Гартунг (Пушкина) Мария Александровна</person>
+			</persons>
+		</event>
+		<event id="68" type="Смерть" date="1877" passed="Около 149">
+			<persons>
+				<person id="29" role="Умер">Гартунг Леонид Николаевич</person>
+			</persons>
+		</event>
+		<event id="17" type="Рождение" date="31.05.1832" daysleft="357" passed="194">
+			<place id="4">Санкт-Петербург</place>
+			<persons>
+				<person id="12" role="Родилась">Гартунг (Пушкина) Мария Александровна</person>
+				<person id="2" role="Отец">Пушкин Александр Сергеевич</person>
+				<person id="22" role="Мать">Пушкина (Гончарова) Наталья Николаевна</person>
+			</persons>
+		</event>
+		<event id="18" type="Смерть" date="07.03.1919" daysleft="272" passed="107">
+			<place id="6">Москва</place>
+			<comment>Похоронена в Донском монастыре</comment>
+			<persons>
+				<person id="12" role="Умерла">Гартунг (Пушкина) Мария Александровна</person>
+			</persons>
+		</event>
+		<event id="35" type="Рождение" date="Предположительно 1703" passed="Около 323">
+			<persons>
+				<person id="19" role="Родилась">Головина Евдокия Ивановна</person>
+			</persons>
+		</event>
+		<event id="50" type="Свадьба">
+			<persons>
+				<person id="5" role="Муж">Пушкин Александр Петрович</person>
+				<person id="19" role="Жена">Головина Евдокия Ивановна</person>
+			</persons>
+		</event>
+		<event id="1" type="Рождение" date="28.02.1723" daysleft="265" passed="303">
+			<persons>
+				<person id="1" role="Родился">Пушкин Лев Александрович</person>
+				<person id="5" role="Отец">Пушкин Александр Петрович</person>
+				<person id="19" role="Мать">Головина Евдокия Ивановна</person>
+			</persons>
+		</event>
+		<event id="36" type="Смерть" date="1725" passed="Около 301">
+			<persons>
+				<person id="19" role="Умерла">Головина Евдокия Ивановна</person>
+			</persons>
+		</event>
+		<event id="117" type="Рождение" date="01.06.1868" daysleft="358" passed="158">
+			<persons>
+				<person id="51" role="Родилась">Де Торби (Меренберг) София Николаевна</person>
+				<person id="34" role="Отец">Нассауский Николай-Вильгельм</person>
+				<person id="11" role="Мать">Пушкина-Дубельт (Пушкина) Наталья Александровна</person>
+			</persons>
+		</event>
+		<event id="118" type="Смерть" date="14.09.1927" daysleft="98" passed="98">
+			<place id="10">Лондон</place>
+			<persons>
+				<person id="51" role="Умерла">Де Торби (Меренберг) София Николаевна</person>
+			</persons>
+		</event>
+		<event id="113" type="Рождение" date="1855" passed="Около 171">
+			<persons>
+				<person id="49" role="Родился">Дубельт Леонтий Михайлович</person>
+				<person id="33" role="Отец">Дубельт Михаил Леонтьевич</person>
+				<person id="11" role="Мать">Пушкина-Дубельт (Пушкина) Наталья Александровна</person>
+			</persons>
+		</event>
+		<event id="114" type="Смерть" date="1894" passed="Около 132">
+			<persons>
+				<person id="49" role="Умер">Дубельт Леонтий Михайлович</person>
+			</persons>
+		</event>
+		<event id="80" type="Рождение" date="21.02.1822" daysleft="258" passed="204">
+			<persons>
+				<person id="33" role="Родился">Дубельт Михаил Леонтьевич</person>
+			</persons>
+		</event>
+		<event id="78" type="Свадьба">
+			<persons>
+				<person id="33" role="Муж">Дубельт Михаил Леонтьевич</person>
+				<person id="11" role="Жена">Пушкина-Дубельт (Пушкина) Наталья Александровна</person>
+			</persons>
+		</event>
+		<event id="81" type="Развод">
+			<persons>
+				<person id="33" role="Бывший муж">Дубельт Михаил Леонтьевич</person>
+				<person id="11" role="Бывшая жена">Пушкина-Дубельт (Пушкина) Наталья Александровна</person>
+			</persons>
+		</event>
+		<event id="111" type="Рождение" date="1854" passed="Около 172">
+			<persons>
+				<person id="48" role="Родилась">Дубельт-Бессель (Дубельт) Наталья Михайловна</person>
+				<person id="33" role="Отец">Дубельт Михаил Леонтьевич</person>
+				<person id="11" role="Мать">Пушкина-Дубельт (Пушкина) Наталья Александровна</person>
+			</persons>
+		</event>
+		<event id="115" type="Рождение" date="1861" passed="Около 165">
+			<persons>
+				<person id="50" role="Родилась">Дубельт-Кондырева (Дубельт) Анна Михайловна</person>
+				<person id="33" role="Отец">Дубельт Михаил Леонтьевич</person>
+				<person id="11" role="Мать">Пушкина-Дубельт (Пушкина) Наталья Александровна</person>
+			</persons>
+		</event>
+		<event id="79" type="Смерть" date="19.04.1900" daysleft="315" passed="126">
+			<persons>
+				<person id="33" role="Умер">Дубельт Михаил Леонтьевич</person>
+			</persons>
+		</event>
+		<event id="112" type="Смерть" date="1925" passed="Около 101">
+			<persons>
+				<person id="48" role="Умерла">Дубельт-Бессель (Дубельт) Наталья Михайловна</person>
+			</persons>
+		</event>
+		<event id="116" type="Смерть" date="1919" passed="Около 107">
+			<persons>
+				<person id="50" role="Умерла">Дубельт-Кондырева (Дубельт) Анна Михайловна</person>
+			</persons>
+		</event>
+		<event id="75" type="Рождение" date="1838" passed="Около 188">
+			<persons>
+				<person id="31" role="Родилась">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="73" type="Свадьба">
+			<persons>
+				<person id="6" role="Муж">Пушкин Александр Александрович</person>
+				<person id="31" role="Жена">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="89" type="Рождение">
+			<persons>
+				<person id="37" role="Родился">Пушкин Пётр Александрович</person>
+				<person id="6" role="Отец">Пушкин Александр Александрович</person>
+				<person id="31" role="Мать">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="91" type="Рождение" date="17.08.1859" daysleft="70" passed="166">
+			<persons>
+				<person id="38" role="Родилась">Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна</person>
+				<person id="6" role="Отец">Пушкин Александр Александрович</person>
+				<person id="31" role="Мать">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="93" type="Рождение" date="1860" passed="Около 166">
+			<persons>
+				<person id="39" role="Родилась">Пушкина София Александровна</person>
+				<person id="6" role="Отец">Пушкин Александр Александрович</person>
+				<person id="31" role="Мать">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="95" type="Рождение" date="1862" passed="Около 164">
+			<persons>
+				<person id="40" role="Родилась">Пушкина-Быкова (Пушкина) Мария Александровна</person>
+				<person id="6" role="Отец">Пушкин Александр Александрович</person>
+				<person id="31" role="Мать">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="97" type="Рождение" date="1863" passed="Около 163">
+			<persons>
+				<person id="41" role="Родился">Пушкин Александр Александрович</person>
+				<person id="6" role="Отец">Пушкин Александр Александрович</person>
+				<person id="31" role="Мать">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="99" type="Рождение" date="1864" passed="Около 162">
+			<persons>
+				<person id="42" role="Родилась">Пушкина-Павлова (Пушкина) Ольга Александровна</person>
+				<person id="6" role="Отец">Пушкин Александр Александрович</person>
+				<person id="31" role="Мать">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="101" type="Рождение" date="1866" passed="Около 160">
+			<persons>
+				<person id="43" role="Родилась">Пушкина Анна Александровна</person>
+				<person id="6" role="Отец">Пушкин Александр Александрович</person>
+				<person id="31" role="Мать">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="103" type="Рождение" date="27.09.1868" daysleft="111" passed="157">
+			<persons>
+				<person id="44" role="Родился">Пушкин Григорий Александрович</person>
+				<person id="6" role="Отец">Пушкин Александр Александрович</person>
+				<person id="31" role="Мать">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="105" type="Рождение" date="1871" passed="Около 155">
+			<persons>
+				<person id="45" role="Родилась">Пушкина Надежда Александровна</person>
+				<person id="6" role="Отец">Пушкин Александр Александрович</person>
+				<person id="31" role="Мать">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="107" type="Рождение" date="1872" passed="Около 154">
+			<persons>
+				<person id="46" role="Родилась">Пушкина-Мезенцова (Пушкина) Вера Александровна</person>
+				<person id="6" role="Отец">Пушкин Александр Александрович</person>
+				<person id="31" role="Мать">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="109" type="Рождение" date="1874" passed="Около 152">
+			<persons>
+				<person id="47" role="Родился">Пушкин Сергей Александрович</person>
+				<person id="6" role="Отец">Пушкин Александр Александрович</person>
+				<person id="31" role="Мать">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="74" type="Смерть" date="1875" passed="Около 151">
+			<persons>
+				<person id="31" role="Умерла">Ланская Софья Александровна</person>
+			</persons>
+		</event>
+		<event id="119" type="Рождение" date="1869" passed="Около 157">
+			<persons>
+				<person id="52" role="Родилась">(Меренберг) Александра Николаевна</person>
+				<person id="34" role="Отец">Нассауский Николай-Вильгельм</person>
+				<person id="11" role="Мать">Пушкина-Дубельт (Пушкина) Наталья Александровна</person>
+			</persons>
+		</event>
+		<event id="120" type="Смерть" date="1950" passed="Около 76">
+			<persons>
+				<person id="52" role="Умерла">(Меренберг) Александра Николаевна</person>
+			</persons>
+		</event>
+		<event id="121" type="Рождение" date="25.02.1871" daysleft="262" passed="155">
+			<persons>
+				<person id="53" role="Родился">Меренберг Георгий Николаевич</person>
+				<person id="34" role="Отец">Нассауский Николай-Вильгельм</person>
+				<person id="11" role="Мать">Пушкина-Дубельт (Пушкина) Наталья Александровна</person>
+			</persons>
+		</event>
+		<event id="122" type="Смерть" date="31.05.1948" daysleft="357" passed="78">
+			<persons>
+				<person id="53" role="Умер">Меренберг Георгий Николаевич</person>
+			</persons>
+		</event>
+		<event id="76" type="Свадьба">
+			<persons>
+				<person id="4" role="Муж">Пушкин Григорий Александрович</person>
+				<person id="32" role="Жена">Мошкова (Мельникова) Варвара Алексеевна</person>
+			</persons>
+		</event>
+		<event id="77" type="Смерть" date="1935" passed="Около 91">
+			<persons>
+				<person id="32" role="Умерла">Мошкова (Мельникова) Варвара Алексеевна</person>
+			</persons>
+		</event>
+		<event id="84" type="Рождение" date="02.10.1832" daysleft="116" passed="193">
+			<persons>
+				<person id="34" role="Родился">Нассауский Николай-Вильгельм</person>
+			</persons>
+		</event>
+		<event id="82" type="Свадьба">
+			<persons>
+				<person id="34" role="Муж">Нассауский Николай-Вильгельм</person>
+				<person id="11" role="Жена">Пушкина-Дубельт (Пушкина) Наталья Александровна</person>
+			</persons>
+		</event>
+		<event id="83" type="Смерть" date="30.09.1905" daysleft="114" passed="120">
+			<place id="12">Висбаден</place>
+			<persons>
+				<person id="34" role="Умер">Нассауский Николай-Вильгельм</person>
+			</persons>
+		</event>
+		<event id="72" type="Рождение" date="1852" passed="Около 174">
+			<persons>
+				<person id="30" role="Родилась">Павлова Мария Александровна</person>
+			</persons>
+		</event>
+		<event id="70" type="Свадьба">
+			<persons>
+				<person id="6" role="Муж">Пушкин Александр Александрович</person>
+				<person id="30" role="Жена">Павлова Мария Александровна</person>
+			</persons>
+		</event>
+		<event id="85" type="Рождение" date="1885" passed="Около 141">
+			<persons>
+				<person id="35" role="Родился">Пушкин Николай Александрович</person>
+				<person id="6" role="Отец">Пушкин Александр Александрович</person>
+				<person id="30" role="Мать">Павлова Мария Александровна</person>
+			</persons>
+		</event>
+		<event id="87" type="Рождение" date="1890" passed="Около 136">
+			<persons>
+				<person id="36" role="Родилась">Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна</person>
+				<person id="6" role="Отец">Пушкин Александр Александрович</person>
+				<person id="30" role="Мать">Павлова Мария Александровна</person>
+			</persons>
+		</event>
+		<event id="71" type="Смерть" date="1919" passed="Около 107">
+			<persons>
+				<person id="30" role="Умерла">Павлова Мария Александровна</person>
+			</persons>
+		</event>
+		<event id="41" type="Рождение" date="06.03.1705" daysleft="271" passed="321">
+			<persons>
+				<person id="23" role="Родилась">Приклонская Лукерья Васильевна</person>
+			</persons>
+		</event>
+		<event id="51" type="Свадьба">
+			<persons>
+				<person id="15" role="Муж">Чичерин Василий Иванович</person>
+				<person id="23" role="Жена">Приклонская Лукерья Васильевна</person>
+			</persons>
+		</event>
+		<event id="33" type="Рождение" date="16.06.1737" daysleft="8" passed="288">
+			<persons>
+				<person id="16" role="Родилась">Чичерина Ольга Васильевна</person>
+				<person id="15" role="Отец">Чичерин Василий Иванович</person>
+				<person id="23" role="Мать">Приклонская Лукерья Васильевна</person>
+			</persons>
+		</event>
+		<event id="42" type="Смерть" date="11.03.1765" daysleft="276" passed="261">
+			<persons>
+				<person id="23" role="Умерла">Приклонская Лукерья Васильевна</person>
+			</persons>
+		</event>
+		<event id="11" type="Рождение" date="18.07.1833" daysleft="40" passed="192">
+			<place id="4">Санкт-Петербург</place>
+			<persons>
+				<person id="6" role="Родился">Пушкин Александр Александрович</person>
+				<person id="2" role="Отец">Пушкин Александр Сергеевич</person>
+				<person id="22" role="Мать">Пушкина (Гончарова) Наталья Николаевна</person>
+			</persons>
+		</event>
+		<event id="12" type="Смерть" date="01.08.1914" daysleft="54" passed="111">
+			<comment>Похоронен в Лопасне</comment>
+			<persons>
+				<person id="6" role="Умер">Пушкин Александр Александрович</person>
+			</persons>
+		</event>
+		<event id="98" type="Смерть" date="1916" passed="Около 110">
+			<persons>
+				<person id="41" role="Умер">Пушкин Александр Александрович</person>
+			</persons>
+		</event>
+		<event id="9" type="Рождение" date="После 1686" passed="Около 340">
+			<persons>
+				<person id="5" role="Родился">Пушкин Александр Петрович</person>
+			</persons>
+		</event>
+		<event id="10" type="Смерть" date="1725" passed="Около 301">
+			<persons>
+				<person id="5" role="Умер">Пушкин Александр Петрович</person>
+			</persons>
+		</event>
+		<event id="3" type="Рождение" date="06.06.1799" daysleft="363" passed="227">
+			<place id="2">Москва</place>
+			<persons>
+				<person id="2" role="Родился">Пушкин Александр Сергеевич</person>
+				<person id="3" role="Отец">Пушкин Сергей Львович</person>
+				<person id="13" role="Мать">Пушкина (Ганнибал) Надежда Осиповна </person>
+			</persons>
+		</event>
+		<event id="137" type="Проживание" date="С 1799 по 1811" passed="Около 215">
+			<place id="2">Москва</place>
+			<persons>
+				<person id="2" role="Участник">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="126" type="Поездка" date="01.07.1804" daysleft="23" passed="221" coords="55.646115, 36.969832">
+			<place id="18">Имение Захарово</place>
+			<persons>
+				<person id="2" role="Путешественник">Пушкин Александр Сергеевич</person>
+				<person id="3" role="Путешественник">Пушкин Сергей Львович</person>
+				<person id="13" role="Путешественница">Пушкина (Ганнибал) Надежда Осиповна </person>
+			</persons>
+		</event>
+		<event id="55" type="Обучение" date="С 1811 по 1817" passed="Около 209" institution="Императорский Царскосельский лицей">
+			<place id="19">Царское село</place>
+			<persons>
+				<person id="2" role="Участник">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="56" type="Проживание" date="С 1817" passed="Около 209">
+			<place id="4">Санкт-Петербург</place>
+			<persons>
+				<person id="2" role="Участник">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="127" type="Поездка" date="С 1818 по 1836" passed="Около 190" coords="57.060728, 28.919361">
+			<place id="14">Михайловское</place>
+			<persons>
+				<person id="2" role="Путешественник">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="129" type="Поездка" date="1820" passed="Около 206" coords="45.026753, 35.382598">
+			<place id="21">Крым  (Феодосия, Гурзув, Бахчисарай)</place>
+			<persons>
+				<person id="2" role="Путешественник">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="131" type="Ссылка" date="С 1820 по 1823" passed="Около 203">
+			<place id="20">Кишинёв</place>
+			<persons>
+				<person id="2" role="Сослан">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="130" type="Проживание" date="С 1823 по 1824" passed="Около 202" coords="46.484303, 30.732288">
+			<place id="15">Одесса</place>
+			<persons>
+				<person id="2" role="Участник">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="138" type="Проживание" date="С 1826 по 1831" passed="Около 195">
+			<place id="2">Москва</place>
+			<persons>
+				<person id="2" role="Участник">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="132" type="Поездка" date="1829" passed="Около 197">
+			<place id="22">Тифлис</place>
+			<persons>
+				<person id="2" role="Путешественник">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="133" type="Поездка" date="1829" passed="Около 197">
+			<place id="24">Эрзурум</place>
+			<persons>
+				<person id="2" role="Путешественник">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="134" type="Поездка" date="1830" passed="Около 196">
+			<place id="26">Болдино</place>
+			<persons>
+				<person id="2" role="Путешественник">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="47" type="Свадьба" date="02.03.1831" daysleft="267" passed="195">
+			<place id="4">Санкт-Петербург</place>
+			<persons>
+				<person id="2" role="Муж">Пушкин Александр Сергеевич</person>
+				<person id="22" role="Жена">Пушкина (Гончарова) Наталья Николаевна</person>
+			</persons>
+		</event>
+		<event id="135" type="Поездка" date="1833" passed="Около 193">
+			<place id="26">Болдино</place>
+			<comment>Вторая поездка в Болдино</comment>
+			<persons>
+				<person id="2" role="Путешественник">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="136" type="Поездка" date="01.10.1834" daysleft="115" passed="191">
+			<place id="26">Болдино</place>
+			<comment>Третья поезда в Болдино</comment>
+			<persons>
+				<person id="2" role="Путешественник">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="7" type="Рождение" date="26.05.1835" daysleft="352" passed="191">
+			<place id="4">Санкт-Петербург</place>
+			<persons>
+				<person id="4" role="Родился">Пушкин Григорий Александрович</person>
+				<person id="2" role="Отец">Пушкин Александр Сергеевич</person>
+				<person id="22" role="Мать">Пушкина (Гончарова) Наталья Николаевна</person>
+			</persons>
+		</event>
+		<event id="23" type="Рождение" date="04.06.1836" daysleft="361" passed="190">
+			<place id="4">Санкт-Петербург</place>
+			<persons>
+				<person id="11" role="Родилась">Пушкина-Дубельт (Пушкина) Наталья Александровна</person>
+				<person id="2" role="Отец">Пушкин Александр Сергеевич</person>
+				<person id="22" role="Мать">Пушкина (Гончарова) Наталья Николаевна</person>
+			</persons>
+		</event>
+		<event id="4" type="Смерть" date="10.02.1837" daysleft="247" passed="189" deathreason="Рана, полученная 27 января на дуэли с Ж. Дантесом">
+			<place id="4">Санкт-Петербург</place>
+			<comment>Погребен на кладбище Святогорского монастыря (Псковскaя губерния)</comment>
+			<persons>
+				<person id="2" role="Умер">Пушкин Александр Сергеевич</person>
+			</persons>
+		</event>
+		<event id="15" type="Рождение" date="1717" passed="Около 309">
+			<persons>
+				<person id="8" role="Родился">Пушкин Алексей Фёдорович</person>
+			</persons>
+		</event>
+		<event id="54" type="Свадьба" date="1742" passed="Около 284">
+			<persons>
+				<person id="8" role="Муж">Пушкин Алексей Фёдорович</person>
+				<person id="20" role="Жена">Пушкина (Ржевская) Сарра</person>
+			</persons>
+		</event>
+		<event id="16" type="Смерть" date="1777" passed="Около 249">
+			<persons>
+				<person id="8" role="Умер">Пушкин Алексей Фёдорович</person>
+			</persons>
+		</event>
+		<event id="57" type="Рождение" date="08.05.1766" daysleft="334" passed="260">
+			<persons>
+				<person id="24" role="Родился">Пушкин Василий Львович</person>
+				<person id="1" role="Отец">Пушкин Лев Александрович</person>
+				<person id="16" role="Мать">Чичерина Ольга Васильевна</person>
+			</persons>
+		</event>
+		<event id="58" type="Смерть" date="01.09.1830" daysleft="85" passed="195">
+			<persons>
+				<person id="24" role="Умер">Пушкин Василий Львович</person>
+			</persons>
+		</event>
+		<event id="8" type="Смерть" date="18.08.1905" daysleft="71" passed="120">
+			<persons>
+				<person id="4" role="Умер">Пушкин Григорий Александрович</person>
+			</persons>
+		</event>
+		<event id="104" type="Смерть" date="01.09.1940" daysleft="85" passed="85">
+			<place id="8">Москва</place>
+			<persons>
+				<person id="44" role="Умер">Пушкин Григорий Александрович</person>
+			</persons>
+		</event>
+		<event id="49" type="Свадьба">
+			<persons>
+				<person id="1" role="Муж">Пушкин Лев Александрович</person>
+				<person id="16" role="Жена">Чичерина Ольга Васильевна</person>
+			</persons>
+		</event>
+		<event id="59" type="Рождение" date="Около 1765" passed="Около 261">
+			<persons>
+				<person id="25" role="Родилась">Пушкина Анна Львовна</person>
+				<person id="1" role="Отец">Пушкин Лев Александрович</person>
+				<person id="16" role="Мать">Чичерина Ольга Васильевна</person>
+			</persons>
+		</event>
+		<event id="5" type="Рождение" date="03.06.1770" daysleft="360" passed="256">
+			<place id="4">Санкт-Петербург</place>
+			<persons>
+				<person id="3" role="Родился">Пушкин Сергей Львович</person>
+				<person id="1" role="Отец">Пушкин Лев Александрович</person>
+				<person id="16" role="Мать">Чичерина Ольга Васильевна</person>
+			</persons>
+		</event>
+		<event id="61" type="Рождение" date="24.08.1776" daysleft="77" passed="249">
+			<persons>
+				<person id="26" role="Родилась">Сонцева (Пушкина) Елизавета Львовна</person>
+				<person id="1" role="Отец">Пушкин Лев Александрович</person>
+				<person id="16" role="Мать">Чичерина Ольга Васильевна</person>
+			</persons>
+		</event>
+		<event id="2" type="Смерть" date="25.10.1790" daysleft="139" passed="235">
+			<persons>
+				<person id="1" role="Умер">Пушкин Лев Александрович</person>
+			</persons>
+		</event>
+		<event id="13" type="Рождение" date="21.04.1805" daysleft="317" passed="221">
+			<place id="2">Москва</place>
+			<persons>
+				<person id="7" role="Родился">Пушкин Лев Сергеевич</person>
+				<person id="3" role="Отец">Пушкин Сергей Львович</person>
+				<person id="13" role="Мать">Пушкина (Ганнибал) Надежда Осиповна </person>
+			</persons>
+		</event>
+		<event id="14" type="Смерть" date="31.07.1852" daysleft="53" passed="173">
+			<persons>
+				<person id="7" role="Умер">Пушкин Лев Сергеевич</person>
+			</persons>
+		</event>
+		<event id="86" type="Смерть" date="1964" passed="Около 62">
+			<persons>
+				<person id="35" role="Умер">Пушкин Николай Александрович</person>
+			</persons>
+		</event>
+		<event id="90" type="Смерть" date="1870" passed="Около 156">
+			<persons>
+				<person id="37" role="Умер">Пушкин Пётр Александрович</person>
+			</persons>
+		</event>
+		<event id="110" type="Смерть" date="1898" passed="Около 128" deathreason="Застрелился">
+			<persons>
+				<person id="47" role="Умер">Пушкин Сергей Александрович</person>
+			</persons>
+		</event>
+		<event id="48" type="Свадьба" date="1796" passed="Около 230">
+			<persons>
+				<person id="3" role="Муж">Пушкин Сергей Львович</person>
+				<person id="13" role="Жена">Пушкина (Ганнибал) Надежда Осиповна </person>
+			</persons>
+		</event>
+		<event id="21" type="Рождение" date="31.12.1797" daysleft="206" passed="228">
+			<persons>
+				<person id="9" role="Родилась">Пушкина-Павлищева (Пушкина) Ольга Сергеевна</person>
+				<person id="3" role="Отец">Пушкин Сергей Львович</person>
+				<person id="13" role="Мать">Пушкина (Ганнибал) Надежда Осиповна </person>
+			</persons>
+		</event>
+		<event id="6" type="Смерть" date="10.07.1848" daysleft="32" passed="177">
+			<place id="2">Москва</place>
+			<persons>
+				<person id="3" role="Умер">Пушкин Сергей Львович</person>
+			</persons>
+		</event>
+		<event id="102" type="Смерть" date="1949" passed="Около 77">
+			<persons>
+				<person id="43" role="Умерла">Пушкина Анна Александровна</person>
+			</persons>
+		</event>
+		<event id="60" type="Смерть" date="Около 1824" passed="Около 202">
+			<persons>
+				<person id="25" role="Умерла">Пушкина Анна Львовна</person>
+			</persons>
+		</event>
+		<event id="26" type="Смерть" date="29.03.1836" daysleft="294" passed="190">
+			<place id="4">Санкт-Петербург</place>
+			<persons>
+				<person id="13" role="Умерла">Пушкина (Ганнибал) Надежда Осиповна </person>
+			</persons>
+		</event>
+		<event id="45" type="Рождение" date="08.09.1812" daysleft="92" passed="213">
+			<persons>
+				<person id="22" role="Родилась">Пушкина (Гончарова) Наталья Николаевна</person>
+			</persons>
+		</event>
+		<event id="46" type="Смерть" date="08.12.1863" daysleft="183" passed="162">
+			<persons>
+				<person id="22" role="Умерла">Пушкина (Гончарова) Наталья Николаевна</person>
+			</persons>
+		</event>
+		<event id="106" type="Смерть" date="1915" passed="Около 111">
+			<persons>
+				<person id="45" role="Умерла">Пушкина Надежда Александровна</person>
+			</persons>
+		</event>
+		<event id="39" type="Рождение" date="1721" passed="Около 305">
+			<persons>
+				<person id="20" role="Родилась">Пушкина (Ржевская) Сарра</person>
+			</persons>
+		</event>
+		<event id="40" type="Смерть" date="После 1790" passed="Около 236">
+			<persons>
+				<person id="20" role="Умерла">Пушкина (Ржевская) Сарра</person>
+			</persons>
+		</event>
+		<event id="94" type="Смерть" date="1861" passed="Около 165">
+			<persons>
+				<person id="39" role="Умерла">Пушкина София Александровна</person>
+			</persons>
+		</event>
+		<event id="96" type="Смерть" date="1939" passed="Около 87">
+			<persons>
+				<person id="40" role="Умерла">Пушкина-Быкова (Пушкина) Мария Александровна</person>
+			</persons>
+		</event>
+		<event id="92" type="Смерть" date="18.12.1912" daysleft="193" passed="113" deathreason="Воспаление лёгких">
+			<persons>
+				<person id="38" role="Умерла">Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна</person>
+			</persons>
+		</event>
+		<event id="24" type="Смерть" date="23.03.1913" daysleft="288" passed="113">
+			<comment>Похоронена в Висбадене (Германия)</comment>
+			<persons>
+				<person id="11" role="Умерла">Пушкина-Дубельт (Пушкина) Наталья Александровна</person>
+			</persons>
+		</event>
+		<event id="108" type="Смерть" date="1909" passed="Около 117">
+			<persons>
+				<person id="46" role="Умерла">Пушкина-Мезенцова (Пушкина) Вера Александровна</person>
+			</persons>
+		</event>
+		<event id="22" type="Смерть" date="14.05.1868" daysleft="340" passed="158">
+			<persons>
+				<person id="9" role="Умерла">Пушкина-Павлищева (Пушкина) Ольга Сергеевна</person>
+			</persons>
+		</event>
+		<event id="100" type="Смерть" date="После 1908" passed="Около 118">
+			<persons>
+				<person id="42" role="Умерла">Пушкина-Павлова (Пушкина) Ольга Александровна</person>
+			</persons>
+		</event>
+		<event id="88" type="Смерть" date="1943" passed="Около 83">
+			<persons>
+				<person id="36" role="Умерла">Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна</person>
+			</persons>
+		</event>
+		<event id="123" type="Рождение" date="22.06.1779" daysleft="14" passed="246">
+			<persons>
+				<person id="27" role="Родился">Сонцев Матвей Михаилович</person>
+			</persons>
+		</event>
+		<event id="63" type="Свадьба">
+			<persons>
+				<person id="27" role="Муж">Сонцев Матвей Михаилович</person>
+				<person id="26" role="Жена">Сонцева (Пушкина) Елизавета Львовна</person>
+			</persons>
+		</event>
+		<event id="124" type="Рождение">
+			<persons>
+				<person id="54" role="Родилась">Сонцева Екатерина Матвеевна</person>
+				<person id="27" role="Отец">Сонцев Матвей Михаилович</person>
+				<person id="26" role="Мать">Сонцева (Пушкина) Елизавета Львовна</person>
+			</persons>
+		</event>
+		<event id="64" type="Смерть" date="22.11.1847" daysleft="167" passed="178">
+			<persons>
+				<person id="27" role="Умер">Сонцев Матвей Михаилович</person>
+			</persons>
+		</event>
+		<event id="125" type="Смерть" date="16.01.1864" daysleft="222" passed="162">
+			<persons>
+				<person id="54" role="Умерла">Сонцева Екатерина Матвеевна</person>
+			</persons>
+		</event>
+		<event id="62" type="Смерть" date="09.10.1848" daysleft="123" passed="177">
+			<persons>
+				<person id="26" role="Умерла">Сонцева (Пушкина) Елизавета Львовна</person>
+			</persons>
+		</event>
+		<event id="31" type="Рождение" date="28.03.1700" daysleft="293" passed="326">
+			<persons>
+				<person id="15" role="Родился">Чичерин Василий Иванович</person>
+			</persons>
+		</event>
+		<event id="32" type="Смерть" date="Между 1743 и 1748" passed="Около 281">
+			<persons>
+				<person id="15" role="Умер">Чичерин Василий Иванович</person>
+			</persons>
+		</event>
+		<event id="34" type="Смерть" date="03.02.1802" daysleft="240" passed="224">
+			<persons>
+				<person id="16" role="Умерла">Чичерина Ольга Васильевна</person>
+			</persons>
+		</event>
+		<event id="37" type="Рождение" date="Около 1717" passed="Около 309">
+			<persons>
+				<person id="17" role="Родилась">Шеберг Христина Матвеевна</person>
+			</persons>
+		</event>
+		<event id="38" type="Смерть" date="1781" passed="Около 245">
+			<persons>
+				<person id="17" role="Умерла">Шеберг Христина Матвеевна</person>
+			</persons>
+		</event>
+	</events>
+	<documents>
+		<document id="14" path="test.xml.files\Gannibal_Abram_Petrovich.jpg" title="Gannibal_Abram_Petrovich" date="17.03.2025">
+			<details>
+				<detail>
+					<person id="18">Ганнибал Абрам (Ибрагим) Петрович</person>
+				</detail>
+			</details>
+		</document>
+		<document id="13" path="test.xml.files\Gannibal_Ivan_Abramovich.jpg" title="Gannibal_Ivan_Abramovich" date="17.03.2025">
+			<details>
+				<detail>
+					<person id="28">Ганнибал Иван Абрамович</person>
+				</detail>
+			</details>
+		</document>
+		<document id="11" path="test.xml.files\gerb.jpg" title="Герб Пушкиных">
+			<details>
+				<detail>
+					<family id="1">Пушкины</family>
+				</detail>
+			</details>
+		</document>
+		<document id="3" path="test.xml.files\maria.jpg" title="Портрет Марии Александровны Пушкиной">
+			<details>
+				<detail>
+					<person id="12">Гартунг (Пушкина) Мария Александровна</person>
+				</detail>
+			</details>
+		</document>
+		<document id="15" path="test.xml.files\Countess_Sophie_of_Merenberg.jpg" title="Countess_Sophie_of_Merenberg" date="17.03.2025">
+			<details>
+				<detail>
+					<person id="51">Де Торби (Меренберг) София Николаевна</person>
+				</detail>
+			</details>
+		</document>
+		<document id="18" path="test.xml.files\M._L._Dubelt_by_Gagarin.jpg" title="M._L._Dubelt_by_Gagarin" date="18.03.2025">
+			<details>
+				<detail>
+					<person id="33">Дубельт Михаил Леонтьевич</person>
+				</detail>
+			</details>
+		</document>
+		<document id="16" path="test.xml.files\Merenberg_Georg-Nikolay.jpg" title="Merenberg_Georg-Nikolay" date="17.03.2025">
+			<details>
+				<detail>
+					<person id="53">Меренберг Георгий Николаевич</person>
+				</detail>
+			</details>
+		</document>
+		<document id="17" path="test.xml.files\NassauNicolaus.jpg" title="NassauNicolaus" date="17.03.2025">
+			<details>
+				<detail>
+					<person id="34">Нассауский Николай-Вильгельм</person>
+				</detail>
+			</details>
+		</document>
+		<document id="7" path="test.xml.files\alexander.jpg" title="Портрет Александра Александровича Пушкина">
+			<details>
+				<detail>
+					<person id="6">Пушкин Александр Александрович</person>
+				</detail>
+			</details>
+		</document>
+		<document id="4" path="test.xml.files\self.jpg" title="Портрет Пушкина">
+			<details>
+				<detail>
+					<person id="2">Пушкин Александр Сергеевич</person>
+				</detail>
+			</details>
+		</document>
+		<document id="12" path="test.xml.files\Pushkin_Vasiliy_Lvovich.jpg" title="Pushkin_Vasiliy_Lvovich" date="17.03.2025">
+			<details>
+				<detail>
+					<person id="24">Пушкин Василий Львович</person>
+				</detail>
+			</details>
+		</document>
+		<document id="10" path="test.xml.files\grigorii.jpg" title="Портрет Григория Александровича Пушкина">
+			<details>
+				<detail>
+					<person id="4">Пушкин Григорий Александрович</person>
+				</detail>
+			</details>
+		</document>
+		<document id="5" path="test.xml.files\lev.jpg" title="Портрет Льва Сергеевича Пушкина">
+			<details>
+				<detail>
+					<person id="7">Пушкин Лев Сергеевич</person>
+				</detail>
+			</details>
+		</document>
+		<document id="9" path="test.xml.files\father.jpg" title="Отец Пушкина">
+			<details>
+				<detail>
+					<person id="3">Пушкин Сергей Львович</person>
+				</detail>
+			</details>
+		</document>
+		<document id="8" path="test.xml.files\mother.jpg" title="Мать Пушкина">
+			<details>
+				<detail>
+					<person id="13">Пушкина (Ганнибал) Надежда Осиповна </person>
+				</detail>
+			</details>
+		</document>
+		<document id="2" path="test.xml.files\wife.jpg" title="Портрет Натальи Гончаровой">
+			<details>
+				<detail>
+					<person id="22">Пушкина (Гончарова) Наталья Николаевна</person>
+				</detail>
+			</details>
+		</document>
+		<document id="6" path="test.xml.files\natalia.jpg" title="Портрет Натальи Александровны Пушкиной">
+			<details>
+				<detail>
+					<person id="11">Пушкина-Дубельт (Пушкина) Наталья Александровна</person>
+				</detail>
+			</details>
+		</document>
+		<document id="1" path="test.xml.files\sister.jpg" title="Портрет Ольги Сергеевны Пушкиной-Павлищевой">
+			<details>
+				<detail>
+					<person id="9">Пушкина-Павлищева (Пушкина) Ольга Сергеевна</person>
+				</detail>
+			</details>
+		</document>
+	</documents>
+	<places>
+		<place id="4" fullname="Санкт-Петербург" name="Санкт-Петербург" nameshort="Санкт-Петербург">
+			<parent_id id="1">Российская империя</parent_id>
+		</place>
+		<place id="1" fullname="Российская империя" name="Российская империя" nameshort="Российская империя" />
+		<place id="14" fullname="Михайловское" name="Михайловское" nameshort="Михайловское" coords="57.064419, 28.919556">
+			<parent_id id="13">Псковская губерния</parent_id>
+		</place>
+		<place id="13" fullname="Псковская губерния" name="Псковская губерния" nameshort="Псковская губерния">
+			<parent_id id="1">Российская империя</parent_id>
+		</place>
+		<place id="2" fullname="Москва" name="Москва" nameshort="Москва" coords="55.755864, 37.617698">
+			<parent_id id="16">Московская губерния</parent_id>
+		</place>
+		<place id="16" fullname="Московская губерния" name="Московская губерния" nameshort="Московская губерния" date="1708">
+			<parent_id id="1">Российская империя</parent_id>
+		</place>
+		<place id="6" fullname="Москва" name="Москва" nameshort="Москва">
+			<parent_id id="5">РСФСР</parent_id>
+		</place>
+		<place id="5" fullname="РСФСР" name="РСФСР" nameshort="РСФСР" />
+		<place id="10" fullname="Лондон" name="Лондон" nameshort="Лондон">
+			<parent_id id="9">Англия</parent_id>
+		</place>
+		<place id="9" fullname="Англия" name="Англия" nameshort="Англия" />
+		<place id="12" fullname="Висбаден" name="Висбаден" nameshort="Висбаден">
+			<parent_id id="11">Германия</parent_id>
+		</place>
+		<place id="11" fullname="Германия" name="Германия" nameshort="Германия" />
+		<place id="18" fullname="Имение Захарово" name="Имение Захарово" nameshort="Имение Захарово" coords="55.646115, 36.969832">
+			<parent_id id="17">деревня Захарово</parent_id>
+		</place>
+		<place id="17" fullname="деревня Захарово" name="деревня Захарово" nameshort="деревня Захарово" coords="55.646115, 36.969832">
+			<parent_id id="16">Московская губерния</parent_id>
+		</place>
+		<place id="19" fullname="Царское село" name="Царское село" nameshort="Царское село" coords="55.772249, 37.672365">
+			<parent_id id="1">Российская империя</parent_id>
+		</place>
+		<place id="21" fullname="Крым  (Феодосия, Гурзув, Бахчисарай)" name="Крым  (Феодосия, Гурзув, Бахчисарай)" nameshort="Крым  (Феодосия, Гурзув, Бахчисарай)" coords="45.043670, 35.376832">
+			<parent_id id="1">Российская империя</parent_id>
+		</place>
+		<place id="20" fullname="Кишинёв" name="Кишинёв" nameshort="Кишинёв" date="1812" coords="47.024513, 28.832293">
+			<parent_id id="27">Бесарабия</parent_id>
+		</place>
+		<place id="27" fullname="Бесарабия" name="Бесарабия" nameshort="Бесарабия">
+			<parent_id id="1">Российская империя</parent_id>
+		</place>
+		<place id="15" fullname="Одесса" name="Одесса" nameshort="Одесса" coords="46.475907, 30.739628">
+			<parent_id id="1">Российская империя</parent_id>
+		</place>
+		<place id="22" fullname="Тифлис" name="Тифлис" nameshort="Тифлис" coords="41.693459, 44.801449">
+			<parent_id id="1">Российская империя</parent_id>
+		</place>
+		<place id="24" fullname="Эрзурум" name="Эрзурум" nameshort="Эрзурум" coords="39.906319, 41.272770">
+			<parent_id id="23">Турция</parent_id>
+		</place>
+		<place id="23" fullname="Турция" name="Турция" nameshort="Турция" />
+		<place id="26" fullname="Болдино" name="Болдино" nameshort="Болдино" coords="55.000713, 45.310505">
+			<parent_id id="25">Нижегородская губерния</parent_id>
+		</place>
+		<place id="25" fullname="Нижегородская губерния" name="Нижегородская губерния" nameshort="Нижегородская губерния">
+			<parent_id id="1">Российская империя</parent_id>
+		</place>
+		<place id="8" fullname="Москва" name="Москва" nameshort="Москва">
+			<parent_id id="7">СССР</parent_id>
+		</place>
+		<place id="7" fullname="СССР" name="СССР" nameshort="СССР" />
+	</places>
+	<sources />
+	<families>
+		<family id="2" ms="Ганнибал" fs="Ганнибал" name="Ганнибал" />
+		<family id="1" ms="Пушкин" fs="Пушкина" name="Пушкины">
+			<documents>
+				<document id="11" ismain="1" />
+			</documents>
+		</family>
+	</families>
+	<tasks />
+</agelongtree>
