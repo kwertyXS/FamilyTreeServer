@@ -1,12 +1,13 @@
 import os
 import shutil
 from io import BytesIO
+from pathlib import Path
 from zipfile import ZipFile
 
 from core.config import OUTPUT_PHOTOS
 
 
-def extract_photos(data: bytes):
+def extract_photos(data: bytes) -> int:
     with ZipFile(BytesIO(data)) as zip_file:
         if os.path.exists(OUTPUT_PHOTOS):
             for entry in os.listdir(OUTPUT_PHOTOS):
@@ -17,3 +18,4 @@ def extract_photos(data: bytes):
                     shutil.rmtree(entry_path)
         os.makedirs(OUTPUT_PHOTOS, exist_ok=True)
         zip_file.extractall(OUTPUT_PHOTOS)
+        return len(list(Path(OUTPUT_PHOTOS).rglob("*.*")))

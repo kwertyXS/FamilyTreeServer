@@ -1,33 +1,6 @@
 from fastapi import UploadFile, HTTPException
 from pydantic import BaseModel, Field, field_validator
 
-MB = 8 * 1024 * 1024
-GB = MB * 1024
-
-class XMLFileModel(BaseModel):
-    file: UploadFile
-
-    @field_validator("file")
-    def validate_file(cls, file: UploadFile):
-        if file.content_type not in ("application/xml", "text/xml", ""):
-            raise ValueError(f"Ожидается XML, получен: {file.content_type}")
-        if file.size // MB <= 100:
-            raise  ValueError(f"Вес файла больше 100 мегабайт")
-
-        return file
-
-class PhotosFileModel(BaseModel):
-    file: UploadFile
-
-    @field_validator("file")
-    def validate_file(cls, file: UploadFile):
-        if file.content_type not in ["application/zip", "application/x-zip-compressed"]:
-            raise ValueError(f"Ожидается zip, получен: {file.content_type}")
-        if file.size // GB <= 10:
-            raise  ValueError(f"Вес файла больше 10 гигабайт")
-
-        return file
-
 
 class ChangeAccountModel(BaseModel):
     login: str | None = None
