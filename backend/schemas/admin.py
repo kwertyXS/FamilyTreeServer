@@ -2,7 +2,7 @@ from fastapi import UploadFile, HTTPException
 from pydantic import BaseModel, Field, field_validator
 
 
-class ChangeAccountModel(BaseModel):
+class ChangeAccountSchema(BaseModel):
     login: str | None = None
     password: str | None = None
 

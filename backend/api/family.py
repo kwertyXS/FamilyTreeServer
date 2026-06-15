@@ -1,29 +1,28 @@
 from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
 from sqlalchemy import select
 from sqlalchemy.orm import joinedload
-from db.database import async_session_factory
-from db.models import Person, Event, Place, Family, person_relation_table, person_event_table
-from models.family import *
+from db.database import session_factory
+from db.tables import PersonTable, EventTable, PersonRelationTable, PersonEventTable
+from schemas.family import *
 
 router = APIRouter(prefix="/api")
 
 
-@router.get("/tree", response_model=TreeOut)
+@router.get("/tree", response_model=TreeSchemaOut)
 async def get_tree():
     """Полное дерево: все люди + связи для отрисовки на фронте."""
 
-    async with async_session_factory() as session:
+    async with session_factory() as session:
         persons = (await session.execute(
-            select(Person).options(joinedload(Person.family))
+            select(PersonTable).options(joinedload(PersonTable.family))
         )).unique().scalars().all()
 
         relations = (await session.execute(
-            select(person_relation_table)
-        )).all()
+            select(PersonRelationTable)
+        )).scalars().all()
 
     nodes = [
-        TreeNode(
+        TreeNodeSchemaOut(
             id=p.id,
             full_name=p.full_name,
             sex=p.sex,
@@ -47,7 +46,7 @@ async def get_tree():
     seen_edges = set()
 
     for r in relations:
-        p1, p2, rtype, rlabel = r
+        p1, p2, rtype, rlabel = r.person_id, r.related_person_id, r.relation_type, r.relation_label
         key = tuple(sorted((p1, p2))) + (rtype,)
         if key in seen_edges:
             continue
@@ -64,56 +63,56 @@ async def get_tree():
         else:
             edge_type = "other"
 
-        edges.append(TreeEdge(from_id=p1, to_id=p2, type=edge_type))
+        edges.append(TreeEdgeSchemaOut(from_id=p1, to_id=p2, type=edge_type))
 
-    return TreeOut(persons=nodes, edges=edges)
+    return TreeSchemaOut(persons=nodes, edges=edges)
 
 
-@router.get("/persons/{person_id}", response_model=PersonDetail)
+@router.get("/persons/{person_id}", response_model=PersonSchemaOut)
 async def get_person(person_id: str):
     """Детальная информация о персоне."""
-    async with async_session_factory() as session:
+    async with session_factory() as session:
         person = (await session.execute(
-            select(Person)
+            select(PersonTable)
             .options(
-                joinedload(Person.family),
-                joinedload(Person.birth_place),
-                joinedload(Person.death_place),
-                joinedload(Person.place_rel),
-                joinedload(Person.events).joinedload(Event.place),
+                joinedload(PersonTable.family),
+                joinedload(PersonTable.birth_place),
+                joinedload(PersonTable.death_place),
+                joinedload(PersonTable.place_rel),
+                joinedload(PersonTable.events).joinedload(EventTable.place),
             )
-            .where(Person.id == person_id)
+            .where(PersonTable.id == person_id)
         )).unique().scalar_one_or_none()
 
         if person is None:
             raise HTTPException(404, "Person not found")
 
         relations = (await session.execute(
-            select(person_relation_table).where(
-                person_relation_table.c.person_id == person_id
+            select(PersonRelationTable).where(
+                PersonRelationTable.person_id == person_id
             )
-        )).all()
+        )).scalars().all()
 
         person_events_participation = (await session.execute(
-            select(person_event_table).where(
-                person_event_table.c.person_id == person_id
+            select(PersonEventTable).where(
+                PersonEventTable.person_id == person_id
             )
-        )).all()
+        )).scalars().all()
 
     # События с ролью
     event_roles = {pe.event_id: pe.role for pe in person_events_participation}
 
     events_out = []
     for ev in person.events:
-        events_out.append(EventBrief(
+        events_out.append(EventSchemaOut(
             id=ev.id,
             type=ev.type,
             date=ev.date,
             description=ev.description,
-            place=PlaceOut.from_orm(ev.place),
+            place=PlaceSchema.from_orm(ev.place),
         ))
 
-    return PersonDetail(
+    return PersonSchemaOut(
         id=person.id,
         full_name=person.full_name,
         sex=person.sex,
@@ -130,12 +129,12 @@ async def get_person(person_id: str):
         maiden_surname=person.maiden_surname,
         death_reason=person.death_reason,
         biography=person.biography,
-        birth_place=PlaceOut.from_orm(person.birth_place),
-        death_place=PlaceOut.from_orm(person.death_place),
-        place=PlaceOut.from_orm(person.place_rel),
+        birth_place=PlaceSchema.from_orm(person.birth_place),
+        death_place=PlaceSchema.from_orm(person.death_place),
+        place=PlaceSchema.from_orm(person.place_rel),
         events=events_out,
         relations=[
-            RelationOut(person_id=r.person_id, related_person_id=r.related_person_id, relation_label=r.relation_label)
+            RelationSchemaOut(person_id=r.person_id, related_person_id=r.related_person_id, relation_label=r.relation_label)
             for r in relations
         ],
     )
@@ -144,9 +143,9 @@ async def get_person(person_id: str):
 @router.get("/events")
 async def get_events():
     """Все события, отсортированные по году (хронология)."""
-    async with async_session_factory() as session:
+    async with session_factory() as session:
         events = (await session.execute(
-            select(Event).options(joinedload(Event.place)).order_by(Event.date_sort.nulls_last(), Event.id)
+            select(EventTable).options(joinedload(EventTable.place)).order_by(EventTable.date_sort.nulls_last(), EventTable.id)
         )).unique().scalars().all()
 
     return [
@@ -155,7 +154,7 @@ async def get_events():
             "type": e.type,
             "date": e.date,
             "description": e.description,
-            "place": PlaceOut.from_orm(e.place).model_dump() if e.place else None,
+            "place": PlaceSchema.from_orm(e.place).model_dump() if e.place else None,
         }
         for e in events
     ]

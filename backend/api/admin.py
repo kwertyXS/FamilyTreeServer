@@ -1,6 +1,6 @@
 from zipfile import BadZipFile
 from fastapi import APIRouter, HTTPException, UploadFile
-from models.admin import ChangeAccountModel
+from schemas.admin import ChangeAccountSchema
 from services.extract_photos import extract_photos
 from services.xml_parser import parse_and_save
 from services.htpasswd_manager import change_account
@@ -39,7 +39,7 @@ async def load_photos(file: UploadFile):
 
 
 @router.post("/change_account")
-async def change_admin_account(body: ChangeAccountModel):
+async def change_admin_account(body: ChangeAccountSchema):
     if body.login is None and body.password is None:
         raise HTTPException(400, "Укажите login и/или password")
     change_account(body.login, body.password)
@@ -47,7 +47,7 @@ async def change_admin_account(body: ChangeAccountModel):
 
 
 @router.post("/change_password")
-async def change_admin_password(body: ChangeAccountModel):
+async def change_admin_password(body: ChangeAccountSchema):
     if body.password is None:
         raise HTTPException(400, "Укажите password")
     change_account(body.login, body.password)

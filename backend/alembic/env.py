@@ -12,7 +12,7 @@ from sqlalchemy.ext.asyncio import create_async_engine
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from core.config import DATABASE_URL
-from db.models import Base
+from db.tables import Base
 
 config = context.config
 if config.config_file_name is not None:

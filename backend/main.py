@@ -5,7 +5,7 @@ from sqlalchemy import text
 from core.cors import setup_cors
 from api import admin, family, test
 from db.database import engine
-from db.models import Base
+from db.tables import Base
 from services.htpasswd_manager import ensure_htpasswd
 
 

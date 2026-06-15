@@ -1,21 +1,21 @@
 from pydantic import BaseModel
-from db.models import Place
+from db.tables import PlaceTable
 
 
-class PlaceOut(BaseModel):
+class PlaceSchema(BaseModel):
     id: str
     full_name: str
     latitude: float | None = None
     longitude: float | None = None
 
     @classmethod
-    def from_orm(cls, p: Place | None) -> "PlaceOut | None":
+    def from_orm(cls, p: PlaceTable | None) -> "PlaceSchema | None":
         if p is None:
             return None
         return cls(id=p.id, full_name=p.full_name, latitude=p.latitude, longitude=p.longitude)
 
 
-class PersonBrief(BaseModel):
+class PersonSchema(BaseModel):
     id: str
     full_name: str
     sex: bool | None = None
@@ -30,33 +30,33 @@ class PersonBrief(BaseModel):
     family_name: str | None = None
 
 
-class PersonDetail(PersonBrief):
+class PersonSchemaOut(PersonSchema):
     occupation: str | None = None
     maiden_surname: str | None = None
     death_reason: str | None = None
     biography: str | None = None
-    birth_place: PlaceOut | None = None
-    death_place: PlaceOut | None = None
-    place: PlaceOut | None = None
-    events: list["EventBrief"] = []
-    relations: list["RelationOut"] = []
+    birth_place: PlaceSchema | None = None
+    death_place: PlaceSchema | None = None
+    place: PlaceSchema | None = None
+    events: list["EventSchemaOut"] = []
+    relations: list["RelationSchemaOut"] = []
 
 
-class RelationOut(BaseModel):
+class RelationSchemaOut(BaseModel):
     person_id: str
     related_person_id: str
     relation_label: str
 
 
-class EventBrief(BaseModel):
+class EventSchemaOut(BaseModel):
     id: str
     type: str
     date: str | None = None
     description: str | None = None
-    place: PlaceOut | None = None
+    place: PlaceSchema | None = None
 
 
-class TreeNode(BaseModel):
+class TreeNodeSchemaOut(BaseModel):
     """Узел дерева для фронтенда (минимально)."""
     id: str
     full_name: str
@@ -69,13 +69,13 @@ class TreeNode(BaseModel):
     family_name: str | None
 
 
-class TreeEdge(BaseModel):
+class TreeEdgeSchemaOut(BaseModel):
     """Ребро графа для фронтенда."""
     from_id: str
     to_id: str
     type: str   # "parent", "spouse", "sibling", "ex_spouse"
 
 
-class TreeOut(BaseModel):
-    persons: list[TreeNode]
-    edges: list[TreeEdge]
+class TreeSchemaOut(BaseModel):
+    persons: list[TreeNodeSchemaOut]
+    edges: list[TreeEdgeSchemaOut]
