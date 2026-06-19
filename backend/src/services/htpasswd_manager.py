@@ -4,7 +4,7 @@ import string
 import subprocess
 import logging
 
-from core.config import HTPASSWD_PATH, DEFAULT_USER
+from src.core.config import HTPASSWD_PATH, DEFAULT_USER
 
 logger = logging.getLogger(__name__)
 

@@ -1,11 +1,11 @@
 from zipfile import BadZipFile
 from fastapi import APIRouter, HTTPException, UploadFile
-from schemas.admin import ChangeAccountSchema
-from services.extract_photos import extract_photos
-from services.xml_parser import parse_and_save
-from services.htpasswd_manager import change_account
+from src.schemas.admin import ChangeAccountSchema
+from src.services.extract_photos import extract_photos
+from src.services.xml_parser import parse_and_save
+from src.services.htpasswd_manager import change_account
 
-router = APIRouter(prefix="/api/admin")
+router = APIRouter(prefix="/admin")
 
 
 @router.post("/load_xml_file")

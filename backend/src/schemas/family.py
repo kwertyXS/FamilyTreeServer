@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from db.tables import PlaceTable
+from src.db.tables import PlaceTable
 
 
 class PlaceSchema(BaseModel):

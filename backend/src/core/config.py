@@ -2,8 +2,12 @@ import os
 from dotenv import load_dotenv
 from pathlib import Path
 
-env_path = Path(__file__).resolve().parent.parent.parent / ".env"
+env_path = Path(__file__).resolve().parent.parent.parent.parent / ".env"
 load_dotenv(env_path, override=True)
+
+local_env = Path(__file__).resolve().parent.parent.parent.parent / ".env.local"
+if local_env.exists():
+    load_dotenv(local_env, override=True)
 
 # --- PostgreSQL ---
 POSTGRES_USER = os.getenv("POSTGRES_USER", "postgres")

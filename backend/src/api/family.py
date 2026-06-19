@@ -1,11 +1,11 @@
 from fastapi import APIRouter, HTTPException
 from sqlalchemy import select
 from sqlalchemy.orm import joinedload
-from db.database import session_factory
-from db.tables import PersonTable, EventTable, PersonRelationTable, PersonEventTable
-from schemas.family import *
+from src.db.database import session_factory
+from src.db.tables import PersonTable, EventTable, PersonRelationTable, PersonEventTable
+from src.schemas.family import *
 
-router = APIRouter(prefix="/api")
+router = APIRouter()
 
 
 @router.get("/tree", response_model=TreeSchemaOut)

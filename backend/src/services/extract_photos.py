@@ -4,7 +4,7 @@ from io import BytesIO
 from pathlib import Path
 from zipfile import ZipFile
 
-from core.config import OUTPUT_PHOTOS
+from src.core.config import OUTPUT_PHOTOS
 
 
 def extract_photos(data: bytes) -> int:

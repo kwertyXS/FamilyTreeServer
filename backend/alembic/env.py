@@ -5,21 +5,26 @@ from pathlib import Path
 from logging.config import fileConfig
 
 from alembic import context
+from dotenv import load_dotenv
 from sqlalchemy import pool
 from sqlalchemy.ext.asyncio import create_async_engine
 
 # Добавляем корень backend в PYTHONPATH для alembic CLI
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from core.config import DATABASE_URL
-from db.tables import Base
+from src.core.config import DATABASE_URL
+from src.db.tables import Base
 
 config = context.config
+config.set_main_option("sqlalchemy.url", DATABASE_URL)
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
 target_metadata = Base.metadata
 
+local_env = Path(__file__).resolve().parent.parent.parent.parent / ".env.local"
+if local_env.exists():
+    load_dotenv(local_env, override=True)
 
 def run_migrations_offline() -> None:
     """Запуск миграций в 'offline' режиме (--sql)."""
