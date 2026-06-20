@@ -15,7 +15,7 @@ async def load_xml_file(file: UploadFile):
 @router.post("/load_photos")
 async def load_photos(file: UploadFile):
     count = await load_photos_service(file)
-    return {"status": "ok", "count": count}
+    return {"status": "ok", "count_files": count}
 
 
 @router.post("/change_account")

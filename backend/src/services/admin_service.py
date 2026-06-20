@@ -30,7 +30,8 @@ async def load_photos_service(file: UploadFile):
         raise HTTPException(400, f"Ожидается ZIP, получен: {file.content_type}")
     data = await file.read()
     try:
-        return extract_photos(data)
+        res = await extract_photos(data)
+        return res
     except BadZipFile:
         raise HTTPException(400, "Файл не является корректным ZIP архивом")
 
@@ -38,7 +39,7 @@ async def load_photos_service(file: UploadFile):
 
 
 
-def extract_photos(data: bytes) -> int:
+async def extract_photos(data: bytes) -> int:
     with ZipFile(BytesIO(data)) as zip_file:
         if os.path.exists(OUTPUT_PHOTOS):
             for entry in os.listdir(OUTPUT_PHOTOS):
@@ -49,6 +50,6 @@ def extract_photos(data: bytes) -> int:
                     shutil.rmtree(entry_path)
         os.makedirs(OUTPUT_PHOTOS, exist_ok=True)
         zip_file.extractall(OUTPUT_PHOTOS)
-        return len(list(Path(OUTPUT_PHOTOS).rglob("*.*")))
+        return len(list(list(Path(OUTPUT_PHOTOS).rglob("*"))[0].rglob("*")))
 
 
