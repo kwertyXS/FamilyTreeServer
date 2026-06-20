@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, UploadFile
 from src.schemas.admin import ChangeAccountSchema
-from src.services.admin_service import load_xml_service, load_photos_service
+from src.services.admin_service import load_xml_service, load_photos_service, load_gedcom_service
 from src.services.password_service import change_account_service
 
 router = APIRouter(prefix="/admin")
@@ -10,6 +10,12 @@ router = APIRouter(prefix="/admin")
 async def load_xml_file(file: UploadFile):
     await load_xml_service(file)
     return {"status": "ok"}
+
+
+@router.post("/load_gedcom")
+async def load_gedcom(file: UploadFile):
+    msg = await load_gedcom_service(file)
+    return {"status": "ok", "message": msg}
 
 
 @router.post("/load_photos")

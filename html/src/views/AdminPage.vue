@@ -4,9 +4,11 @@ import axios from 'axios'
 
 const xmlFile = ref(null)
 const zipFile = ref(null)
+const gedcomFile = ref(null)
 const xmlStatus = ref({ type: '', text: '' })
 const zipStatus = ref({ type: '', text: '' })
-const uploading = ref({ xml: false, zip: false })
+const gedcomStatus = ref({ type: '', text: '' })
+const uploading = ref({ xml: false, zip: false, gedcom: false })
 
 const newLogin = ref('')
 const newPassword = ref('')
@@ -21,6 +23,11 @@ function onXmlChange(e) {
 function onZipChange(e) {
   zipFile.value = e.target.files[0] || null
   zipStatus.value = { type: '', text: '' }
+}
+
+function onGedcomChange(e) {
+  gedcomFile.value = e.target.files[0] || null
+  gedcomStatus.value = { type: '', text: '' }
 }
 
 async function uploadXml() {
@@ -60,6 +67,25 @@ async function uploadZip() {
   }
 }
 
+async function uploadGedcom() {
+  if (!gedcomFile.value) return
+  uploading.value.gedcom = true
+  gedcomStatus.value = { type: 'loading', text: 'Загрузка…' }
+  try {
+    const form = new FormData()
+    form.append('file', gedcomFile.value)
+    const res = await axios.post('/api/admin/load_gedcom', form)
+    const msg = res.data.message || 'Готово'
+    gedcomStatus.value = { type: 'ok', text: msg }
+    gedcomFile.value = null
+  } catch (e) {
+    const msg = e.response?.data?.detail || e.message
+    gedcomStatus.value = { type: 'error', text: `Ошибка: ${msg}` }
+  } finally {
+    uploading.value.gedcom = false
+  }
+}
+
 function removeXml() {
   xmlFile.value = null
   xmlStatus.value = { type: '', text: '' }
@@ -68,6 +94,11 @@ function removeXml() {
 function removeZip() {
   zipFile.value = null
   zipStatus.value = { type: '', text: '' }
+}
+
+function removeGedcom() {
+  gedcomFile.value = null
+  gedcomStatus.value = { type: '', text: '' }
 }
 
 
@@ -202,6 +233,52 @@ async function changeAccount() {
         <div v-if="zipStatus.type" class="status-msg" :class="zipStatus.type">
           <span v-if="zipStatus.type === 'loading'" class="status-spinner"></span>
           {{ zipStatus.text }}
+        </div>
+      </div>
+
+      <!-- ─── GEDCOM ─── -->
+      <div class="admin-card glass">
+        <div class="card-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+               stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/>
+            <polyline points="8 6 2 12 8 18"/>
+          </svg>
+        </div>
+        <h2 class="card-title">Импорт GEDCOM</h2>
+        <p class="card-desc">Загрузите файл в формате GEDCOM (.ged) для импорта всего древа</p>
+
+        <div class="drop-zone" :class="{ 'has-file': gedcomFile }">
+          <label class="file-label" v-if="!gedcomFile">
+            <input type="file" accept=".ged,application/x-gedcom" @change="onGedcomChange" />
+            <span class="drop-hint">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                   stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/>
+                <line x1="12" y1="3" x2="12" y2="15"/>
+              </svg>
+              <span>Выберите GEDCOM-файл</span>
+            </span>
+          </label>
+          <div class="file-info" v-else>
+            <div class="file-name">{{ gedcomFile.name }}</div>
+            <div class="file-size">{{ (gedcomFile.size / 1024).toFixed(1) }} KB</div>
+            <div class="file-actions">
+              <button class="btn btn-ghost" @click="removeGedcom">Отмена</button>
+              <button class="btn btn-primary" :disabled="uploading.gedcom" @click="uploadGedcom">
+                <span v-if="uploading.gedcom" class="btn-spinner"></span>
+                <span v-else>Загрузить</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div v-if="gedcomStatus.type" class="status-msg" :class="gedcomStatus.type">
+          <span v-if="gedcomStatus.type === 'loading'" class="status-spinner"></span>
+          {{ gedcomStatus.text }}
         </div>
       </div>
 
