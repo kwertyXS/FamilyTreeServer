@@ -1,10 +1,9 @@
-FROM python:3.11-slim
-
+FROM ghcr.io/astral-sh/uv:python3.12-bookworm
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install -r requirements.txt
 COPY . .
 
-CMD alembic upgrade head && python -m src.main
+RUN uv sync --frozen
+
+CMD uv run alembic upgrade head && uv run -m src.utils.init_password && uv run -m src.main

@@ -25,28 +25,7 @@ def hash_func(password: str, salt: str | None = None) -> str:
     return result.stdout.strip()
 
 
-def ensure_htpasswd() -> str | None:
-    """Создать .htpasswd с паролем по умолчанию, если файла нет.
-    Возвращает пароль, если был создан, иначе None."""
-    if os.path.isfile(HTPASSWD_PATH):
-        return None
 
-    password = secrets.token_urlsafe(12)
-    user = DEFAULT_USER
-    entry = f"{user}:{hash_func(password)}\n"
-
-    os.makedirs(os.path.dirname(HTPASSWD_PATH), exist_ok=True)
-    with open(HTPASSWD_PATH, "w", encoding="UTF8") as f:
-        f.write(entry)
-
-    logger.warning(
-        "🔐 .htpasswd создан: %s\n"
-        "   Логин: %s\n"
-        "   Пароль: %s\n"
-        "   ⚠️  Смените пароль после входа!",
-        HTPASSWD_PATH, user, password,
-    )
-    return password
 
 
 async def change_account_service(body: ChangeAccountSchema) -> None:

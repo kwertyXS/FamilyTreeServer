@@ -4,21 +4,12 @@ from fastapi import FastAPI
 from src.core.cors import setup_cors
 from src.api import main_router
 from src.db.database import engine
-from src.services.password_service import ensure_htpasswd
-
-
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    ensure_htpasswd()  # при старте — создать .htpasswd, если его нет
-    yield
-    await engine.dispose()
 
 
 app = FastAPI(
     title="FamilyTreeServer",
     docs_url="/api/docs",
-    openapi_url="/api/openapi.json",
-    lifespan=lifespan,
+    openapi_url="/api/openapi.json"
 )
 
 setup_cors(app)

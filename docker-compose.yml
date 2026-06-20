@@ -13,9 +13,9 @@ services:
       - .env
     volumes:
       - ./backend:/app
+      - /app/.venv
       - photos:/var/photos
       - htpasswd_data:/app/auth
-    command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload --log-level debug
     depends_on:
       db:
         condition: service_healthy
