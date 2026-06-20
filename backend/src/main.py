@@ -7,7 +7,7 @@ from alembic import command
 from src.core.cors import setup_cors
 from src.api import main_router
 from src.db.database import engine
-from src.services.htpasswd_manager import ensure_htpasswd
+from src.services.password_service import ensure_htpasswd
 
 
 @asynccontextmanager

@@ -4,7 +4,7 @@ from typing import Optional
 from lxml import etree
 
 from src.db.tables import *
-from src.repositories.FamilyRepository import *
+from src.repositories.SQLAlchemyRepositories import *
 
 
 def _parse_coords(coords: str | None) -> tuple[Optional[float], Optional[float]]:

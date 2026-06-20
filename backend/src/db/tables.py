@@ -1,7 +1,4 @@
-from sqlalchemy import (
-    Column, String, Text, Boolean, Float, Integer,
-    ForeignKey, DateTime, Table, create_engine,
-)
+from sqlalchemy import ForeignKey
 from sqlalchemy.orm import DeclarativeBase, relationship, Mapped, mapped_column
 
 
