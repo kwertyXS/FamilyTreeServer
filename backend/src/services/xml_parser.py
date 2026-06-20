@@ -180,16 +180,7 @@ async def parse_and_save(xml_bytes: bytes):
         if nearest_el is not None:
             _collect_relations(relations_list, relations_seen, pid, nearest_el, persons_in_xml)
 
-    # --- Запись в БД (двухфазно: удаление снизу вверх, вставка сверху вниз) ---
-    # Фаза 1: очистка (от зависимых к независимым)
-    # await PersonEventRepository().rewrite([])
-    # await PersonRelationRepository().rewrite([])
-    # await PersonRepository().rewrite([])
-    # await EventRepository().rewrite([])
-    # await FamilyRepository().rewrite([])
-    # await PlaceRepository().rewrite([])
-
-    # Фаза 2: вставка (от независимых к зависимым)
+    # --- Запись в БД  ---
     await PlaceRepository().rewrite(places_list)
     await FamilyRepository().rewrite(families_list)
     await EventRepository().rewrite(event_list)
