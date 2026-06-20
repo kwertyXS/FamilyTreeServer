@@ -8,6 +8,7 @@ const xmlStatus = ref({ type: '', text: '' })
 const zipStatus = ref({ type: '', text: '' })
 const uploading = ref({ xml: false, zip: false })
 
+const newLogin = ref('')
 const newPassword = ref('')
 const passwdStatus = ref({ type: '', text: '' })
 const changingPass = ref(false)
@@ -48,8 +49,8 @@ async function uploadZip() {
     const form = new FormData()
     form.append('file', zipFile.value)
     const res = await axios.post('/api/admin/load_photos', form)
-    const files = res.data.files || []
-    zipStatus.value = { type: 'ok', text: `Загружено ${files.length} файлов` }
+    const count = res.data.count_files ?? "?"
+    zipStatus.value = { type: 'ok', text: `Загружено ${count} файлов` }
     zipFile.value = null
   } catch (e) {
     const msg = e.response?.data?.detail || e.message
@@ -70,17 +71,26 @@ function removeZip() {
 }
 
 
-async function changePasswd() {
+async function changeAccount() {
+  const login = newLogin.value.trim()
   const pwd = newPassword.value.trim()
-  if (!pwd || pwd.length < 4) {
+  if (!login && !pwd) {
+    passwdStatus.value = { type: 'error', text: 'Введите новое имя пользователя или пароль' }
+    return
+  }
+  if (pwd && pwd.length < 4) {
     passwdStatus.value = { type: 'error', text: 'Пароль должен быть минимум 4 символа' }
     return
   }
   changingPass.value = true
-  passwdStatus.value = { type: 'loading', text: 'Смена пароля…' }
+  passwdStatus.value = { type: 'loading', text: 'Сохранение…' }
   try {
-    const res = await axios.post('/api/admin/change_password', { password: pwd })
-    passwdStatus.value = { type: 'ok', text: res.data.message || 'Пароль изменён' }
+    const body = {}
+    if (login) body.login = login
+    if (pwd) body.password = pwd
+    const res = await axios.post('/api/admin/change_account', body)
+    passwdStatus.value = { type: 'ok', text: res.data.message || 'Данные изменены' }
+    newLogin.value = ''
     newPassword.value = ''
   } catch (e) {
     const msg = e.response?.data?.detail || e.message
@@ -195,7 +205,7 @@ async function changePasswd() {
         </div>
       </div>
 
-      <!-- ─── Смена пароля ─── -->
+      <!-- ─── Смена учётной записи ─── -->
       <div class="admin-card glass">
         <div class="card-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -205,22 +215,31 @@ async function changePasswd() {
             <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
           </svg>
         </div>
-        <h2 class="card-title">Смена пароля</h2>
-        <p class="card-desc">Измените пароль для входа в админ-панель</p>
+        <h2 class="card-title">Смена учётной записи</h2>
+        <p class="card-desc">Измените имя пользователя и/или пароль для входа в админ-панель</p>
 
-        <div class="passwd-form">
-          <div class="passwd-input-wrap">
+        <div class="account-form">
+          <div class="account-input-wrap">
             <input
-              class="passwd-input"
+              class="account-input"
               type="text"
-              placeholder="Введите новый пароль"
-              v-model="newPassword"
-              @keyup.enter="changePasswd"
+              placeholder="Новое имя пользователя"
+              v-model="newLogin"
+              @keyup.enter="changeAccount"
             />
           </div>
-          <button class="btn btn-primary" :disabled="changingPass || !newPassword.trim()" @click="changePasswd">
+          <div class="account-input-wrap">
+            <input
+              class="account-input"
+              type="text"
+              placeholder="Новый пароль"
+              v-model="newPassword"
+              @keyup.enter="changeAccount"
+            />
+          </div>
+          <button class="btn btn-primary btn-block" :disabled="changingPass || (!newLogin.trim() && !newPassword.trim())" @click="changeAccount">
             <span v-if="changingPass" class="btn-spinner"></span>
-            <span v-else>Сменить</span>
+            <span v-else>Сохранить</span>
           </button>
         </div>
 
@@ -360,7 +379,11 @@ async function changePasswd() {
   transition: all .15s var(--ease-out);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
+}
+.btn-block {
+  width: 100%;
 }
 .btn:disabled {
   opacity: .5;
@@ -427,16 +450,16 @@ async function changePasswd() {
   to { transform: rotate(360deg); }
 }
 
-/* ─── Смена пароля ─── */
-.passwd-form {
+/* ─── Смена учётной записи ─── */
+.account-form {
   display: flex;
+  flex-direction: column;
   gap: 8px;
-  align-items: center;
 }
-.passwd-input-wrap {
-  flex: 1;
+.account-input-wrap {
+  width: 100%;
 }
-.passwd-input {
+.account-input {
   width: 100%;
   padding: 9px 14px;
   border-radius: var(--r-pill);
@@ -447,11 +470,12 @@ async function changePasswd() {
   font-family: inherit;
   outline: none;
   transition: border-color .15s var(--ease-out);
+  box-sizing: border-box;
 }
-.passwd-input:focus {
+.account-input:focus {
   border-color: var(--tint);
 }
-.passwd-input::placeholder {
+.account-input::placeholder {
   color: var(--ink-4);
 }
 </style>
