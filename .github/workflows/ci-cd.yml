@@ -25,7 +25,7 @@ jobs:
 
       # --- run создаёт отдельный контейнер для тестов (uvicorn не запускается) ---
       - name: Run tests
-        run: docker compose -f docker-compose.yml run -T --rm backend pytest -v
+        run: docker compose -f docker-compose.yml run -T --rm backend uv run pytest -v
 
       - name: Cleanup
         if: always()
