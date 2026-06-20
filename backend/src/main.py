@@ -1,7 +1,6 @@
 import uvicorn
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
-from src.core.cors import setup_cors
 from src.api import main_router
 from src.db.database import engine
 
@@ -12,7 +11,7 @@ app = FastAPI(
     openapi_url="/api/openapi.json"
 )
 
-setup_cors(app)
+
 
 app.include_router(main_router)
 
