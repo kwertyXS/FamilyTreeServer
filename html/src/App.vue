@@ -5,8 +5,9 @@ const router = useRouter()
 const route = useRoute()
 
 const navItems = [
-  { path: '/',      label: 'Семейное древо', icon: 'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5' },
-  { path: '/events', label: 'События',        icon: 'M8 2v4M16 2v4M3 9h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 6v8m4-8v8m4-8v8m4-8v8' },
+  { path: '/',        label: 'Древо',   icon: 'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5' },
+  { path: '/persons', label: 'Люди',    icon: 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-4 0-6 2-6 4v1h12v-1c0-2-2-4-6-4z' },
+  { path: '/events',  label: 'События', icon: 'M8 2v4M16 2v4M3 9h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 6v8m4-8v8m4-8v8m4-8v8' },
 ]
 </script>
 

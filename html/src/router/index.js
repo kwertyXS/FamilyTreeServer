@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import PersonsPage from '@/views/PersonsPage.vue'
 import GraphPage from '@/views/GraphPage.vue'
 import EventsPage from '@/views/EventsPage.vue'
 import AdminPage from '@/views/AdminPage.vue'
@@ -9,6 +10,12 @@ const routes = [
     name: 'graph',
     component: GraphPage,
     meta: { title: 'Семейное древо' }
+  },
+  {
+    path: '/persons',
+    name: 'persons',
+    component: PersonsPage,
+    meta: { title: 'Список людей' }
   },
   {
     path: '/events',

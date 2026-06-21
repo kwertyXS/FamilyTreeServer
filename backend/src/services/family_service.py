@@ -5,7 +5,7 @@ from src.db.database import session_factory
 from src.db.tables import PersonRelationTable, PersonEventTable
 from src.repositories.SQLAlchemyRepositories import PersonRelationRepository, PersonRepository, EventRepository
 from src.schemas.family import TreeEdgeSchemaOut, TreeSchemaOut, TreeNodeSchemaOut, PersonSchemaOut, EventSchemaOut, \
-    PlaceSchema, RelationSchemaOut
+    PlaceSchema, RelationSchemaOut, PersonSchema
 
 
 async def get_tree_service() -> TreeSchemaOut:
@@ -132,4 +132,25 @@ async def get_events_service():
             "place": PlaceSchema.from_orm(e.place).model_dump() if e.place else None,
         }
         for e in events
+    ]
+
+
+async def get_persons_service() -> list[PersonSchema]:
+    persons = await PersonRepository().get_all()
+    return [
+        PersonSchema(
+            id=p.id,
+            full_name=p.full_name,
+            sex=p.sex,
+            surname=p.surname,
+            first_name=p.first_name,
+            middle_name=p.middle_name,
+            birth_date=p.birth_date,
+            death_date=p.death_date,
+            lifespan=p.lifespan,
+            photo=p.photo,
+            is_favorite=p.is_favorite,
+            family_name=p.family.name if p.family else None,
+        )
+        for p in persons
     ]
