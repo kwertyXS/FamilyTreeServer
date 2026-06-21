@@ -1,3 +1,5 @@
+import uuid
+
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -8,7 +10,7 @@ from .person_event import PersonEventTable
 class EventTable(Base):
     __tablename__ = "events"
 
-    id: Mapped[str] = mapped_column(primary_key=True)
+    id: Mapped[str] = mapped_column(primary_key=True, default=lambda: str(uuid.uuid4()))
     type: Mapped[str]
     date: Mapped[str | None]
     date_sort: Mapped[int | None]
