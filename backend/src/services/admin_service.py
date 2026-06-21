@@ -8,6 +8,7 @@ from fastapi import UploadFile, HTTPException
 
 from src.core.config import OUTPUT_PHOTOS
 from src.services.xml_parser import parse_and_save
+from src.services.gedcom_parser import parse_and_save_gedcom
 
 
 async def load_xml_service(file: UploadFile):
@@ -22,6 +23,23 @@ async def load_xml_service(file: UploadFile):
         await parse_and_save(raw)
     except Exception as e:
         raise HTTPException(422, f"Ошибка парсинга XML: {e}")
+
+
+async def load_gedcom_service(file: UploadFile):
+    raw = await file.read()
+    if not raw:
+        raise HTTPException(400, "Пустой файл")
+
+    try:
+        text = raw.decode("utf-8")
+    except UnicodeDecodeError:
+        raise HTTPException(422, "Файл должен быть в кодировке UTF-8")
+
+    try:
+        msg = await parse_and_save_gedcom(text)
+        return msg
+    except Exception as e:
+        raise HTTPException(422, f"Ошибка парсинга GEDCOM: {e}")
 
 
 
