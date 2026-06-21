@@ -150,11 +150,10 @@ function renderGraph(persons, edges) {
   cy.on('mouseover', 'node', (ev) => {
     const node = ev.target
     const d = node.data()
-    const pos = node.renderedPosition()
     tooltip.value = {
       show: true,
-      x: pos.x,
-      y: pos.y - 30 / cy.zoom(),
+      x: ev.originalEvent.clientX,
+      y: ev.originalEvent.clientY,
       person: d,
     }
     document.body.style.cursor = 'pointer'
@@ -269,7 +268,7 @@ onBeforeUnmount(() => { if (cy) cy.destroy() })
 <style>
 .cy-tooltip {
   position: fixed;
-  transform: translate(-50%, -100%);
+  transform: translate(14px, -110%);
   padding: 10px 14px;
   border-radius: var(--r-sm);
   z-index: 9999;
