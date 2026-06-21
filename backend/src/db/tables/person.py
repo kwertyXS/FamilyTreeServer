@@ -1,3 +1,5 @@
+import uuid
+
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -9,7 +11,7 @@ from .person_relation import PersonRelationTable
 class PersonTable(Base):
     __tablename__ = "persons"
 
-    id: Mapped[str] = mapped_column(primary_key=True)
+    id: Mapped[str] = mapped_column(primary_key=True, default=lambda: str(uuid.uuid4()))
     sex: Mapped[bool | None]
     surname: Mapped[str | None]
     maiden_surname: Mapped[str | None]

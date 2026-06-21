@@ -1,3 +1,5 @@
+import uuid
+
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -7,7 +9,7 @@ from .base import Base
 class PlaceTable(Base):
     __tablename__ = "places"
 
-    id: Mapped[str] = mapped_column(primary_key=True)
+    id: Mapped[str] = mapped_column(primary_key=True, default=lambda: str(uuid.uuid4()))
     full_name: Mapped[str]
     name: Mapped[str | None]
     short_name: Mapped[str | None]
