@@ -24,13 +24,15 @@ function eventIcon(type) {
   <tr class="event-row">
     <!-- Тип + иконка -->
     <td class="cell-type">
-      <span class="type-icon-wrap" :title="event.type">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path :d="eventIcon(event.type)"/>
-        </svg>
+      <span class="type-flex">
+        <span class="type-icon-wrap" :title="event.type">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path :d="eventIcon(event.type)"/>
+          </svg>
+        </span>
+        <span class="type-label">{{ event.type }}</span>
       </span>
-      <span class="type-label">{{ event.type }}</span>
     </td>
 
     <!-- Дата -->
@@ -48,12 +50,14 @@ function eventIcon(type) {
     <!-- Место -->
     <td class="cell-place">
       <template v-if="event.place">
-        <svg class="place-icon" width="12" height="12" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 22s-7-7.58-7-13a7 7 0 1 1 14 0c0 5.42-7 13-7 13z"/>
-          <circle cx="12" cy="9" r="2.5"/>
-        </svg>
-        <span class="place-name">{{ event.place.full_name }}</span>
+        <span class="place-flex">
+          <svg class="place-icon" width="12" height="12" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s-7-7.58-7-13a7 7 0 1 1 14 0c0 5.42-7 13-7 13z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+          <span class="place-name">{{ event.place.full_name }}</span>
+        </span>
       </template>
       <span v-else class="no-place">—</span>
     </td>
@@ -78,10 +82,12 @@ function eventIcon(type) {
 
 /* ─── Тип ─── */
 .cell-type {
-  display: flex;
+  white-space: nowrap;
+}
+.type-flex {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-  white-space: nowrap;
 }
 .type-icon-wrap {
   display: flex;
@@ -118,10 +124,12 @@ function eventIcon(type) {
 
 /* ─── Место ─── */
 .cell-place {
-  display: flex;
+  white-space: nowrap;
+}
+.place-flex {
+  display: inline-flex;
   align-items: center;
   gap: 6px;
-  white-space: nowrap;
 }
 .place-icon {
   flex-shrink: 0;
