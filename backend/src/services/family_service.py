@@ -34,16 +34,15 @@ async def get_tree_service() -> TreeSchemaOut:
     REL_EX_SPOUSE = {"L"}
 
     edges = []
-    seen_edges = set()
 
     for r in relations:
         p1, p2, rtype, rlabel = r.person_id, r.related_person_id, r.relation_type, r.relation_label
-        key = tuple(sorted((p1, p2))) + (rtype,)
-        if key in seen_edges:
-            continue
-        seen_edges.add(key)
 
         if rtype in REL_PARENT_CODES:
+            # Только прямое направление — от родителя к ребёнку (F, M)
+            # S (сын) / D (дочь) — обратное, пропускаем
+            if rtype not in {"F", "M"}:
+                continue
             edge_type = "parent"
         elif rtype in REL_SPOUSE_CODES:
             edge_type = "spouse"

@@ -2,6 +2,9 @@
 import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 import axios from 'axios'
 import cytoscape from 'cytoscape'
+import dagre from 'cytoscape-dagre'
+
+cytoscape.use(dagre)
 
 const container = ref(null)
 const tooltip = ref({ show: false, x: 0, y: 0, person: null })
@@ -9,6 +12,17 @@ const loading = ref(true)
 const error = ref(null)
 const stats = ref({ persons: 0, edges: 0 })
 let cy = null
+
+/** Гендерная SVG-заглушка в формате data URI */
+function placeholderDataUri(sex) {
+  const color = sex === 'male' ? '#3A6BD9' : sex === 'female' ? '#D94A6B' : '#888'
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="${color}"/>
+    <circle cx="50" cy="32" r="18" fill="#fff" opacity=".35"/>
+    <path d="M22 82 Q50 55 78 82" fill="#fff" opacity=".35"/>
+  </svg>`
+  return `data:image/svg+xml,${encodeURIComponent(svg)}`
+}
 
 async function fetchTree() {
   loading.value = true
@@ -32,29 +46,33 @@ function renderGraph(persons, edges) {
 
   for (const p of persons) {
     const sex = p.sex === true ? 'male' : p.sex === false ? 'female' : 'unknown'
+    const photoUrl = p.photo ? `/photos/${p.photo}` : placeholderDataUri(sex)
+    const borderCls = sex === 'male' ? 'male' : sex === 'female' ? 'female' : ''
+
     elements.push({
       data: {
         id: p.id,
-        label: p.full_name.split(' ').slice(0, 2).join(' '),
+        label: p.full_name,
         full_name: p.full_name,
         sex,
-        photo: p.photo,
+        photo: photoUrl,
         birth: p.birth_date,
         death: p.death_date,
         lifespan: p.lifespan,
         is_favorite: p.is_favorite,
         family_name: p.family_name,
       },
-      classes: sex,
+      classes: borderCls,
     })
   }
 
   for (const e of edges) {
-    const cls = e.type === 'spouse' ? 'spouse' : e.type === 'sibling' ? 'sibling' : 'parent'
-    elements.push({
-      data: { source: e.from_id, target: e.to_id, type: e.type },
-      classes: cls,
-    })
+    if (e.type === 'parent') {
+      elements.push({
+        data: { source: e.from_id, target: e.to_id },
+        classes: 'parent',
+      })
+    }
   }
 
   if (cy) cy.destroy()
@@ -66,31 +84,38 @@ function renderGraph(persons, edges) {
       {
         selector: 'node',
         style: {
+          shape: 'rectangle',
+          width: 90,
+          height: 115,
           'background-color': '#888',
+          'background-image': 'data(photo)',
           'background-fit': 'cover',
-          'border-color': 'rgba(0,0,0,0.12)',
+          'background-position-x': '50%',
+          'background-position-y': '0%',
+          'border-color': 'rgba(0,0,0,0.15)',
           'border-width': 2,
-          width: 48,
-          height: 48,
-          shape: 'ellipse',
           label: 'data(label)',
           color: '#1a1a2e',
           'font-size': 10,
           'text-valign': 'bottom',
           'text-halign': 'center',
-          'text-margin-y': 6,
+          'text-margin-y': 5,
           'text-wrap': 'ellipsis',
-          'text-max-width': 80,
-          'background-opacity': 0.9,
+          'text-max-width': 84,
+          'text-background-color': '#ffffff',
+          'text-background-opacity': 0.92,
+          'text-background-padding': 4,
+          'text-background-shape': 'roundrectangle',
+          'min-zoomed-font-size': 7,
         },
       },
       {
         selector: 'node.male',
-        style: { 'background-color': '#3A6BD9', 'border-color': '#2a4fa8' },
+        style: { 'border-color': '#2a4fa8' },
       },
       {
         selector: 'node.female',
-        style: { 'background-color': '#D94A6B', 'border-color': '#b83250' },
+        style: { 'border-color': '#b83250' },
       },
       {
         selector: 'node[is_favorite = true]',
@@ -107,38 +132,17 @@ function renderGraph(persons, edges) {
           'arrow-scale': 0.7,
         },
       },
-      {
-        selector: 'edge.parent',
-        style: { 'line-style': 'solid' },
-      },
-      {
-        selector: 'edge.spouse',
-        style: {
-          'line-style': 'dashed',
-          'target-arrow-shape': 'none',
-          'curve-style': 'unbundled-bezier',
-          'control-point-step-size': 40,
-        },
-      },
-      {
-        selector: 'edge.sibling',
-        style: {
-          'line-style': 'dotted',
-          'target-arrow-shape': 'none',
-          'curve-style': 'unbundled-bezier',
-          'control-point-step-size': 20,
-        },
-      },
     ],
     layout: {
-      name: 'cose',
+      name: 'dagre',
+      rankDir: 'TB',
+      spacingFactor: 1.4,
+      nodeSep: 40,
+      rankSep: 100,
       animate: false,
-      nodeRepulsion: 12000,
-      idealEdgeLength: 100,
-      nodeDimensionsIncludeLabels: true,
     },
     wheelSensitivity: 0.3,
-    minZoom: 0.3,
+    minZoom: 0.1,
     maxZoom: 3,
   })
 
@@ -154,7 +158,7 @@ function renderGraph(persons, edges) {
     tooltip.value = {
       show: true,
       x: pos.x,
-      y: pos.y - 30 / cy.zoom(),
+      y: pos.y - 20 / cy.zoom(),
       person: d,
     }
     document.body.style.cursor = 'pointer'
@@ -171,24 +175,26 @@ onBeforeUnmount(() => { if (cy) cy.destroy() })
 
 <template>
   <div class="graph-page">
-    <div class="page-head">
-      <h1 class="page-title">Семейное древо</h1>
-      <p class="page-sub">
-        Всего: <strong>{{ stats.persons }}</strong> человек,
-        <strong>{{ stats.edges }}</strong> связей
-      </p>
-    </div>
+    <!-- Контейнер графа (всегда смонтирован, скрыт пока загрузка) -->
+    <div ref="container" class="cy-container" :class="{ cyHidden: loading || error }"></div>
 
-    <div v-if="loading" class="state-msg">
+    <!-- Загрузка -->
+    <div v-if="loading" class="graph-overlay">
       <div class="spinner"></div>
       <span>Загрузка дерева…</span>
     </div>
-    <div v-else-if="error" class="state-msg error">
+
+    <!-- Ошибка -->
+    <div v-else-if="error" class="graph-overlay graph-overlay--error">
       <span>Ошибка: {{ error }}</span>
       <button class="retry-btn" @click="fetchTree">Повторить</button>
     </div>
 
-    <div v-else ref="container" class="cy-container"></div>
+    <!-- Статистика в углу -->
+    <div v-if="!loading && !error" class="graph-stats glass">
+      <strong>{{ stats.persons }}</strong> чел.,
+      <strong>{{ stats.edges }}</strong> связей
+    </div>
 
     <Teleport to="body">
       <div
@@ -213,30 +219,37 @@ onBeforeUnmount(() => { if (cy) cy.destroy() })
 
 <style scoped>
 .graph-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 24px 80px;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
 }
-.page-head { margin-bottom: 24px; }
-.page-title {
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--ink);
-  margin-bottom: 6px;
-}
-.page-sub { font-size: 14px; color: var(--ink-3); }
 
-.state-msg {
+.cy-container {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-1);
+}
+.cyHidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* ─── Оверлей загрузки / ошибки ─── */
+.graph-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 16px;
-  padding: 80px 0;
   color: var(--ink-2);
   font-size: 15px;
 }
-.state-msg.error { color: #D94A6B; }
+.graph-overlay--error {
+  color: #D94A6B;
+}
 .spinner {
   width: 32px; height: 32px;
   border: 3px solid var(--hairline);
@@ -256,13 +269,18 @@ onBeforeUnmount(() => { if (cy) cy.destroy() })
 }
 .retry-btn:hover { background: var(--glass-thick); }
 
-.cy-container {
-  width: 100%;
-  height: 600px;
-  border-radius: var(--r-lg);
-  background: var(--bg-1);
-  border: 1px solid var(--hairline);
-  overflow: hidden;
+/* ─── Статистика ─── */
+.graph-stats {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 18px;
+  border-radius: var(--r-pill);
+  font-size: 13px;
+  color: var(--ink-2);
+  z-index: 5;
+  white-space: nowrap;
 }
 </style>
 
