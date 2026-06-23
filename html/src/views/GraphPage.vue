@@ -11,7 +11,10 @@ const tooltip = ref({ show: false, x: 0, y: 0, person: null })
 const loading = ref(true)
 const error = ref(null)
 const stats = ref({ persons: 0, edges: 0 })
+const searchQuery = ref('')
+const searchResult = ref('')
 let cy = null
+let personsList = []  // { id, full_name }
 
 /** Гендерная SVG-заглушка в формате data URI */
 function placeholderDataUri(sex) {
@@ -24,12 +27,51 @@ function placeholderDataUri(sex) {
   return `data:image/svg+xml,${encodeURIComponent(svg)}`
 }
 
+function onSearch() {
+  const q = searchQuery.value.trim().toLowerCase()
+  if (!q || !cy) return
+
+  cy.nodes().removeClass('highlight')
+  // Останавливаем предыдущие анимации
+  cy.nodes().stop()
+
+  const matching = cy.nodes().filter(n =>
+    n.data('full_name').toLowerCase().includes(q)
+  )
+
+  if (matching.length > 0) {
+    matching.addClass('highlight')
+
+    // Пульсация — цикл изменения яркости подсветки
+    matching.forEach(n => {
+      n.animate({
+        style: { 'underlay-opacity': 0.6 },
+        duration: 400,
+      }).animate({
+        style: { 'underlay-opacity': 0.25 },
+        duration: 400,
+      }).loop()
+    })
+
+    cy.animate({
+      fit: { eles: matching, padding: 120 },
+      duration: 500,
+    })
+
+    // Показываем счётчик
+    searchResult.value = `Найдено: ${matching.length}`
+  } else {
+    searchResult.value = 'Ничего не найдено'
+  }
+}
+
 async function fetchTree() {
   loading.value = true
   error.value = null
   try {
     const res = await axios.get('/api/tree')
     stats.value = { persons: res.data.persons.length, edges: res.data.edges.length }
+    personsList = res.data.persons.map(p => ({ id: p.id, full_name: p.full_name }))
     loading.value = false
     await nextTick()
     renderGraph(res.data.persons, res.data.edges)
@@ -87,23 +129,25 @@ function renderGraph(persons, edges) {
           shape: 'rectangle',
           width: 90,
           height: 115,
-          'background-color': '#888',
+          'background-color': 'rgba(255,255,255,0.72)',
           'background-image': 'data(photo)',
           'background-fit': 'cover',
           'background-position-x': '50%',
           'background-position-y': '0%',
-          'border-color': 'rgba(0,0,0,0.15)',
+          'background-opacity': 1,
+          'border-color': 'rgba(255,255,255,0.65)',
           'border-width': 2,
           label: 'data(label)',
-          color: '#1a1a2e',
+          color: '#14110C',
           'font-size': 10,
+          'font-weight': 600,
           'text-valign': 'bottom',
           'text-halign': 'center',
           'text-margin-y': 5,
           'text-wrap': 'ellipsis',
           'text-max-width': 84,
-          'text-background-color': '#ffffff',
-          'text-background-opacity': 0.92,
+          'text-background-color': 'rgba(255,255,255,0.85)',
+          'text-background-opacity': 1,
           'text-background-padding': 4,
           'text-background-shape': 'roundrectangle',
           'min-zoomed-font-size': 7,
@@ -111,15 +155,25 @@ function renderGraph(persons, edges) {
       },
       {
         selector: 'node.male',
-        style: { 'border-color': '#2a4fa8' },
+        style: { 'border-color': 'rgba(42,79,168,0.25)', 'border-width': 2 },
       },
       {
         selector: 'node.female',
-        style: { 'border-color': '#b83250' },
+        style: { 'border-color': 'rgba(184,50,80,0.25)', 'border-width': 2 },
       },
       {
-        selector: 'node[is_favorite = true]',
-        style: { 'border-width': 3, 'border-color': '#F5A623' },
+        selector: 'node[is_favorite="true"]',
+        style: { 'border-width': 3, 'border-color': '#5a5a5a' },
+      },
+      {
+        selector: 'node.highlight',
+        style: {
+          'border-color': '#5a5a5a',
+          'border-width': 5,
+          'underlay-color': '#8a8a8a',
+          'underlay-opacity': 0.35,
+          'underlay-padding': 8,
+        },
       },
       {
         selector: 'edge',
@@ -196,6 +250,31 @@ onBeforeUnmount(() => { if (cy) cy.destroy() })
       <strong>{{ stats.edges }}</strong> связей
     </div>
 
+    <!-- Поиск -->
+    <div v-if="!loading && !error" class="graph-search glass">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <path d="M21 21l-4.35-4.35"/>
+      </svg>
+      <input
+        v-model="searchQuery"
+        type="text"
+        class="search-input"
+        placeholder="Поиск человека…"
+        @keydown.enter="onSearch"
+      />
+      <button class="search-btn" @click="onSearch">Найти</button>
+      <span v-if="searchResult" class="search-result" :class="{ 'search-result--empty': searchResult === 'Ничего не найдено' }">{{ searchResult }}</span>
+      <button v-if="searchQuery" class="search-clear" @click="searchQuery = ''; searchResult = ''; cy?.nodes().removeClass('highlight'); cy?.nodes().stop()" title="Очистить">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
     <Teleport to="body">
       <div
         v-if="tooltip.show"
@@ -227,7 +306,6 @@ onBeforeUnmount(() => { if (cy) cy.destroy() })
 .cy-container {
   width: 100%;
   height: 100%;
-  background: var(--bg-1);
 }
 .cyHidden {
   visibility: hidden;
@@ -281,6 +359,77 @@ onBeforeUnmount(() => { if (cy) cy.destroy() })
   color: var(--ink-2);
   z-index: 5;
   white-space: nowrap;
+}
+
+/* ─── Поиск ─── */
+.graph-search {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 6px 6px 12px;
+  border-radius: var(--r-pill);
+  z-index: 5;
+}
+.search-icon {
+  flex-shrink: 0;
+  color: var(--ink-3);
+}
+.search-input {
+  flex: 0 1 220px;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 13px;
+  color: var(--ink);
+  font-family: inherit;
+}
+.search-input::placeholder {
+  color: var(--ink-4);
+}
+.search-btn {
+  padding: 5px 14px;
+  border-radius: var(--r-pill);
+  border: none;
+  background: var(--tint);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .15s var(--ease-out);
+  white-space: nowrap;
+}
+.search-btn:hover {
+  background: var(--tint-2);
+}
+.search-result {
+  font-size: 12px;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+.search-result--empty {
+  color: #D94A6B;
+}
+.search-clear {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: background .15s var(--ease-out);
+}
+.search-clear:hover {
+  background: var(--glass-thick);
+  color: var(--ink);
 }
 </style>
 

@@ -43,6 +43,8 @@ async def get_tree_service() -> TreeSchemaOut:
             # S (сын) / D (дочь) — обратное, пропускаем
             if rtype not in {"F", "M"}:
                 continue
+            # В БД person_id = ребёнок, related_person_id = родитель — разворачиваем
+            p1, p2 = p2, p1
             edge_type = "parent"
         elif rtype in REL_SPOUSE_CODES:
             edge_type = "spouse"
