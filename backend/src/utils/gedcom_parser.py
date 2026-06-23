@@ -199,6 +199,7 @@ class GedcomParser:
                 bp = self.__place_from_children(birt)
                 ev = self.__find_event(event_list, "Рождение", dt, bp)
                 if ev:
+                    ev.person_id = pid
                     person_event_list.append(PersonEventTable(
                         person_id=pid, event_id=ev.id,
                         role="Родился" if person.sex is True else "Родилась",
@@ -208,6 +209,7 @@ class GedcomParser:
                 dp = self.__place_from_children(deat)
                 ev = self.__find_event(event_list, "Смерть", dt, dp)
                 if ev:
+                    ev.person_id = pid
                     person_event_list.append(PersonEventTable(
                         person_id=pid, event_id=ev.id,
                         role="Умер" if person.sex is True else "Умерла",
@@ -266,8 +268,8 @@ class GedcomParser:
 
         await PlaceRepository().rewrite(places_list)
         await FamilyRepository().rewrite(families_list)
-        await EventRepository().rewrite(event_list)
         await PersonRepository().rewrite(persons_list)
+        await EventRepository().rewrite(event_list)
         await PersonEventRepository().rewrite(person_event_list)
         await PersonRelationRepository().rewrite(relations_list)
 

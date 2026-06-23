@@ -16,6 +16,8 @@ class EventTable(Base):
     date_sort: Mapped[int | None]
     description: Mapped[str | None]
     place_id: Mapped[str | None] = mapped_column(ForeignKey("places.id", ondelete="CASCADE"))
+    person_id: Mapped[str | None] = mapped_column(ForeignKey("persons.id", ondelete="CASCADE"))
 
     place = relationship("PlaceTable", lazy="joined")
+    person = relationship("PersonTable", foreign_keys=[person_id], lazy="joined")
     persons = relationship("PersonTable", secondary=PersonEventTable.__table__, lazy="selectin")

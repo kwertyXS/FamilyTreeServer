@@ -31,8 +31,8 @@ class XMLParser:
 
         await PlaceRepository().rewrite(places_list)
         await FamilyRepository().rewrite(families_list)
-        await EventRepository().rewrite(event_list)
         await PersonRepository().rewrite(persons_list)
+        await EventRepository().rewrite(event_list)
         await PersonEventRepository().rewrite(person_event_list)
         await PersonRelationRepository().rewrite(relations_list)
 
@@ -50,6 +50,7 @@ class XMLParser:
                     eid = event_el.get("id")
                     role = event_el.get("role", "")
                     if eid and eid in event_map:
+                        event_map[eid].person_id = pid
                         person_event_list.append(
                             PersonEventTable(person_id=pid, event_id=eid, role=role)
                         )

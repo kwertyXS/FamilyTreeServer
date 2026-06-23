@@ -79,6 +79,7 @@ onMounted(fetchEvents)
         <thead>
           <tr>
             <th class="th-type">Событие</th>
+            <th class="th-person">Имя</th>
             <th class="th-date">Дата</th>
             <th class="th-desc">Описание</th>
             <th class="th-place">Место</th>
