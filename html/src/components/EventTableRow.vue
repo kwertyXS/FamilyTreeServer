@@ -35,6 +35,12 @@ function eventIcon(type) {
       </span>
     </td>
 
+    <!-- Человек -->
+    <td class="cell-person">
+      <span v-if="event.person" class="person-text">{{ event.person.full_name }}</span>
+      <span v-else class="no-date">—</span>
+    </td>
+
     <!-- Дата -->
     <td class="cell-date">
       <span v-if="event.date" class="date-text">{{ event.date }}</span>

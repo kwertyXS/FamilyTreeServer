@@ -48,12 +48,18 @@ class RelationSchemaOut(BaseModel):
     relation_label: str
 
 
+class PersonBriefSchema(BaseModel):
+    id: str
+    full_name: str
+
+
 class EventSchemaOut(BaseModel):
     id: str
     type: str
     date: str | None = None
     description: str | None = None
     place: PlaceSchema | None = None
+    person: PersonBriefSchema | None = None
 
 
 class TreeNodeSchemaOut(BaseModel):

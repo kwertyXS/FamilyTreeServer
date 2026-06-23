@@ -5,7 +5,7 @@ from src.db.database import session_factory
 from src.db.tables import PersonRelationTable, PersonEventTable
 from src.repositories.SQLAlchemyRepositories import PersonRelationRepository, PersonRepository, EventRepository
 from src.schemas.family import TreeEdgeSchemaOut, TreeSchemaOut, TreeNodeSchemaOut, PersonSchemaOut, EventSchemaOut, \
-    PlaceSchema, RelationSchemaOut, PersonSchema
+    PlaceSchema, RelationSchemaOut, PersonSchema, PersonBriefSchema
 
 
 async def get_tree_service() -> TreeSchemaOut:
@@ -34,16 +34,17 @@ async def get_tree_service() -> TreeSchemaOut:
     REL_EX_SPOUSE = {"L"}
 
     edges = []
-    seen_edges = set()
 
     for r in relations:
         p1, p2, rtype, rlabel = r.person_id, r.related_person_id, r.relation_type, r.relation_label
-        key = tuple(sorted((p1, p2))) + (rtype,)
-        if key in seen_edges:
-            continue
-        seen_edges.add(key)
 
         if rtype in REL_PARENT_CODES:
+            # Только прямое направление — от родителя к ребёнку (F, M)
+            # S (сын) / D (дочь) — обратное, пропускаем
+            if rtype not in {"F", "M"}:
+                continue
+            # В БД person_id = ребёнок, related_person_id = родитель — разворачиваем
+            p1, p2 = p2, p1
             edge_type = "parent"
         elif rtype in REL_SPOUSE_CODES:
             edge_type = "spouse"
@@ -127,6 +128,8 @@ async def get_events_service():
         {
             "id": e.id,
             "type": e.type,
+            "person": PersonBriefSchema(id=e.person.id, full_name=e.person.full_name).model_dump()
+            if e.person else None,
             "date": e.date,
             "description": e.description,
             "place": PlaceSchema.from_orm(e.place).model_dump() if e.place else None,
