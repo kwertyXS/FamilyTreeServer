@@ -7,6 +7,7 @@ const events = ref([])
 const loading = ref(true)
 const error = ref(null)
 const filterType = ref('all')
+const searchQuery = ref('')
 
 /** Все уникальные типы событий для фильтра */
 const eventTypes = computed(() => {
@@ -14,10 +15,33 @@ const eventTypes = computed(() => {
   return ['all', ...types]
 })
 
-/** Отфильтрованные события */
+/** Отфильтрованные события — по типу + поиск */
 const filteredEvents = computed(() => {
-  if (filterType.value === 'all') return events.value
-  return events.value.filter(e => e.type === filterType.value)
+  let result = events.value
+
+  // Фильтр по типу
+  if (filterType.value !== 'all') {
+    result = result.filter(e => e.type === filterType.value)
+  }
+
+  // Текстовый поиск
+  const q = searchQuery.value.trim().toLowerCase()
+  if (q) {
+    result = result.filter(e => {
+      const name = e.person?.full_name ?? ''
+      const date = e.date ?? ''
+      const desc = e.description ?? ''
+      const place = e.place?.full_name ?? ''
+      return (
+        name.toLowerCase().includes(q) ||
+        date.toLowerCase().includes(q) ||
+        desc.toLowerCase().includes(q) ||
+        place.toLowerCase().includes(q)
+      )
+    })
+  }
+
+  return result
 })
 
 async function fetchEvents() {
@@ -42,6 +66,28 @@ onMounted(fetchEvents)
     <div class="page-head">
       <h1 class="page-title">Хронология событий</h1>
       <p class="page-sub">Всего событий: <strong>{{ events.length }}</strong></p>
+    </div>
+
+    <!-- Поиск -->
+    <div class="search-bar glass">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <path d="M21 21l-4.35-4.35"/>
+      </svg>
+      <input
+        v-model="searchQuery"
+        type="text"
+        class="search-input"
+        placeholder="Поиск по имени, дате, описанию, месту…"
+      />
+      <button v-if="searchQuery" class="search-clear" @click="searchQuery = ''" title="Очистить">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
     </div>
 
     <!-- Фильтр по типу -->
@@ -120,6 +166,50 @@ onMounted(fetchEvents)
 .page-sub {
   font-size: 14px;
   color: var(--ink-3);
+}
+
+/* ─── Поиск ─── */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-radius: var(--r-md);
+  margin-bottom: 12px;
+}
+.search-icon {
+  flex-shrink: 0;
+  color: var(--ink-3);
+}
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: var(--ink);
+  font-family: inherit;
+}
+.search-input::placeholder {
+  color: var(--ink-4);
+}
+.search-clear {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: background .15s var(--ease-out);
+}
+.search-clear:hover {
+  background: var(--glass-thick);
+  color: var(--ink);
 }
 
 /* ─── Фильтр ─── */

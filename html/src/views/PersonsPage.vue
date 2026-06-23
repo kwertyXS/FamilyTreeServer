@@ -1,10 +1,31 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import axios from 'axios'
 
 const persons = ref([])
 const loading = ref(true)
 const error = ref(null)
+const searchQuery = ref('')
+
+const filteredPersons = computed(() => {
+  const q = searchQuery.value.trim().toLowerCase()
+  if (!q) return persons.value
+
+  return persons.value.filter(p => {
+    const fields = [
+      p.full_name,
+      p.family_name,
+      p.birth_date,
+      p.death_date,
+      p.lifespan,
+      p.sex != null ? (p.sex ? 'мужской' : 'женский') : '',
+      p.is_favorite ? 'избранный' : '',
+      p.birth_place,
+      p.death_place,
+    ]
+    return fields.some(f => f && String(f).toLowerCase().includes(q))
+  })
+})
 
 async function fetchPersons() {
   loading.value = true
@@ -29,6 +50,28 @@ onMounted(fetchPersons)
       <p class="page-sub">Всего человек: <strong>{{ persons.length }}</strong></p>
     </div>
 
+    <!-- Поиск -->
+    <div class="search-bar glass">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <path d="M21 21l-4.35-4.35"/>
+      </svg>
+      <input
+        v-model="searchQuery"
+        type="text"
+        class="search-input"
+        placeholder="Поиск по имени, датам, месту рождения/смерти…"
+      />
+      <button v-if="searchQuery" class="search-clear" @click="searchQuery = ''" title="Очистить">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
     <div v-if="loading" class="state-msg">
       <div class="spinner"></div>
       <span>Загрузка…</span>
@@ -40,7 +83,7 @@ onMounted(fetchPersons)
 
     <div v-else class="persons-grid">
       <div
-        v-for="person in persons"
+        v-for="person in filteredPersons"
         :key="person.id"
         class="person-card glass"
         @click="$router.push('/person/' + person.id)"
@@ -96,6 +139,50 @@ onMounted(fetchPersons)
   margin-bottom: 6px;
 }
 .page-sub { font-size: 14px; color: var(--ink-3); }
+
+/* ─── Поиск ─── */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-radius: var(--r-md);
+  margin-bottom: 24px;
+}
+.search-icon {
+  flex-shrink: 0;
+  color: var(--ink-3);
+}
+.search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: var(--ink);
+  font-family: inherit;
+}
+.search-input::placeholder {
+  color: var(--ink-4);
+}
+.search-clear {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: background .15s var(--ease-out);
+}
+.search-clear:hover {
+  background: var(--glass-thick);
+  color: var(--ink);
+}
 
 .state-msg {
   display: flex;
