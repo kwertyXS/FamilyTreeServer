@@ -236,9 +236,6 @@ nginx/prod-active.conf
 pgdata/
 
 
-# примеры, чтоб можно было быстро смотреть
-exemple/
-
 # === backend/ ===
 backend/auth
 
