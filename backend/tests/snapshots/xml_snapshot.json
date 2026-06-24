@@ -1,0 +1,4582 @@
+{
+  "tree": {
+    "persons": [
+      {
+        "id": "18",
+        "full_name": "Ганнибал Абрам (Ибрагим) Петрович",
+        "sex": true,
+        "birth_date": "Около 1696",
+        "death_date": "25.05.1781",
+        "lifespan": "Около 85",
+        "photo": "test.xml.files\\Gannibal_Abram_Petrovich.jpg",
+        "is_favorite": false,
+        "family_name": "Ганнибал"
+      },
+      {
+        "id": "28",
+        "full_name": "Ганнибал Иван Абрамович",
+        "sex": true,
+        "birth_date": "16.06.1735",
+        "death_date": "24.10.1801",
+        "lifespan": "66",
+        "photo": "test.xml.files\\Gannibal_Ivan_Abramovich.jpg",
+        "is_favorite": false,
+        "family_name": "Ганнибал"
+      },
+      {
+        "id": "14",
+        "full_name": "Ганнибал Осип Абрамович",
+        "sex": true,
+        "birth_date": "31.01.1744",
+        "death_date": "24.10.1806",
+        "lifespan": "62",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Ганнибал"
+      },
+      {
+        "id": "10",
+        "full_name": "Ганнибал (Пушкина) Мария Алексеевна",
+        "sex": false,
+        "birth_date": "31.01.1745",
+        "death_date": "09.07.1818",
+        "lifespan": "73",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "29",
+        "full_name": "Гартунг Леонид Николаевич",
+        "sex": true,
+        "birth_date": "1834",
+        "death_date": "1877",
+        "lifespan": "Около 43",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "12",
+        "full_name": "Гартунг (Пушкина) Мария Александровна",
+        "sex": false,
+        "birth_date": "31.05.1832",
+        "death_date": "07.03.1919",
+        "lifespan": "86",
+        "photo": "test.xml.files\\maria.jpg",
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "19",
+        "full_name": "Головина Евдокия Ивановна",
+        "sex": false,
+        "birth_date": "Предположительно 1703",
+        "death_date": "1725",
+        "lifespan": "Около 22",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "51",
+        "full_name": "Де Торби (Меренберг) София Николаевна",
+        "sex": false,
+        "birth_date": "01.06.1868",
+        "death_date": "14.09.1927",
+        "lifespan": "59",
+        "photo": "test.xml.files\\Countess_Sophie_of_Merenberg.jpg",
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "49",
+        "full_name": "Дубельт Леонтий Михайлович",
+        "sex": true,
+        "birth_date": "1855",
+        "death_date": "1894",
+        "lifespan": "Около 39",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "33",
+        "full_name": "Дубельт Михаил Леонтьевич",
+        "sex": true,
+        "birth_date": "21.02.1822",
+        "death_date": "19.04.1900",
+        "lifespan": "78",
+        "photo": "test.xml.files\\M._L._Dubelt_by_Gagarin.jpg",
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "48",
+        "full_name": "Дубельт-Бессель (Дубельт) Наталья Михайловна",
+        "sex": false,
+        "birth_date": "1854",
+        "death_date": "1925",
+        "lifespan": "Около 71",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "50",
+        "full_name": "Дубельт-Кондырева (Дубельт) Анна Михайловна",
+        "sex": false,
+        "birth_date": "1861",
+        "death_date": "1919",
+        "lifespan": "Около 58",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "31",
+        "full_name": "Ланская Софья Александровна",
+        "sex": false,
+        "birth_date": "1838",
+        "death_date": "1875",
+        "lifespan": "Около 37",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "52",
+        "full_name": "(Меренберг) Александра Николаевна",
+        "sex": false,
+        "birth_date": "1869",
+        "death_date": "1950",
+        "lifespan": "Около 81",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "53",
+        "full_name": "Меренберг Георгий Николаевич",
+        "sex": true,
+        "birth_date": "25.02.1871",
+        "death_date": "31.05.1948",
+        "lifespan": "77",
+        "photo": "test.xml.files\\Merenberg_Georg-Nikolay.jpg",
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "32",
+        "full_name": "Мошкова (Мельникова) Варвара Алексеевна",
+        "sex": false,
+        "birth_date": null,
+        "death_date": "1935",
+        "lifespan": null,
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "34",
+        "full_name": "Нассауский Николай-Вильгельм",
+        "sex": true,
+        "birth_date": "02.10.1832",
+        "death_date": "30.09.1905",
+        "lifespan": "72",
+        "photo": "test.xml.files\\NassauNicolaus.jpg",
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "30",
+        "full_name": "Павлова Мария Александровна",
+        "sex": false,
+        "birth_date": "1852",
+        "death_date": "1919",
+        "lifespan": "Около 67",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "23",
+        "full_name": "Приклонская Лукерья Васильевна",
+        "sex": false,
+        "birth_date": "06.03.1705",
+        "death_date": "11.03.1765",
+        "lifespan": "60",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "6",
+        "full_name": "Пушкин Александр Александрович",
+        "sex": true,
+        "birth_date": "18.07.1833",
+        "death_date": "01.08.1914",
+        "lifespan": "81",
+        "photo": "test.xml.files\\alexander.jpg",
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "41",
+        "full_name": "Пушкин Александр Александрович",
+        "sex": true,
+        "birth_date": "1863",
+        "death_date": "1916",
+        "lifespan": "Около 53",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "5",
+        "full_name": "Пушкин Александр Петрович",
+        "sex": true,
+        "birth_date": "После 1686",
+        "death_date": "1725",
+        "lifespan": "Около 39",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич",
+        "sex": true,
+        "birth_date": "06.06.1799",
+        "death_date": "10.02.1837",
+        "lifespan": "37",
+        "photo": "test.xml.files\\self.jpg",
+        "is_favorite": true,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "8",
+        "full_name": "Пушкин Алексей Фёдорович",
+        "sex": true,
+        "birth_date": "1717",
+        "death_date": "1777",
+        "lifespan": "Около 60",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "24",
+        "full_name": "Пушкин Василий Львович",
+        "sex": true,
+        "birth_date": "08.05.1766",
+        "death_date": "01.09.1830",
+        "lifespan": "64",
+        "photo": "test.xml.files\\Pushkin_Vasiliy_Lvovich.jpg",
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "4",
+        "full_name": "Пушкин Григорий Александрович",
+        "sex": true,
+        "birth_date": "26.05.1835",
+        "death_date": "18.08.1905",
+        "lifespan": "70",
+        "photo": "test.xml.files\\grigorii.jpg",
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "44",
+        "full_name": "Пушкин Григорий Александрович",
+        "sex": true,
+        "birth_date": "27.09.1868",
+        "death_date": "01.09.1940",
+        "lifespan": "71",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "1",
+        "full_name": "Пушкин Лев Александрович",
+        "sex": true,
+        "birth_date": "28.02.1723",
+        "death_date": "25.10.1790",
+        "lifespan": "67",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "7",
+        "full_name": "Пушкин Лев Сергеевич",
+        "sex": true,
+        "birth_date": "21.04.1805",
+        "death_date": "31.07.1852",
+        "lifespan": "47",
+        "photo": "test.xml.files\\lev.jpg",
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "35",
+        "full_name": "Пушкин Николай Александрович",
+        "sex": true,
+        "birth_date": "1885",
+        "death_date": "1964",
+        "lifespan": "Около 79",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "37",
+        "full_name": "Пушкин Пётр Александрович",
+        "sex": true,
+        "birth_date": null,
+        "death_date": "1870",
+        "lifespan": null,
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "47",
+        "full_name": "Пушкин Сергей Александрович",
+        "sex": true,
+        "birth_date": "1874",
+        "death_date": "1898",
+        "lifespan": "Около 24",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "3",
+        "full_name": "Пушкин Сергей Львович",
+        "sex": true,
+        "birth_date": "03.06.1770",
+        "death_date": "10.07.1848",
+        "lifespan": "78",
+        "photo": "test.xml.files\\father.jpg",
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "43",
+        "full_name": "Пушкина Анна Александровна",
+        "sex": false,
+        "birth_date": "1866",
+        "death_date": "1949",
+        "lifespan": "Около 83",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "25",
+        "full_name": "Пушкина Анна Львовна",
+        "sex": false,
+        "birth_date": "Около 1765",
+        "death_date": "Около 1824",
+        "lifespan": "Около 59",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "13",
+        "full_name": "Пушкина (Ганнибал) Надежда Осиповна ",
+        "sex": false,
+        "birth_date": "02.07.1775",
+        "death_date": "29.03.1836",
+        "lifespan": "60",
+        "photo": "test.xml.files\\mother.jpg",
+        "is_favorite": false,
+        "family_name": "Ганнибал"
+      },
+      {
+        "id": "22",
+        "full_name": "Пушкина (Гончарова) Наталья Николаевна",
+        "sex": false,
+        "birth_date": "08.09.1812",
+        "death_date": "08.12.1863",
+        "lifespan": "51",
+        "photo": "test.xml.files\\wife.jpg",
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "45",
+        "full_name": "Пушкина Надежда Александровна",
+        "sex": false,
+        "birth_date": "1871",
+        "death_date": "1915",
+        "lifespan": "Около 44",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "20",
+        "full_name": "Пушкина (Ржевская) Сарра",
+        "sex": false,
+        "birth_date": "1721",
+        "death_date": "После 1790",
+        "lifespan": "Около 69",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "39",
+        "full_name": "Пушкина София Александровна",
+        "sex": false,
+        "birth_date": "1860",
+        "death_date": "1861",
+        "lifespan": "Около 1",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "40",
+        "full_name": "Пушкина-Быкова (Пушкина) Мария Александровна",
+        "sex": false,
+        "birth_date": "1862",
+        "death_date": "1939",
+        "lifespan": "Около 77",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "38",
+        "full_name": "Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна",
+        "sex": false,
+        "birth_date": "17.08.1859",
+        "death_date": "18.12.1912",
+        "lifespan": "53",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "11",
+        "full_name": "Пушкина-Дубельт (Пушкина) Наталья Александровна",
+        "sex": false,
+        "birth_date": "04.06.1836",
+        "death_date": "23.03.1913",
+        "lifespan": "76",
+        "photo": "test.xml.files\\natalia.jpg",
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "46",
+        "full_name": "Пушкина-Мезенцова (Пушкина) Вера Александровна",
+        "sex": false,
+        "birth_date": "1872",
+        "death_date": "1909",
+        "lifespan": "Около 37",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "9",
+        "full_name": "Пушкина-Павлищева (Пушкина) Ольга Сергеевна",
+        "sex": false,
+        "birth_date": "31.12.1797",
+        "death_date": "14.05.1868",
+        "lifespan": "70",
+        "photo": "test.xml.files\\sister.jpg",
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "42",
+        "full_name": "Пушкина-Павлова (Пушкина) Ольга Александровна",
+        "sex": false,
+        "birth_date": "1864",
+        "death_date": "После 1908",
+        "lifespan": "Около 44",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "36",
+        "full_name": "Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна",
+        "sex": false,
+        "birth_date": "1890",
+        "death_date": "1943",
+        "lifespan": "Около 53",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "27",
+        "full_name": "Сонцев Матвей Михаилович",
+        "sex": true,
+        "birth_date": "22.06.1779",
+        "death_date": "22.11.1847",
+        "lifespan": "68",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "54",
+        "full_name": "Сонцева Екатерина Матвеевна",
+        "sex": false,
+        "birth_date": null,
+        "death_date": "16.01.1864",
+        "lifespan": null,
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "26",
+        "full_name": "Сонцева (Пушкина) Елизавета Львовна",
+        "sex": false,
+        "birth_date": "24.08.1776",
+        "death_date": "09.10.1848",
+        "lifespan": "72",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": "Пушкины"
+      },
+      {
+        "id": "15",
+        "full_name": "Чичерин Василий Иванович",
+        "sex": true,
+        "birth_date": "28.03.1700",
+        "death_date": "Между 1743 и 1748",
+        "lifespan": "Около 44",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "16",
+        "full_name": "Чичерина Ольга Васильевна",
+        "sex": false,
+        "birth_date": "16.06.1737",
+        "death_date": "03.02.1802",
+        "lifespan": "64",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      },
+      {
+        "id": "17",
+        "full_name": "Шеберг Христина Матвеевна",
+        "sex": false,
+        "birth_date": "Около 1717",
+        "death_date": "1781",
+        "lifespan": "Около 64",
+        "photo": null,
+        "is_favorite": false,
+        "family_name": null
+      }
+    ],
+    "edges": [
+      {
+        "from_id": "18",
+        "to_id": "17",
+        "type": "spouse"
+      },
+      {
+        "from_id": "17",
+        "to_id": "18",
+        "type": "spouse"
+      },
+      {
+        "from_id": "18",
+        "to_id": "28",
+        "type": "parent"
+      },
+      {
+        "from_id": "17",
+        "to_id": "28",
+        "type": "parent"
+      },
+      {
+        "from_id": "18",
+        "to_id": "14",
+        "type": "parent"
+      },
+      {
+        "from_id": "17",
+        "to_id": "14",
+        "type": "parent"
+      },
+      {
+        "from_id": "28",
+        "to_id": "14",
+        "type": "sibling"
+      },
+      {
+        "from_id": "14",
+        "to_id": "28",
+        "type": "sibling"
+      },
+      {
+        "from_id": "14",
+        "to_id": "10",
+        "type": "spouse"
+      },
+      {
+        "from_id": "10",
+        "to_id": "14",
+        "type": "spouse"
+      },
+      {
+        "from_id": "14",
+        "to_id": "13",
+        "type": "parent"
+      },
+      {
+        "from_id": "10",
+        "to_id": "13",
+        "type": "parent"
+      },
+      {
+        "from_id": "8",
+        "to_id": "10",
+        "type": "parent"
+      },
+      {
+        "from_id": "20",
+        "to_id": "10",
+        "type": "parent"
+      },
+      {
+        "from_id": "29",
+        "to_id": "12",
+        "type": "spouse"
+      },
+      {
+        "from_id": "12",
+        "to_id": "29",
+        "type": "spouse"
+      },
+      {
+        "from_id": "2",
+        "to_id": "12",
+        "type": "parent"
+      },
+      {
+        "from_id": "22",
+        "to_id": "12",
+        "type": "parent"
+      },
+      {
+        "from_id": "12",
+        "to_id": "6",
+        "type": "sibling"
+      },
+      {
+        "from_id": "12",
+        "to_id": "4",
+        "type": "sibling"
+      },
+      {
+        "from_id": "12",
+        "to_id": "11",
+        "type": "sibling"
+      },
+      {
+        "from_id": "19",
+        "to_id": "5",
+        "type": "spouse"
+      },
+      {
+        "from_id": "5",
+        "to_id": "19",
+        "type": "spouse"
+      },
+      {
+        "from_id": "19",
+        "to_id": "1",
+        "type": "parent"
+      },
+      {
+        "from_id": "5",
+        "to_id": "1",
+        "type": "parent"
+      },
+      {
+        "from_id": "34",
+        "to_id": "51",
+        "type": "parent"
+      },
+      {
+        "from_id": "11",
+        "to_id": "51",
+        "type": "parent"
+      },
+      {
+        "from_id": "51",
+        "to_id": "52",
+        "type": "sibling"
+      },
+      {
+        "from_id": "51",
+        "to_id": "53",
+        "type": "sibling"
+      },
+      {
+        "from_id": "51",
+        "to_id": "48",
+        "type": "sibling"
+      },
+      {
+        "from_id": "51",
+        "to_id": "49",
+        "type": "sibling"
+      },
+      {
+        "from_id": "51",
+        "to_id": "50",
+        "type": "sibling"
+      },
+      {
+        "from_id": "33",
+        "to_id": "49",
+        "type": "parent"
+      },
+      {
+        "from_id": "11",
+        "to_id": "49",
+        "type": "parent"
+      },
+      {
+        "from_id": "49",
+        "to_id": "48",
+        "type": "sibling"
+      },
+      {
+        "from_id": "49",
+        "to_id": "50",
+        "type": "sibling"
+      },
+      {
+        "from_id": "49",
+        "to_id": "51",
+        "type": "sibling"
+      },
+      {
+        "from_id": "49",
+        "to_id": "52",
+        "type": "sibling"
+      },
+      {
+        "from_id": "49",
+        "to_id": "53",
+        "type": "sibling"
+      },
+      {
+        "from_id": "33",
+        "to_id": "11",
+        "type": "ex_spouse"
+      },
+      {
+        "from_id": "33",
+        "to_id": "48",
+        "type": "parent"
+      },
+      {
+        "from_id": "11",
+        "to_id": "48",
+        "type": "parent"
+      },
+      {
+        "from_id": "48",
+        "to_id": "49",
+        "type": "sibling"
+      },
+      {
+        "from_id": "48",
+        "to_id": "50",
+        "type": "sibling"
+      },
+      {
+        "from_id": "48",
+        "to_id": "51",
+        "type": "sibling"
+      },
+      {
+        "from_id": "48",
+        "to_id": "52",
+        "type": "sibling"
+      },
+      {
+        "from_id": "48",
+        "to_id": "53",
+        "type": "sibling"
+      },
+      {
+        "from_id": "33",
+        "to_id": "50",
+        "type": "parent"
+      },
+      {
+        "from_id": "11",
+        "to_id": "50",
+        "type": "parent"
+      },
+      {
+        "from_id": "50",
+        "to_id": "48",
+        "type": "sibling"
+      },
+      {
+        "from_id": "50",
+        "to_id": "49",
+        "type": "sibling"
+      },
+      {
+        "from_id": "50",
+        "to_id": "51",
+        "type": "sibling"
+      },
+      {
+        "from_id": "50",
+        "to_id": "52",
+        "type": "sibling"
+      },
+      {
+        "from_id": "50",
+        "to_id": "53",
+        "type": "sibling"
+      },
+      {
+        "from_id": "31",
+        "to_id": "6",
+        "type": "spouse"
+      },
+      {
+        "from_id": "6",
+        "to_id": "31",
+        "type": "spouse"
+      },
+      {
+        "from_id": "31",
+        "to_id": "37",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "37",
+        "type": "parent"
+      },
+      {
+        "from_id": "31",
+        "to_id": "38",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "38",
+        "type": "parent"
+      },
+      {
+        "from_id": "31",
+        "to_id": "39",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "39",
+        "type": "parent"
+      },
+      {
+        "from_id": "31",
+        "to_id": "40",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "40",
+        "type": "parent"
+      },
+      {
+        "from_id": "31",
+        "to_id": "41",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "41",
+        "type": "parent"
+      },
+      {
+        "from_id": "31",
+        "to_id": "42",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "42",
+        "type": "parent"
+      },
+      {
+        "from_id": "31",
+        "to_id": "43",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "43",
+        "type": "parent"
+      },
+      {
+        "from_id": "31",
+        "to_id": "44",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "44",
+        "type": "parent"
+      },
+      {
+        "from_id": "31",
+        "to_id": "45",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "45",
+        "type": "parent"
+      },
+      {
+        "from_id": "31",
+        "to_id": "46",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "46",
+        "type": "parent"
+      },
+      {
+        "from_id": "31",
+        "to_id": "47",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "47",
+        "type": "parent"
+      },
+      {
+        "from_id": "34",
+        "to_id": "52",
+        "type": "parent"
+      },
+      {
+        "from_id": "11",
+        "to_id": "52",
+        "type": "parent"
+      },
+      {
+        "from_id": "52",
+        "to_id": "51",
+        "type": "sibling"
+      },
+      {
+        "from_id": "52",
+        "to_id": "53",
+        "type": "sibling"
+      },
+      {
+        "from_id": "52",
+        "to_id": "48",
+        "type": "sibling"
+      },
+      {
+        "from_id": "52",
+        "to_id": "49",
+        "type": "sibling"
+      },
+      {
+        "from_id": "52",
+        "to_id": "50",
+        "type": "sibling"
+      },
+      {
+        "from_id": "34",
+        "to_id": "53",
+        "type": "parent"
+      },
+      {
+        "from_id": "11",
+        "to_id": "53",
+        "type": "parent"
+      },
+      {
+        "from_id": "53",
+        "to_id": "51",
+        "type": "sibling"
+      },
+      {
+        "from_id": "53",
+        "to_id": "52",
+        "type": "sibling"
+      },
+      {
+        "from_id": "53",
+        "to_id": "48",
+        "type": "sibling"
+      },
+      {
+        "from_id": "53",
+        "to_id": "49",
+        "type": "sibling"
+      },
+      {
+        "from_id": "53",
+        "to_id": "50",
+        "type": "sibling"
+      },
+      {
+        "from_id": "32",
+        "to_id": "4",
+        "type": "spouse"
+      },
+      {
+        "from_id": "4",
+        "to_id": "32",
+        "type": "spouse"
+      },
+      {
+        "from_id": "34",
+        "to_id": "11",
+        "type": "spouse"
+      },
+      {
+        "from_id": "11",
+        "to_id": "34",
+        "type": "spouse"
+      },
+      {
+        "from_id": "30",
+        "to_id": "6",
+        "type": "spouse"
+      },
+      {
+        "from_id": "6",
+        "to_id": "30",
+        "type": "spouse"
+      },
+      {
+        "from_id": "30",
+        "to_id": "35",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "35",
+        "type": "parent"
+      },
+      {
+        "from_id": "30",
+        "to_id": "36",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "36",
+        "type": "parent"
+      },
+      {
+        "from_id": "23",
+        "to_id": "15",
+        "type": "spouse"
+      },
+      {
+        "from_id": "15",
+        "to_id": "23",
+        "type": "spouse"
+      },
+      {
+        "from_id": "23",
+        "to_id": "16",
+        "type": "parent"
+      },
+      {
+        "from_id": "15",
+        "to_id": "16",
+        "type": "parent"
+      },
+      {
+        "from_id": "2",
+        "to_id": "6",
+        "type": "parent"
+      },
+      {
+        "from_id": "22",
+        "to_id": "6",
+        "type": "parent"
+      },
+      {
+        "from_id": "6",
+        "to_id": "12",
+        "type": "sibling"
+      },
+      {
+        "from_id": "6",
+        "to_id": "4",
+        "type": "sibling"
+      },
+      {
+        "from_id": "6",
+        "to_id": "11",
+        "type": "sibling"
+      },
+      {
+        "from_id": "41",
+        "to_id": "37",
+        "type": "sibling"
+      },
+      {
+        "from_id": "41",
+        "to_id": "38",
+        "type": "sibling"
+      },
+      {
+        "from_id": "41",
+        "to_id": "39",
+        "type": "sibling"
+      },
+      {
+        "from_id": "41",
+        "to_id": "40",
+        "type": "sibling"
+      },
+      {
+        "from_id": "41",
+        "to_id": "42",
+        "type": "sibling"
+      },
+      {
+        "from_id": "41",
+        "to_id": "43",
+        "type": "sibling"
+      },
+      {
+        "from_id": "41",
+        "to_id": "44",
+        "type": "sibling"
+      },
+      {
+        "from_id": "41",
+        "to_id": "45",
+        "type": "sibling"
+      },
+      {
+        "from_id": "41",
+        "to_id": "46",
+        "type": "sibling"
+      },
+      {
+        "from_id": "41",
+        "to_id": "47",
+        "type": "sibling"
+      },
+      {
+        "from_id": "41",
+        "to_id": "35",
+        "type": "sibling"
+      },
+      {
+        "from_id": "41",
+        "to_id": "36",
+        "type": "sibling"
+      },
+      {
+        "from_id": "3",
+        "to_id": "2",
+        "type": "parent"
+      },
+      {
+        "from_id": "13",
+        "to_id": "2",
+        "type": "parent"
+      },
+      {
+        "from_id": "2",
+        "to_id": "9",
+        "type": "sibling"
+      },
+      {
+        "from_id": "2",
+        "to_id": "7",
+        "type": "sibling"
+      },
+      {
+        "from_id": "2",
+        "to_id": "22",
+        "type": "spouse"
+      },
+      {
+        "from_id": "22",
+        "to_id": "2",
+        "type": "spouse"
+      },
+      {
+        "from_id": "2",
+        "to_id": "4",
+        "type": "parent"
+      },
+      {
+        "from_id": "22",
+        "to_id": "4",
+        "type": "parent"
+      },
+      {
+        "from_id": "2",
+        "to_id": "11",
+        "type": "parent"
+      },
+      {
+        "from_id": "22",
+        "to_id": "11",
+        "type": "parent"
+      },
+      {
+        "from_id": "8",
+        "to_id": "20",
+        "type": "spouse"
+      },
+      {
+        "from_id": "20",
+        "to_id": "8",
+        "type": "spouse"
+      },
+      {
+        "from_id": "1",
+        "to_id": "24",
+        "type": "parent"
+      },
+      {
+        "from_id": "16",
+        "to_id": "24",
+        "type": "parent"
+      },
+      {
+        "from_id": "24",
+        "to_id": "25",
+        "type": "sibling"
+      },
+      {
+        "from_id": "24",
+        "to_id": "3",
+        "type": "sibling"
+      },
+      {
+        "from_id": "24",
+        "to_id": "26",
+        "type": "sibling"
+      },
+      {
+        "from_id": "4",
+        "to_id": "12",
+        "type": "sibling"
+      },
+      {
+        "from_id": "4",
+        "to_id": "6",
+        "type": "sibling"
+      },
+      {
+        "from_id": "4",
+        "to_id": "11",
+        "type": "sibling"
+      },
+      {
+        "from_id": "44",
+        "to_id": "37",
+        "type": "sibling"
+      },
+      {
+        "from_id": "44",
+        "to_id": "38",
+        "type": "sibling"
+      },
+      {
+        "from_id": "44",
+        "to_id": "39",
+        "type": "sibling"
+      },
+      {
+        "from_id": "44",
+        "to_id": "40",
+        "type": "sibling"
+      },
+      {
+        "from_id": "44",
+        "to_id": "41",
+        "type": "sibling"
+      },
+      {
+        "from_id": "44",
+        "to_id": "42",
+        "type": "sibling"
+      },
+      {
+        "from_id": "44",
+        "to_id": "43",
+        "type": "sibling"
+      },
+      {
+        "from_id": "44",
+        "to_id": "45",
+        "type": "sibling"
+      },
+      {
+        "from_id": "44",
+        "to_id": "46",
+        "type": "sibling"
+      },
+      {
+        "from_id": "44",
+        "to_id": "47",
+        "type": "sibling"
+      },
+      {
+        "from_id": "44",
+        "to_id": "35",
+        "type": "sibling"
+      },
+      {
+        "from_id": "44",
+        "to_id": "36",
+        "type": "sibling"
+      },
+      {
+        "from_id": "1",
+        "to_id": "16",
+        "type": "spouse"
+      },
+      {
+        "from_id": "16",
+        "to_id": "1",
+        "type": "spouse"
+      },
+      {
+        "from_id": "1",
+        "to_id": "25",
+        "type": "parent"
+      },
+      {
+        "from_id": "16",
+        "to_id": "25",
+        "type": "parent"
+      },
+      {
+        "from_id": "1",
+        "to_id": "3",
+        "type": "parent"
+      },
+      {
+        "from_id": "16",
+        "to_id": "3",
+        "type": "parent"
+      },
+      {
+        "from_id": "1",
+        "to_id": "26",
+        "type": "parent"
+      },
+      {
+        "from_id": "16",
+        "to_id": "26",
+        "type": "parent"
+      },
+      {
+        "from_id": "3",
+        "to_id": "7",
+        "type": "parent"
+      },
+      {
+        "from_id": "13",
+        "to_id": "7",
+        "type": "parent"
+      },
+      {
+        "from_id": "7",
+        "to_id": "9",
+        "type": "sibling"
+      },
+      {
+        "from_id": "7",
+        "to_id": "2",
+        "type": "sibling"
+      },
+      {
+        "from_id": "35",
+        "to_id": "37",
+        "type": "sibling"
+      },
+      {
+        "from_id": "35",
+        "to_id": "38",
+        "type": "sibling"
+      },
+      {
+        "from_id": "35",
+        "to_id": "39",
+        "type": "sibling"
+      },
+      {
+        "from_id": "35",
+        "to_id": "40",
+        "type": "sibling"
+      },
+      {
+        "from_id": "35",
+        "to_id": "41",
+        "type": "sibling"
+      },
+      {
+        "from_id": "35",
+        "to_id": "42",
+        "type": "sibling"
+      },
+      {
+        "from_id": "35",
+        "to_id": "43",
+        "type": "sibling"
+      },
+      {
+        "from_id": "35",
+        "to_id": "44",
+        "type": "sibling"
+      },
+      {
+        "from_id": "35",
+        "to_id": "45",
+        "type": "sibling"
+      },
+      {
+        "from_id": "35",
+        "to_id": "46",
+        "type": "sibling"
+      },
+      {
+        "from_id": "35",
+        "to_id": "47",
+        "type": "sibling"
+      },
+      {
+        "from_id": "35",
+        "to_id": "36",
+        "type": "sibling"
+      },
+      {
+        "from_id": "37",
+        "to_id": "38",
+        "type": "sibling"
+      },
+      {
+        "from_id": "37",
+        "to_id": "39",
+        "type": "sibling"
+      },
+      {
+        "from_id": "37",
+        "to_id": "40",
+        "type": "sibling"
+      },
+      {
+        "from_id": "37",
+        "to_id": "41",
+        "type": "sibling"
+      },
+      {
+        "from_id": "37",
+        "to_id": "42",
+        "type": "sibling"
+      },
+      {
+        "from_id": "37",
+        "to_id": "43",
+        "type": "sibling"
+      },
+      {
+        "from_id": "37",
+        "to_id": "44",
+        "type": "sibling"
+      },
+      {
+        "from_id": "37",
+        "to_id": "45",
+        "type": "sibling"
+      },
+      {
+        "from_id": "37",
+        "to_id": "46",
+        "type": "sibling"
+      },
+      {
+        "from_id": "37",
+        "to_id": "47",
+        "type": "sibling"
+      },
+      {
+        "from_id": "37",
+        "to_id": "35",
+        "type": "sibling"
+      },
+      {
+        "from_id": "37",
+        "to_id": "36",
+        "type": "sibling"
+      },
+      {
+        "from_id": "47",
+        "to_id": "37",
+        "type": "sibling"
+      },
+      {
+        "from_id": "47",
+        "to_id": "38",
+        "type": "sibling"
+      },
+      {
+        "from_id": "47",
+        "to_id": "39",
+        "type": "sibling"
+      },
+      {
+        "from_id": "47",
+        "to_id": "40",
+        "type": "sibling"
+      },
+      {
+        "from_id": "47",
+        "to_id": "41",
+        "type": "sibling"
+      },
+      {
+        "from_id": "47",
+        "to_id": "42",
+        "type": "sibling"
+      },
+      {
+        "from_id": "47",
+        "to_id": "43",
+        "type": "sibling"
+      },
+      {
+        "from_id": "47",
+        "to_id": "44",
+        "type": "sibling"
+      },
+      {
+        "from_id": "47",
+        "to_id": "45",
+        "type": "sibling"
+      },
+      {
+        "from_id": "47",
+        "to_id": "46",
+        "type": "sibling"
+      },
+      {
+        "from_id": "47",
+        "to_id": "35",
+        "type": "sibling"
+      },
+      {
+        "from_id": "47",
+        "to_id": "36",
+        "type": "sibling"
+      },
+      {
+        "from_id": "3",
+        "to_id": "25",
+        "type": "sibling"
+      },
+      {
+        "from_id": "3",
+        "to_id": "24",
+        "type": "sibling"
+      },
+      {
+        "from_id": "3",
+        "to_id": "26",
+        "type": "sibling"
+      },
+      {
+        "from_id": "3",
+        "to_id": "13",
+        "type": "spouse"
+      },
+      {
+        "from_id": "13",
+        "to_id": "3",
+        "type": "spouse"
+      },
+      {
+        "from_id": "3",
+        "to_id": "9",
+        "type": "parent"
+      },
+      {
+        "from_id": "13",
+        "to_id": "9",
+        "type": "parent"
+      },
+      {
+        "from_id": "43",
+        "to_id": "37",
+        "type": "sibling"
+      },
+      {
+        "from_id": "43",
+        "to_id": "38",
+        "type": "sibling"
+      },
+      {
+        "from_id": "43",
+        "to_id": "39",
+        "type": "sibling"
+      },
+      {
+        "from_id": "43",
+        "to_id": "40",
+        "type": "sibling"
+      },
+      {
+        "from_id": "43",
+        "to_id": "41",
+        "type": "sibling"
+      },
+      {
+        "from_id": "43",
+        "to_id": "42",
+        "type": "sibling"
+      },
+      {
+        "from_id": "43",
+        "to_id": "44",
+        "type": "sibling"
+      },
+      {
+        "from_id": "43",
+        "to_id": "45",
+        "type": "sibling"
+      },
+      {
+        "from_id": "43",
+        "to_id": "46",
+        "type": "sibling"
+      },
+      {
+        "from_id": "43",
+        "to_id": "47",
+        "type": "sibling"
+      },
+      {
+        "from_id": "43",
+        "to_id": "35",
+        "type": "sibling"
+      },
+      {
+        "from_id": "43",
+        "to_id": "36",
+        "type": "sibling"
+      },
+      {
+        "from_id": "25",
+        "to_id": "24",
+        "type": "sibling"
+      },
+      {
+        "from_id": "25",
+        "to_id": "3",
+        "type": "sibling"
+      },
+      {
+        "from_id": "25",
+        "to_id": "26",
+        "type": "sibling"
+      },
+      {
+        "from_id": "45",
+        "to_id": "37",
+        "type": "sibling"
+      },
+      {
+        "from_id": "45",
+        "to_id": "38",
+        "type": "sibling"
+      },
+      {
+        "from_id": "45",
+        "to_id": "39",
+        "type": "sibling"
+      },
+      {
+        "from_id": "45",
+        "to_id": "40",
+        "type": "sibling"
+      },
+      {
+        "from_id": "45",
+        "to_id": "41",
+        "type": "sibling"
+      },
+      {
+        "from_id": "45",
+        "to_id": "42",
+        "type": "sibling"
+      },
+      {
+        "from_id": "45",
+        "to_id": "43",
+        "type": "sibling"
+      },
+      {
+        "from_id": "45",
+        "to_id": "44",
+        "type": "sibling"
+      },
+      {
+        "from_id": "45",
+        "to_id": "46",
+        "type": "sibling"
+      },
+      {
+        "from_id": "45",
+        "to_id": "47",
+        "type": "sibling"
+      },
+      {
+        "from_id": "45",
+        "to_id": "35",
+        "type": "sibling"
+      },
+      {
+        "from_id": "45",
+        "to_id": "36",
+        "type": "sibling"
+      },
+      {
+        "from_id": "39",
+        "to_id": "37",
+        "type": "sibling"
+      },
+      {
+        "from_id": "39",
+        "to_id": "38",
+        "type": "sibling"
+      },
+      {
+        "from_id": "39",
+        "to_id": "40",
+        "type": "sibling"
+      },
+      {
+        "from_id": "39",
+        "to_id": "41",
+        "type": "sibling"
+      },
+      {
+        "from_id": "39",
+        "to_id": "42",
+        "type": "sibling"
+      },
+      {
+        "from_id": "39",
+        "to_id": "43",
+        "type": "sibling"
+      },
+      {
+        "from_id": "39",
+        "to_id": "44",
+        "type": "sibling"
+      },
+      {
+        "from_id": "39",
+        "to_id": "45",
+        "type": "sibling"
+      },
+      {
+        "from_id": "39",
+        "to_id": "46",
+        "type": "sibling"
+      },
+      {
+        "from_id": "39",
+        "to_id": "47",
+        "type": "sibling"
+      },
+      {
+        "from_id": "39",
+        "to_id": "35",
+        "type": "sibling"
+      },
+      {
+        "from_id": "39",
+        "to_id": "36",
+        "type": "sibling"
+      },
+      {
+        "from_id": "40",
+        "to_id": "37",
+        "type": "sibling"
+      },
+      {
+        "from_id": "40",
+        "to_id": "38",
+        "type": "sibling"
+      },
+      {
+        "from_id": "40",
+        "to_id": "39",
+        "type": "sibling"
+      },
+      {
+        "from_id": "40",
+        "to_id": "41",
+        "type": "sibling"
+      },
+      {
+        "from_id": "40",
+        "to_id": "42",
+        "type": "sibling"
+      },
+      {
+        "from_id": "40",
+        "to_id": "43",
+        "type": "sibling"
+      },
+      {
+        "from_id": "40",
+        "to_id": "44",
+        "type": "sibling"
+      },
+      {
+        "from_id": "40",
+        "to_id": "45",
+        "type": "sibling"
+      },
+      {
+        "from_id": "40",
+        "to_id": "46",
+        "type": "sibling"
+      },
+      {
+        "from_id": "40",
+        "to_id": "47",
+        "type": "sibling"
+      },
+      {
+        "from_id": "40",
+        "to_id": "35",
+        "type": "sibling"
+      },
+      {
+        "from_id": "40",
+        "to_id": "36",
+        "type": "sibling"
+      },
+      {
+        "from_id": "38",
+        "to_id": "37",
+        "type": "sibling"
+      },
+      {
+        "from_id": "38",
+        "to_id": "39",
+        "type": "sibling"
+      },
+      {
+        "from_id": "38",
+        "to_id": "40",
+        "type": "sibling"
+      },
+      {
+        "from_id": "38",
+        "to_id": "41",
+        "type": "sibling"
+      },
+      {
+        "from_id": "38",
+        "to_id": "42",
+        "type": "sibling"
+      },
+      {
+        "from_id": "38",
+        "to_id": "43",
+        "type": "sibling"
+      },
+      {
+        "from_id": "38",
+        "to_id": "44",
+        "type": "sibling"
+      },
+      {
+        "from_id": "38",
+        "to_id": "45",
+        "type": "sibling"
+      },
+      {
+        "from_id": "38",
+        "to_id": "46",
+        "type": "sibling"
+      },
+      {
+        "from_id": "38",
+        "to_id": "47",
+        "type": "sibling"
+      },
+      {
+        "from_id": "38",
+        "to_id": "35",
+        "type": "sibling"
+      },
+      {
+        "from_id": "38",
+        "to_id": "36",
+        "type": "sibling"
+      },
+      {
+        "from_id": "11",
+        "to_id": "12",
+        "type": "sibling"
+      },
+      {
+        "from_id": "11",
+        "to_id": "6",
+        "type": "sibling"
+      },
+      {
+        "from_id": "11",
+        "to_id": "4",
+        "type": "sibling"
+      },
+      {
+        "from_id": "11",
+        "to_id": "33",
+        "type": "other"
+      },
+      {
+        "from_id": "46",
+        "to_id": "37",
+        "type": "sibling"
+      },
+      {
+        "from_id": "46",
+        "to_id": "38",
+        "type": "sibling"
+      },
+      {
+        "from_id": "46",
+        "to_id": "39",
+        "type": "sibling"
+      },
+      {
+        "from_id": "46",
+        "to_id": "40",
+        "type": "sibling"
+      },
+      {
+        "from_id": "46",
+        "to_id": "41",
+        "type": "sibling"
+      },
+      {
+        "from_id": "46",
+        "to_id": "42",
+        "type": "sibling"
+      },
+      {
+        "from_id": "46",
+        "to_id": "43",
+        "type": "sibling"
+      },
+      {
+        "from_id": "46",
+        "to_id": "44",
+        "type": "sibling"
+      },
+      {
+        "from_id": "46",
+        "to_id": "45",
+        "type": "sibling"
+      },
+      {
+        "from_id": "46",
+        "to_id": "47",
+        "type": "sibling"
+      },
+      {
+        "from_id": "46",
+        "to_id": "35",
+        "type": "sibling"
+      },
+      {
+        "from_id": "46",
+        "to_id": "36",
+        "type": "sibling"
+      },
+      {
+        "from_id": "9",
+        "to_id": "2",
+        "type": "sibling"
+      },
+      {
+        "from_id": "9",
+        "to_id": "7",
+        "type": "sibling"
+      },
+      {
+        "from_id": "42",
+        "to_id": "37",
+        "type": "sibling"
+      },
+      {
+        "from_id": "42",
+        "to_id": "38",
+        "type": "sibling"
+      },
+      {
+        "from_id": "42",
+        "to_id": "39",
+        "type": "sibling"
+      },
+      {
+        "from_id": "42",
+        "to_id": "40",
+        "type": "sibling"
+      },
+      {
+        "from_id": "42",
+        "to_id": "41",
+        "type": "sibling"
+      },
+      {
+        "from_id": "42",
+        "to_id": "43",
+        "type": "sibling"
+      },
+      {
+        "from_id": "42",
+        "to_id": "44",
+        "type": "sibling"
+      },
+      {
+        "from_id": "42",
+        "to_id": "45",
+        "type": "sibling"
+      },
+      {
+        "from_id": "42",
+        "to_id": "46",
+        "type": "sibling"
+      },
+      {
+        "from_id": "42",
+        "to_id": "47",
+        "type": "sibling"
+      },
+      {
+        "from_id": "42",
+        "to_id": "35",
+        "type": "sibling"
+      },
+      {
+        "from_id": "42",
+        "to_id": "36",
+        "type": "sibling"
+      },
+      {
+        "from_id": "36",
+        "to_id": "37",
+        "type": "sibling"
+      },
+      {
+        "from_id": "36",
+        "to_id": "38",
+        "type": "sibling"
+      },
+      {
+        "from_id": "36",
+        "to_id": "39",
+        "type": "sibling"
+      },
+      {
+        "from_id": "36",
+        "to_id": "40",
+        "type": "sibling"
+      },
+      {
+        "from_id": "36",
+        "to_id": "41",
+        "type": "sibling"
+      },
+      {
+        "from_id": "36",
+        "to_id": "42",
+        "type": "sibling"
+      },
+      {
+        "from_id": "36",
+        "to_id": "43",
+        "type": "sibling"
+      },
+      {
+        "from_id": "36",
+        "to_id": "44",
+        "type": "sibling"
+      },
+      {
+        "from_id": "36",
+        "to_id": "45",
+        "type": "sibling"
+      },
+      {
+        "from_id": "36",
+        "to_id": "46",
+        "type": "sibling"
+      },
+      {
+        "from_id": "36",
+        "to_id": "47",
+        "type": "sibling"
+      },
+      {
+        "from_id": "36",
+        "to_id": "35",
+        "type": "sibling"
+      },
+      {
+        "from_id": "27",
+        "to_id": "26",
+        "type": "spouse"
+      },
+      {
+        "from_id": "26",
+        "to_id": "27",
+        "type": "spouse"
+      },
+      {
+        "from_id": "27",
+        "to_id": "54",
+        "type": "parent"
+      },
+      {
+        "from_id": "26",
+        "to_id": "54",
+        "type": "parent"
+      },
+      {
+        "from_id": "26",
+        "to_id": "25",
+        "type": "sibling"
+      },
+      {
+        "from_id": "26",
+        "to_id": "24",
+        "type": "sibling"
+      },
+      {
+        "from_id": "26",
+        "to_id": "3",
+        "type": "sibling"
+      }
+    ]
+  },
+  "persons": [
+    {
+      "id": "18",
+      "full_name": "Ганнибал Абрам (Ибрагим) Петрович",
+      "sex": true,
+      "surname": "Ганнибал",
+      "first_name": "Абрам (Ибрагим)",
+      "middle_name": "Петрович",
+      "birth_date": "Около 1696",
+      "death_date": "25.05.1781",
+      "lifespan": "Около 85",
+      "photo": "test.xml.files\\Gannibal_Abram_Petrovich.jpg",
+      "is_favorite": false,
+      "family_name": "Ганнибал"
+    },
+    {
+      "id": "28",
+      "full_name": "Ганнибал Иван Абрамович",
+      "sex": true,
+      "surname": "Ганнибал",
+      "first_name": "Иван",
+      "middle_name": "Абрамович",
+      "birth_date": "16.06.1735",
+      "death_date": "24.10.1801",
+      "lifespan": "66",
+      "photo": "test.xml.files\\Gannibal_Ivan_Abramovich.jpg",
+      "is_favorite": false,
+      "family_name": "Ганнибал"
+    },
+    {
+      "id": "14",
+      "full_name": "Ганнибал Осип Абрамович",
+      "sex": true,
+      "surname": "Ганнибал",
+      "first_name": "Осип",
+      "middle_name": "Абрамович",
+      "birth_date": "31.01.1744",
+      "death_date": "24.10.1806",
+      "lifespan": "62",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Ганнибал"
+    },
+    {
+      "id": "10",
+      "full_name": "Ганнибал (Пушкина) Мария Алексеевна",
+      "sex": false,
+      "surname": "Ганнибал",
+      "first_name": "Мария",
+      "middle_name": "Алексеевна",
+      "birth_date": "31.01.1745",
+      "death_date": "09.07.1818",
+      "lifespan": "73",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "29",
+      "full_name": "Гартунг Леонид Николаевич",
+      "sex": true,
+      "surname": "Гартунг",
+      "first_name": "Леонид",
+      "middle_name": "Николаевич",
+      "birth_date": "1834",
+      "death_date": "1877",
+      "lifespan": "Около 43",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "12",
+      "full_name": "Гартунг (Пушкина) Мария Александровна",
+      "sex": false,
+      "surname": "Гартунг",
+      "first_name": "Мария",
+      "middle_name": "Александровна",
+      "birth_date": "31.05.1832",
+      "death_date": "07.03.1919",
+      "lifespan": "86",
+      "photo": "test.xml.files\\maria.jpg",
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "19",
+      "full_name": "Головина Евдокия Ивановна",
+      "sex": false,
+      "surname": "Головина",
+      "first_name": "Евдокия",
+      "middle_name": "Ивановна",
+      "birth_date": "Предположительно 1703",
+      "death_date": "1725",
+      "lifespan": "Около 22",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "51",
+      "full_name": "Де Торби (Меренберг) София Николаевна",
+      "sex": false,
+      "surname": "Де Торби",
+      "first_name": "София",
+      "middle_name": "Николаевна",
+      "birth_date": "01.06.1868",
+      "death_date": "14.09.1927",
+      "lifespan": "59",
+      "photo": "test.xml.files\\Countess_Sophie_of_Merenberg.jpg",
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "49",
+      "full_name": "Дубельт Леонтий Михайлович",
+      "sex": true,
+      "surname": "Дубельт",
+      "first_name": "Леонтий",
+      "middle_name": "Михайлович",
+      "birth_date": "1855",
+      "death_date": "1894",
+      "lifespan": "Около 39",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "33",
+      "full_name": "Дубельт Михаил Леонтьевич",
+      "sex": true,
+      "surname": "Дубельт",
+      "first_name": "Михаил",
+      "middle_name": "Леонтьевич",
+      "birth_date": "21.02.1822",
+      "death_date": "19.04.1900",
+      "lifespan": "78",
+      "photo": "test.xml.files\\M._L._Dubelt_by_Gagarin.jpg",
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "48",
+      "full_name": "Дубельт-Бессель (Дубельт) Наталья Михайловна",
+      "sex": false,
+      "surname": "Дубельт-Бессель",
+      "first_name": "Наталья",
+      "middle_name": "Михайловна",
+      "birth_date": "1854",
+      "death_date": "1925",
+      "lifespan": "Около 71",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "50",
+      "full_name": "Дубельт-Кондырева (Дубельт) Анна Михайловна",
+      "sex": false,
+      "surname": "Дубельт-Кондырева",
+      "first_name": "Анна",
+      "middle_name": "Михайловна",
+      "birth_date": "1861",
+      "death_date": "1919",
+      "lifespan": "Около 58",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "31",
+      "full_name": "Ланская Софья Александровна",
+      "sex": false,
+      "surname": "Ланская",
+      "first_name": "Софья",
+      "middle_name": "Александровна",
+      "birth_date": "1838",
+      "death_date": "1875",
+      "lifespan": "Около 37",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "52",
+      "full_name": "(Меренберг) Александра Николаевна",
+      "sex": false,
+      "surname": null,
+      "first_name": "Александра",
+      "middle_name": "Николаевна",
+      "birth_date": "1869",
+      "death_date": "1950",
+      "lifespan": "Около 81",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "53",
+      "full_name": "Меренберг Георгий Николаевич",
+      "sex": true,
+      "surname": "Меренберг",
+      "first_name": "Георгий",
+      "middle_name": "Николаевич",
+      "birth_date": "25.02.1871",
+      "death_date": "31.05.1948",
+      "lifespan": "77",
+      "photo": "test.xml.files\\Merenberg_Georg-Nikolay.jpg",
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "32",
+      "full_name": "Мошкова (Мельникова) Варвара Алексеевна",
+      "sex": false,
+      "surname": "Мошкова",
+      "first_name": "Варвара",
+      "middle_name": "Алексеевна",
+      "birth_date": null,
+      "death_date": "1935",
+      "lifespan": null,
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "34",
+      "full_name": "Нассауский Николай-Вильгельм",
+      "sex": true,
+      "surname": "Нассауский",
+      "first_name": "Николай-Вильгельм",
+      "middle_name": null,
+      "birth_date": "02.10.1832",
+      "death_date": "30.09.1905",
+      "lifespan": "72",
+      "photo": "test.xml.files\\NassauNicolaus.jpg",
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "30",
+      "full_name": "Павлова Мария Александровна",
+      "sex": false,
+      "surname": "Павлова",
+      "first_name": "Мария",
+      "middle_name": "Александровна",
+      "birth_date": "1852",
+      "death_date": "1919",
+      "lifespan": "Около 67",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "23",
+      "full_name": "Приклонская Лукерья Васильевна",
+      "sex": false,
+      "surname": "Приклонская",
+      "first_name": "Лукерья",
+      "middle_name": "Васильевна",
+      "birth_date": "06.03.1705",
+      "death_date": "11.03.1765",
+      "lifespan": "60",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "6",
+      "full_name": "Пушкин Александр Александрович",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Александр",
+      "middle_name": "Александрович",
+      "birth_date": "18.07.1833",
+      "death_date": "01.08.1914",
+      "lifespan": "81",
+      "photo": "test.xml.files\\alexander.jpg",
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "41",
+      "full_name": "Пушкин Александр Александрович",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Александр",
+      "middle_name": "Александрович",
+      "birth_date": "1863",
+      "death_date": "1916",
+      "lifespan": "Около 53",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "5",
+      "full_name": "Пушкин Александр Петрович",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Александр",
+      "middle_name": "Петрович",
+      "birth_date": "После 1686",
+      "death_date": "1725",
+      "lifespan": "Около 39",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "2",
+      "full_name": "Пушкин Александр Сергеевич",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Александр",
+      "middle_name": "Сергеевич",
+      "birth_date": "06.06.1799",
+      "death_date": "10.02.1837",
+      "lifespan": "37",
+      "photo": "test.xml.files\\self.jpg",
+      "is_favorite": true,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "8",
+      "full_name": "Пушкин Алексей Фёдорович",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Алексей",
+      "middle_name": "Фёдорович",
+      "birth_date": "1717",
+      "death_date": "1777",
+      "lifespan": "Около 60",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "24",
+      "full_name": "Пушкин Василий Львович",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Василий",
+      "middle_name": "Львович",
+      "birth_date": "08.05.1766",
+      "death_date": "01.09.1830",
+      "lifespan": "64",
+      "photo": "test.xml.files\\Pushkin_Vasiliy_Lvovich.jpg",
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "4",
+      "full_name": "Пушкин Григорий Александрович",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Григорий",
+      "middle_name": "Александрович",
+      "birth_date": "26.05.1835",
+      "death_date": "18.08.1905",
+      "lifespan": "70",
+      "photo": "test.xml.files\\grigorii.jpg",
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "44",
+      "full_name": "Пушкин Григорий Александрович",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Григорий",
+      "middle_name": "Александрович",
+      "birth_date": "27.09.1868",
+      "death_date": "01.09.1940",
+      "lifespan": "71",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "1",
+      "full_name": "Пушкин Лев Александрович",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Лев",
+      "middle_name": "Александрович",
+      "birth_date": "28.02.1723",
+      "death_date": "25.10.1790",
+      "lifespan": "67",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "7",
+      "full_name": "Пушкин Лев Сергеевич",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Лев",
+      "middle_name": "Сергеевич",
+      "birth_date": "21.04.1805",
+      "death_date": "31.07.1852",
+      "lifespan": "47",
+      "photo": "test.xml.files\\lev.jpg",
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "35",
+      "full_name": "Пушкин Николай Александрович",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Николай",
+      "middle_name": "Александрович",
+      "birth_date": "1885",
+      "death_date": "1964",
+      "lifespan": "Около 79",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "37",
+      "full_name": "Пушкин Пётр Александрович",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Пётр",
+      "middle_name": "Александрович",
+      "birth_date": null,
+      "death_date": "1870",
+      "lifespan": null,
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "47",
+      "full_name": "Пушкин Сергей Александрович",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Сергей",
+      "middle_name": "Александрович",
+      "birth_date": "1874",
+      "death_date": "1898",
+      "lifespan": "Около 24",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "3",
+      "full_name": "Пушкин Сергей Львович",
+      "sex": true,
+      "surname": "Пушкин",
+      "first_name": "Сергей",
+      "middle_name": "Львович",
+      "birth_date": "03.06.1770",
+      "death_date": "10.07.1848",
+      "lifespan": "78",
+      "photo": "test.xml.files\\father.jpg",
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "43",
+      "full_name": "Пушкина Анна Александровна",
+      "sex": false,
+      "surname": "Пушкина",
+      "first_name": "Анна",
+      "middle_name": "Александровна",
+      "birth_date": "1866",
+      "death_date": "1949",
+      "lifespan": "Около 83",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "25",
+      "full_name": "Пушкина Анна Львовна",
+      "sex": false,
+      "surname": "Пушкина",
+      "first_name": "Анна",
+      "middle_name": "Львовна",
+      "birth_date": "Около 1765",
+      "death_date": "Около 1824",
+      "lifespan": "Около 59",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "13",
+      "full_name": "Пушкина (Ганнибал) Надежда Осиповна ",
+      "sex": false,
+      "surname": "Пушкина",
+      "first_name": "Надежда",
+      "middle_name": "Осиповна ",
+      "birth_date": "02.07.1775",
+      "death_date": "29.03.1836",
+      "lifespan": "60",
+      "photo": "test.xml.files\\mother.jpg",
+      "is_favorite": false,
+      "family_name": "Ганнибал"
+    },
+    {
+      "id": "22",
+      "full_name": "Пушкина (Гончарова) Наталья Николаевна",
+      "sex": false,
+      "surname": "Пушкина",
+      "first_name": "Наталья",
+      "middle_name": "Николаевна",
+      "birth_date": "08.09.1812",
+      "death_date": "08.12.1863",
+      "lifespan": "51",
+      "photo": "test.xml.files\\wife.jpg",
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "45",
+      "full_name": "Пушкина Надежда Александровна",
+      "sex": false,
+      "surname": "Пушкина",
+      "first_name": "Надежда",
+      "middle_name": "Александровна",
+      "birth_date": "1871",
+      "death_date": "1915",
+      "lifespan": "Около 44",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "20",
+      "full_name": "Пушкина (Ржевская) Сарра",
+      "sex": false,
+      "surname": "Пушкина",
+      "first_name": "Сарра",
+      "middle_name": null,
+      "birth_date": "1721",
+      "death_date": "После 1790",
+      "lifespan": "Около 69",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "39",
+      "full_name": "Пушкина София Александровна",
+      "sex": false,
+      "surname": "Пушкина",
+      "first_name": "София",
+      "middle_name": "Александровна",
+      "birth_date": "1860",
+      "death_date": "1861",
+      "lifespan": "Около 1",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "40",
+      "full_name": "Пушкина-Быкова (Пушкина) Мария Александровна",
+      "sex": false,
+      "surname": "Пушкина-Быкова",
+      "first_name": "Мария",
+      "middle_name": "Александровна",
+      "birth_date": "1862",
+      "death_date": "1939",
+      "lifespan": "Около 77",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "38",
+      "full_name": "Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна",
+      "sex": false,
+      "surname": "Пушкина-Воронцова-Вельяминова",
+      "first_name": "Наталия",
+      "middle_name": "Александровна",
+      "birth_date": "17.08.1859",
+      "death_date": "18.12.1912",
+      "lifespan": "53",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "11",
+      "full_name": "Пушкина-Дубельт (Пушкина) Наталья Александровна",
+      "sex": false,
+      "surname": "Пушкина-Дубельт",
+      "first_name": "Наталья",
+      "middle_name": "Александровна",
+      "birth_date": "04.06.1836",
+      "death_date": "23.03.1913",
+      "lifespan": "76",
+      "photo": "test.xml.files\\natalia.jpg",
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "46",
+      "full_name": "Пушкина-Мезенцова (Пушкина) Вера Александровна",
+      "sex": false,
+      "surname": "Пушкина-Мезенцова",
+      "first_name": "Вера",
+      "middle_name": "Александровна",
+      "birth_date": "1872",
+      "death_date": "1909",
+      "lifespan": "Около 37",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "9",
+      "full_name": "Пушкина-Павлищева (Пушкина) Ольга Сергеевна",
+      "sex": false,
+      "surname": "Пушкина-Павлищева",
+      "first_name": "Ольга",
+      "middle_name": "Сергеевна",
+      "birth_date": "31.12.1797",
+      "death_date": "14.05.1868",
+      "lifespan": "70",
+      "photo": "test.xml.files\\sister.jpg",
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "42",
+      "full_name": "Пушкина-Павлова (Пушкина) Ольга Александровна",
+      "sex": false,
+      "surname": "Пушкина-Павлова",
+      "first_name": "Ольга",
+      "middle_name": "Александровна",
+      "birth_date": "1864",
+      "death_date": "После 1908",
+      "lifespan": "Около 44",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "36",
+      "full_name": "Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна",
+      "sex": false,
+      "surname": "Пушкина-Фон дер Розенмайер",
+      "first_name": "Елена",
+      "middle_name": "Александровна",
+      "birth_date": "1890",
+      "death_date": "1943",
+      "lifespan": "Около 53",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "27",
+      "full_name": "Сонцев Матвей Михаилович",
+      "sex": true,
+      "surname": "Сонцев",
+      "first_name": "Матвей",
+      "middle_name": "Михаилович",
+      "birth_date": "22.06.1779",
+      "death_date": "22.11.1847",
+      "lifespan": "68",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "54",
+      "full_name": "Сонцева Екатерина Матвеевна",
+      "sex": false,
+      "surname": "Сонцева",
+      "first_name": "Екатерина",
+      "middle_name": "Матвеевна",
+      "birth_date": null,
+      "death_date": "16.01.1864",
+      "lifespan": null,
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "26",
+      "full_name": "Сонцева (Пушкина) Елизавета Львовна",
+      "sex": false,
+      "surname": "Сонцева",
+      "first_name": "Елизавета",
+      "middle_name": "Львовна",
+      "birth_date": "24.08.1776",
+      "death_date": "09.10.1848",
+      "lifespan": "72",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": "Пушкины"
+    },
+    {
+      "id": "15",
+      "full_name": "Чичерин Василий Иванович",
+      "sex": true,
+      "surname": "Чичерин",
+      "first_name": "Василий",
+      "middle_name": "Иванович",
+      "birth_date": "28.03.1700",
+      "death_date": "Между 1743 и 1748",
+      "lifespan": "Около 44",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "16",
+      "full_name": "Чичерина Ольга Васильевна",
+      "sex": false,
+      "surname": "Чичерина",
+      "first_name": "Ольга",
+      "middle_name": "Васильевна",
+      "birth_date": "16.06.1737",
+      "death_date": "03.02.1802",
+      "lifespan": "64",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    },
+    {
+      "id": "17",
+      "full_name": "Шеберг Христина Матвеевна",
+      "sex": false,
+      "surname": "Шеберг",
+      "first_name": "Христина",
+      "middle_name": "Матвеевна",
+      "birth_date": "Около 1717",
+      "death_date": "1781",
+      "lifespan": "Около 64",
+      "photo": null,
+      "is_favorite": false,
+      "family_name": null
+    }
+  ],
+  "events": [
+    {
+      "id": "9",
+      "type": "Рождение",
+      "person": {
+        "id": "5",
+        "full_name": "Пушкин Александр Петрович"
+      },
+      "date": "После 1686",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "29",
+      "type": "Рождение",
+      "person": {
+        "id": "18",
+        "full_name": "Ганнибал Абрам (Ибрагим) Петрович"
+      },
+      "date": "Около 1696",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "31",
+      "type": "Рождение",
+      "person": {
+        "id": "15",
+        "full_name": "Чичерин Василий Иванович"
+      },
+      "date": "28.03.1700",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "35",
+      "type": "Рождение",
+      "person": {
+        "id": "19",
+        "full_name": "Головина Евдокия Ивановна"
+      },
+      "date": "Предположительно 1703",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "41",
+      "type": "Рождение",
+      "person": {
+        "id": "23",
+        "full_name": "Приклонская Лукерья Васильевна"
+      },
+      "date": "06.03.1705",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "15",
+      "type": "Рождение",
+      "person": {
+        "id": "8",
+        "full_name": "Пушкин Алексей Фёдорович"
+      },
+      "date": "1717",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "37",
+      "type": "Рождение",
+      "person": {
+        "id": "17",
+        "full_name": "Шеберг Христина Матвеевна"
+      },
+      "date": "Около 1717",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "39",
+      "type": "Рождение",
+      "person": {
+        "id": "20",
+        "full_name": "Пушкина (Ржевская) Сарра"
+      },
+      "date": "1721",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "1",
+      "type": "Рождение",
+      "person": {
+        "id": "1",
+        "full_name": "Пушкин Лев Александрович"
+      },
+      "date": "28.02.1723",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "10",
+      "type": "Смерть",
+      "person": {
+        "id": "5",
+        "full_name": "Пушкин Александр Петрович"
+      },
+      "date": "1725",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "36",
+      "type": "Смерть",
+      "person": {
+        "id": "19",
+        "full_name": "Головина Евдокия Ивановна"
+      },
+      "date": "1725",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "65",
+      "type": "Рождение",
+      "person": {
+        "id": "17",
+        "full_name": "Шеберг Христина Матвеевна"
+      },
+      "date": "16.06.1735",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "53",
+      "type": "Свадьба",
+      "person": {
+        "id": "17",
+        "full_name": "Шеберг Христина Матвеевна"
+      },
+      "date": "1736",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "33",
+      "type": "Рождение",
+      "person": {
+        "id": "16",
+        "full_name": "Чичерина Ольга Васильевна"
+      },
+      "date": "16.06.1737",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "54",
+      "type": "Свадьба",
+      "person": {
+        "id": "20",
+        "full_name": "Пушкина (Ржевская) Сарра"
+      },
+      "date": "1742",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "32",
+      "type": "Смерть",
+      "person": {
+        "id": "15",
+        "full_name": "Чичерин Василий Иванович"
+      },
+      "date": "Между 1743 и 1748",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "27",
+      "type": "Рождение",
+      "person": {
+        "id": "17",
+        "full_name": "Шеберг Христина Матвеевна"
+      },
+      "date": "31.01.1744",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "19",
+      "type": "Рождение",
+      "person": {
+        "id": "20",
+        "full_name": "Пушкина (Ржевская) Сарра"
+      },
+      "date": "31.01.1745",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "42",
+      "type": "Смерть",
+      "person": {
+        "id": "23",
+        "full_name": "Приклонская Лукерья Васильевна"
+      },
+      "date": "11.03.1765",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "59",
+      "type": "Рождение",
+      "person": {
+        "id": "16",
+        "full_name": "Чичерина Ольга Васильевна"
+      },
+      "date": "Около 1765",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "57",
+      "type": "Рождение",
+      "person": {
+        "id": "16",
+        "full_name": "Чичерина Ольга Васильевна"
+      },
+      "date": "08.05.1766",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "5",
+      "type": "Рождение",
+      "person": {
+        "id": "16",
+        "full_name": "Чичерина Ольга Васильевна"
+      },
+      "date": "03.06.1770",
+      "description": null,
+      "place": {
+        "id": "4",
+        "full_name": "Санкт-Петербург",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "25",
+      "type": "Рождение",
+      "person": {
+        "id": "13",
+        "full_name": "Пушкина (Ганнибал) Надежда Осиповна "
+      },
+      "date": "02.07.1775",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "61",
+      "type": "Рождение",
+      "person": {
+        "id": "16",
+        "full_name": "Чичерина Ольга Васильевна"
+      },
+      "date": "24.08.1776",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "16",
+      "type": "Смерть",
+      "person": {
+        "id": "8",
+        "full_name": "Пушкин Алексей Фёдорович"
+      },
+      "date": "1777",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "123",
+      "type": "Рождение",
+      "person": {
+        "id": "27",
+        "full_name": "Сонцев Матвей Михаилович"
+      },
+      "date": "22.06.1779",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "30",
+      "type": "Смерть",
+      "person": {
+        "id": "18",
+        "full_name": "Ганнибал Абрам (Ибрагим) Петрович"
+      },
+      "date": "25.05.1781",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "38",
+      "type": "Смерть",
+      "person": {
+        "id": "17",
+        "full_name": "Шеберг Христина Матвеевна"
+      },
+      "date": "1781",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "2",
+      "type": "Смерть",
+      "person": {
+        "id": "1",
+        "full_name": "Пушкин Лев Александрович"
+      },
+      "date": "25.10.1790",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "40",
+      "type": "Смерть",
+      "person": {
+        "id": "20",
+        "full_name": "Пушкина (Ржевская) Сарра"
+      },
+      "date": "После 1790",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "48",
+      "type": "Свадьба",
+      "person": {
+        "id": "13",
+        "full_name": "Пушкина (Ганнибал) Надежда Осиповна "
+      },
+      "date": "1796",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "21",
+      "type": "Рождение",
+      "person": {
+        "id": "9",
+        "full_name": "Пушкина-Павлищева (Пушкина) Ольга Сергеевна"
+      },
+      "date": "31.12.1797",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "137",
+      "type": "Проживание",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "С 1799 по 1811",
+      "description": null,
+      "place": {
+        "id": "2",
+        "full_name": "Москва",
+        "latitude": 55.755864,
+        "longitude": 37.617698
+      }
+    },
+    {
+      "id": "3",
+      "type": "Рождение",
+      "person": {
+        "id": "13",
+        "full_name": "Пушкина (Ганнибал) Надежда Осиповна "
+      },
+      "date": "06.06.1799",
+      "description": null,
+      "place": {
+        "id": "2",
+        "full_name": "Москва",
+        "latitude": 55.755864,
+        "longitude": 37.617698
+      }
+    },
+    {
+      "id": "66",
+      "type": "Смерть",
+      "person": {
+        "id": "28",
+        "full_name": "Ганнибал Иван Абрамович"
+      },
+      "date": "24.10.1801",
+      "description": "от горячки",
+      "place": {
+        "id": "4",
+        "full_name": "Санкт-Петербург",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "34",
+      "type": "Смерть",
+      "person": {
+        "id": "16",
+        "full_name": "Чичерина Ольга Васильевна"
+      },
+      "date": "03.02.1802",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "126",
+      "type": "Поездка",
+      "person": {
+        "id": "13",
+        "full_name": "Пушкина (Ганнибал) Надежда Осиповна "
+      },
+      "date": "01.07.1804",
+      "description": null,
+      "place": {
+        "id": "18",
+        "full_name": "Имение Захарово",
+        "latitude": 55.646115,
+        "longitude": 36.969832
+      }
+    },
+    {
+      "id": "13",
+      "type": "Рождение",
+      "person": {
+        "id": "13",
+        "full_name": "Пушкина (Ганнибал) Надежда Осиповна "
+      },
+      "date": "21.04.1805",
+      "description": null,
+      "place": {
+        "id": "2",
+        "full_name": "Москва",
+        "latitude": 55.755864,
+        "longitude": 37.617698
+      }
+    },
+    {
+      "id": "28",
+      "type": "Смерть",
+      "person": {
+        "id": "14",
+        "full_name": "Ганнибал Осип Абрамович"
+      },
+      "date": "24.10.1806",
+      "description": "Погребен в Святогорском монастыре",
+      "place": null
+    },
+    {
+      "id": "55",
+      "type": "Обучение",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "С 1811 по 1817",
+      "description": null,
+      "place": {
+        "id": "19",
+        "full_name": "Царское село",
+        "latitude": 55.772249,
+        "longitude": 37.672365
+      }
+    },
+    {
+      "id": "45",
+      "type": "Рождение",
+      "person": {
+        "id": "22",
+        "full_name": "Пушкина (Гончарова) Наталья Николаевна"
+      },
+      "date": "08.09.1812",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "56",
+      "type": "Проживание",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "С 1817",
+      "description": null,
+      "place": {
+        "id": "4",
+        "full_name": "Санкт-Петербург",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "127",
+      "type": "Поездка",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "С 1818 по 1836",
+      "description": null,
+      "place": {
+        "id": "14",
+        "full_name": "Михайловское",
+        "latitude": 57.064419,
+        "longitude": 28.919556
+      }
+    },
+    {
+      "id": "20",
+      "type": "Смерть",
+      "person": {
+        "id": "10",
+        "full_name": "Ганнибал (Пушкина) Мария Алексеевна"
+      },
+      "date": "09.07.1818",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "129",
+      "type": "Поездка",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "1820",
+      "description": null,
+      "place": {
+        "id": "21",
+        "full_name": "Крым  (Феодосия, Гурзув, Бахчисарай)",
+        "latitude": 45.04367,
+        "longitude": 35.376832
+      }
+    },
+    {
+      "id": "131",
+      "type": "Ссылка",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "С 1820 по 1823",
+      "description": null,
+      "place": {
+        "id": "20",
+        "full_name": "Кишинёв",
+        "latitude": 47.024513,
+        "longitude": 28.832293
+      }
+    },
+    {
+      "id": "80",
+      "type": "Рождение",
+      "person": {
+        "id": "33",
+        "full_name": "Дубельт Михаил Леонтьевич"
+      },
+      "date": "21.02.1822",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "130",
+      "type": "Проживание",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "С 1823 по 1824",
+      "description": null,
+      "place": {
+        "id": "15",
+        "full_name": "Одесса",
+        "latitude": 46.475907,
+        "longitude": 30.739628
+      }
+    },
+    {
+      "id": "60",
+      "type": "Смерть",
+      "person": {
+        "id": "25",
+        "full_name": "Пушкина Анна Львовна"
+      },
+      "date": "Около 1824",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "138",
+      "type": "Проживание",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "С 1826 по 1831",
+      "description": null,
+      "place": {
+        "id": "2",
+        "full_name": "Москва",
+        "latitude": 55.755864,
+        "longitude": 37.617698
+      }
+    },
+    {
+      "id": "132",
+      "type": "Поездка",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "1829",
+      "description": null,
+      "place": {
+        "id": "22",
+        "full_name": "Тифлис",
+        "latitude": 41.693459,
+        "longitude": 44.801449
+      }
+    },
+    {
+      "id": "133",
+      "type": "Поездка",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "1829",
+      "description": null,
+      "place": {
+        "id": "24",
+        "full_name": "Эрзурум",
+        "latitude": 39.906319,
+        "longitude": 41.27277
+      }
+    },
+    {
+      "id": "134",
+      "type": "Поездка",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "1830",
+      "description": null,
+      "place": {
+        "id": "26",
+        "full_name": "Болдино",
+        "latitude": 55.000713,
+        "longitude": 45.310505
+      }
+    },
+    {
+      "id": "58",
+      "type": "Смерть",
+      "person": {
+        "id": "24",
+        "full_name": "Пушкин Василий Львович"
+      },
+      "date": "01.09.1830",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "47",
+      "type": "Свадьба",
+      "person": {
+        "id": "22",
+        "full_name": "Пушкина (Гончарова) Наталья Николаевна"
+      },
+      "date": "02.03.1831",
+      "description": null,
+      "place": {
+        "id": "4",
+        "full_name": "Санкт-Петербург",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "17",
+      "type": "Рождение",
+      "person": {
+        "id": "22",
+        "full_name": "Пушкина (Гончарова) Наталья Николаевна"
+      },
+      "date": "31.05.1832",
+      "description": null,
+      "place": {
+        "id": "4",
+        "full_name": "Санкт-Петербург",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "84",
+      "type": "Рождение",
+      "person": {
+        "id": "34",
+        "full_name": "Нассауский Николай-Вильгельм"
+      },
+      "date": "02.10.1832",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "11",
+      "type": "Рождение",
+      "person": {
+        "id": "22",
+        "full_name": "Пушкина (Гончарова) Наталья Николаевна"
+      },
+      "date": "18.07.1833",
+      "description": null,
+      "place": {
+        "id": "4",
+        "full_name": "Санкт-Петербург",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "135",
+      "type": "Поездка",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "1833",
+      "description": "Вторая поездка в Болдино",
+      "place": {
+        "id": "26",
+        "full_name": "Болдино",
+        "latitude": 55.000713,
+        "longitude": 45.310505
+      }
+    },
+    {
+      "id": "136",
+      "type": "Поездка",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "01.10.1834",
+      "description": "Третья поезда в Болдино",
+      "place": {
+        "id": "26",
+        "full_name": "Болдино",
+        "latitude": 55.000713,
+        "longitude": 45.310505
+      }
+    },
+    {
+      "id": "69",
+      "type": "Рождение",
+      "person": {
+        "id": "29",
+        "full_name": "Гартунг Леонид Николаевич"
+      },
+      "date": "1834",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "7",
+      "type": "Рождение",
+      "person": {
+        "id": "22",
+        "full_name": "Пушкина (Гончарова) Наталья Николаевна"
+      },
+      "date": "26.05.1835",
+      "description": null,
+      "place": {
+        "id": "4",
+        "full_name": "Санкт-Петербург",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "23",
+      "type": "Рождение",
+      "person": {
+        "id": "11",
+        "full_name": "Пушкина-Дубельт (Пушкина) Наталья Александровна"
+      },
+      "date": "04.06.1836",
+      "description": null,
+      "place": {
+        "id": "4",
+        "full_name": "Санкт-Петербург",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "26",
+      "type": "Смерть",
+      "person": {
+        "id": "13",
+        "full_name": "Пушкина (Ганнибал) Надежда Осиповна "
+      },
+      "date": "29.03.1836",
+      "description": null,
+      "place": {
+        "id": "4",
+        "full_name": "Санкт-Петербург",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "4",
+      "type": "Смерть",
+      "person": {
+        "id": "2",
+        "full_name": "Пушкин Александр Сергеевич"
+      },
+      "date": "10.02.1837",
+      "description": "Погребен на кладбище Святогорского монастыря (Псковскaя губерния) Рана, полученная 27 января на дуэли с Ж. Дантесом",
+      "place": {
+        "id": "4",
+        "full_name": "Санкт-Петербург",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "75",
+      "type": "Рождение",
+      "person": {
+        "id": "31",
+        "full_name": "Ланская Софья Александровна"
+      },
+      "date": "1838",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "64",
+      "type": "Смерть",
+      "person": {
+        "id": "27",
+        "full_name": "Сонцев Матвей Михаилович"
+      },
+      "date": "22.11.1847",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "6",
+      "type": "Смерть",
+      "person": {
+        "id": "3",
+        "full_name": "Пушкин Сергей Львович"
+      },
+      "date": "10.07.1848",
+      "description": null,
+      "place": {
+        "id": "2",
+        "full_name": "Москва",
+        "latitude": 55.755864,
+        "longitude": 37.617698
+      }
+    },
+    {
+      "id": "62",
+      "type": "Смерть",
+      "person": {
+        "id": "26",
+        "full_name": "Сонцева (Пушкина) Елизавета Львовна"
+      },
+      "date": "09.10.1848",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "14",
+      "type": "Смерть",
+      "person": {
+        "id": "7",
+        "full_name": "Пушкин Лев Сергеевич"
+      },
+      "date": "31.07.1852",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "72",
+      "type": "Рождение",
+      "person": {
+        "id": "30",
+        "full_name": "Павлова Мария Александровна"
+      },
+      "date": "1852",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "111",
+      "type": "Рождение",
+      "person": {
+        "id": "11",
+        "full_name": "Пушкина-Дубельт (Пушкина) Наталья Александровна"
+      },
+      "date": "1854",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "113",
+      "type": "Рождение",
+      "person": {
+        "id": "11",
+        "full_name": "Пушкина-Дубельт (Пушкина) Наталья Александровна"
+      },
+      "date": "1855",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "91",
+      "type": "Рождение",
+      "person": {
+        "id": "38",
+        "full_name": "Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна"
+      },
+      "date": "17.08.1859",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "93",
+      "type": "Рождение",
+      "person": {
+        "id": "39",
+        "full_name": "Пушкина София Александровна"
+      },
+      "date": "1860",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "115",
+      "type": "Рождение",
+      "person": {
+        "id": "11",
+        "full_name": "Пушкина-Дубельт (Пушкина) Наталья Александровна"
+      },
+      "date": "1861",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "94",
+      "type": "Смерть",
+      "person": {
+        "id": "39",
+        "full_name": "Пушкина София Александровна"
+      },
+      "date": "1861",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "95",
+      "type": "Рождение",
+      "person": {
+        "id": "40",
+        "full_name": "Пушкина-Быкова (Пушкина) Мария Александровна"
+      },
+      "date": "1862",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "46",
+      "type": "Смерть",
+      "person": {
+        "id": "22",
+        "full_name": "Пушкина (Гончарова) Наталья Николаевна"
+      },
+      "date": "08.12.1863",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "97",
+      "type": "Рождение",
+      "person": {
+        "id": "41",
+        "full_name": "Пушкин Александр Александрович"
+      },
+      "date": "1863",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "125",
+      "type": "Смерть",
+      "person": {
+        "id": "54",
+        "full_name": "Сонцева Екатерина Матвеевна"
+      },
+      "date": "16.01.1864",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "99",
+      "type": "Рождение",
+      "person": {
+        "id": "42",
+        "full_name": "Пушкина-Павлова (Пушкина) Ольга Александровна"
+      },
+      "date": "1864",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "101",
+      "type": "Рождение",
+      "person": {
+        "id": "43",
+        "full_name": "Пушкина Анна Александровна"
+      },
+      "date": "1866",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "103",
+      "type": "Рождение",
+      "person": {
+        "id": "44",
+        "full_name": "Пушкин Григорий Александрович"
+      },
+      "date": "27.09.1868",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "117",
+      "type": "Рождение",
+      "person": {
+        "id": "11",
+        "full_name": "Пушкина-Дубельт (Пушкина) Наталья Александровна"
+      },
+      "date": "01.06.1868",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "22",
+      "type": "Смерть",
+      "person": {
+        "id": "9",
+        "full_name": "Пушкина-Павлищева (Пушкина) Ольга Сергеевна"
+      },
+      "date": "14.05.1868",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "119",
+      "type": "Рождение",
+      "person": {
+        "id": "11",
+        "full_name": "Пушкина-Дубельт (Пушкина) Наталья Александровна"
+      },
+      "date": "1869",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "90",
+      "type": "Смерть",
+      "person": {
+        "id": "37",
+        "full_name": "Пушкин Пётр Александрович"
+      },
+      "date": "1870",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "105",
+      "type": "Рождение",
+      "person": {
+        "id": "45",
+        "full_name": "Пушкина Надежда Александровна"
+      },
+      "date": "1871",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "121",
+      "type": "Рождение",
+      "person": {
+        "id": "11",
+        "full_name": "Пушкина-Дубельт (Пушкина) Наталья Александровна"
+      },
+      "date": "25.02.1871",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "107",
+      "type": "Рождение",
+      "person": {
+        "id": "46",
+        "full_name": "Пушкина-Мезенцова (Пушкина) Вера Александровна"
+      },
+      "date": "1872",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "109",
+      "type": "Рождение",
+      "person": {
+        "id": "47",
+        "full_name": "Пушкин Сергей Александрович"
+      },
+      "date": "1874",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "74",
+      "type": "Смерть",
+      "person": {
+        "id": "31",
+        "full_name": "Ланская Софья Александровна"
+      },
+      "date": "1875",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "68",
+      "type": "Смерть",
+      "person": {
+        "id": "29",
+        "full_name": "Гартунг Леонид Николаевич"
+      },
+      "date": "1877",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "85",
+      "type": "Рождение",
+      "person": {
+        "id": "35",
+        "full_name": "Пушкин Николай Александрович"
+      },
+      "date": "1885",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "87",
+      "type": "Рождение",
+      "person": {
+        "id": "36",
+        "full_name": "Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна"
+      },
+      "date": "1890",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "114",
+      "type": "Смерть",
+      "person": {
+        "id": "49",
+        "full_name": "Дубельт Леонтий Михайлович"
+      },
+      "date": "1894",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "110",
+      "type": "Смерть",
+      "person": {
+        "id": "47",
+        "full_name": "Пушкин Сергей Александрович"
+      },
+      "date": "1898",
+      "description": "Застрелился",
+      "place": null
+    },
+    {
+      "id": "79",
+      "type": "Смерть",
+      "person": {
+        "id": "33",
+        "full_name": "Дубельт Михаил Леонтьевич"
+      },
+      "date": "19.04.1900",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "8",
+      "type": "Смерть",
+      "person": {
+        "id": "4",
+        "full_name": "Пушкин Григорий Александрович"
+      },
+      "date": "18.08.1905",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "83",
+      "type": "Смерть",
+      "person": {
+        "id": "34",
+        "full_name": "Нассауский Николай-Вильгельм"
+      },
+      "date": "30.09.1905",
+      "description": null,
+      "place": {
+        "id": "12",
+        "full_name": "Висбаден",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "100",
+      "type": "Смерть",
+      "person": {
+        "id": "42",
+        "full_name": "Пушкина-Павлова (Пушкина) Ольга Александровна"
+      },
+      "date": "После 1908",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "108",
+      "type": "Смерть",
+      "person": {
+        "id": "46",
+        "full_name": "Пушкина-Мезенцова (Пушкина) Вера Александровна"
+      },
+      "date": "1909",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "92",
+      "type": "Смерть",
+      "person": {
+        "id": "38",
+        "full_name": "Пушкина-Воронцова-Вельяминова (Пушкина) Наталия Александровна"
+      },
+      "date": "18.12.1912",
+      "description": "Воспаление лёгких",
+      "place": null
+    },
+    {
+      "id": "24",
+      "type": "Смерть",
+      "person": {
+        "id": "11",
+        "full_name": "Пушкина-Дубельт (Пушкина) Наталья Александровна"
+      },
+      "date": "23.03.1913",
+      "description": "Похоронена в Висбадене (Германия)",
+      "place": null
+    },
+    {
+      "id": "12",
+      "type": "Смерть",
+      "person": {
+        "id": "6",
+        "full_name": "Пушкин Александр Александрович"
+      },
+      "date": "01.08.1914",
+      "description": "Похоронен в Лопасне",
+      "place": null
+    },
+    {
+      "id": "106",
+      "type": "Смерть",
+      "person": {
+        "id": "45",
+        "full_name": "Пушкина Надежда Александровна"
+      },
+      "date": "1915",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "98",
+      "type": "Смерть",
+      "person": {
+        "id": "41",
+        "full_name": "Пушкин Александр Александрович"
+      },
+      "date": "1916",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "116",
+      "type": "Смерть",
+      "person": {
+        "id": "50",
+        "full_name": "Дубельт-Кондырева (Дубельт) Анна Михайловна"
+      },
+      "date": "1919",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "18",
+      "type": "Смерть",
+      "person": {
+        "id": "12",
+        "full_name": "Гартунг (Пушкина) Мария Александровна"
+      },
+      "date": "07.03.1919",
+      "description": "Похоронена в Донском монастыре",
+      "place": {
+        "id": "6",
+        "full_name": "Москва",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "71",
+      "type": "Смерть",
+      "person": {
+        "id": "30",
+        "full_name": "Павлова Мария Александровна"
+      },
+      "date": "1919",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "112",
+      "type": "Смерть",
+      "person": {
+        "id": "48",
+        "full_name": "Дубельт-Бессель (Дубельт) Наталья Михайловна"
+      },
+      "date": "1925",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "118",
+      "type": "Смерть",
+      "person": {
+        "id": "51",
+        "full_name": "Де Торби (Меренберг) София Николаевна"
+      },
+      "date": "14.09.1927",
+      "description": null,
+      "place": {
+        "id": "10",
+        "full_name": "Лондон",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "77",
+      "type": "Смерть",
+      "person": {
+        "id": "32",
+        "full_name": "Мошкова (Мельникова) Варвара Алексеевна"
+      },
+      "date": "1935",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "96",
+      "type": "Смерть",
+      "person": {
+        "id": "40",
+        "full_name": "Пушкина-Быкова (Пушкина) Мария Александровна"
+      },
+      "date": "1939",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "104",
+      "type": "Смерть",
+      "person": {
+        "id": "44",
+        "full_name": "Пушкин Григорий Александрович"
+      },
+      "date": "01.09.1940",
+      "description": null,
+      "place": {
+        "id": "8",
+        "full_name": "Москва",
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    {
+      "id": "88",
+      "type": "Смерть",
+      "person": {
+        "id": "36",
+        "full_name": "Пушкина-Фон дер Розенмайер (Пушкина) Елена Александровна"
+      },
+      "date": "1943",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "122",
+      "type": "Смерть",
+      "person": {
+        "id": "53",
+        "full_name": "Меренберг Георгий Николаевич"
+      },
+      "date": "31.05.1948",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "102",
+      "type": "Смерть",
+      "person": {
+        "id": "43",
+        "full_name": "Пушкина Анна Александровна"
+      },
+      "date": "1949",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "120",
+      "type": "Смерть",
+      "person": {
+        "id": "52",
+        "full_name": "(Меренберг) Александра Николаевна"
+      },
+      "date": "1950",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "86",
+      "type": "Смерть",
+      "person": {
+        "id": "35",
+        "full_name": "Пушкин Николай Александрович"
+      },
+      "date": "1964",
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "124",
+      "type": "Рождение",
+      "person": {
+        "id": "26",
+        "full_name": "Сонцева (Пушкина) Елизавета Львовна"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "49",
+      "type": "Свадьба",
+      "person": {
+        "id": "16",
+        "full_name": "Чичерина Ольга Васильевна"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "50",
+      "type": "Свадьба",
+      "person": {
+        "id": "5",
+        "full_name": "Пушкин Александр Петрович"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "51",
+      "type": "Свадьба",
+      "person": {
+        "id": "15",
+        "full_name": "Чичерин Василий Иванович"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "52",
+      "type": "Свадьба",
+      "person": {
+        "id": "10",
+        "full_name": "Ганнибал (Пушкина) Мария Алексеевна"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "63",
+      "type": "Свадьба",
+      "person": {
+        "id": "26",
+        "full_name": "Сонцева (Пушкина) Елизавета Львовна"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "67",
+      "type": "Свадьба",
+      "person": {
+        "id": "12",
+        "full_name": "Гартунг (Пушкина) Мария Александровна"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "70",
+      "type": "Свадьба",
+      "person": {
+        "id": "6",
+        "full_name": "Пушкин Александр Александрович"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "73",
+      "type": "Свадьба",
+      "person": {
+        "id": "6",
+        "full_name": "Пушкин Александр Александрович"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "76",
+      "type": "Свадьба",
+      "person": {
+        "id": "4",
+        "full_name": "Пушкин Григорий Александрович"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "78",
+      "type": "Свадьба",
+      "person": {
+        "id": "11",
+        "full_name": "Пушкина-Дубельт (Пушкина) Наталья Александровна"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "81",
+      "type": "Развод",
+      "person": {
+        "id": "11",
+        "full_name": "Пушкина-Дубельт (Пушкина) Наталья Александровна"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "82",
+      "type": "Свадьба",
+      "person": {
+        "id": "11",
+        "full_name": "Пушкина-Дубельт (Пушкина) Наталья Александровна"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    },
+    {
+      "id": "89",
+      "type": "Рождение",
+      "person": {
+        "id": "37",
+        "full_name": "Пушкин Пётр Александрович"
+      },
+      "date": null,
+      "description": null,
+      "place": null
+    }
+  ]
+}

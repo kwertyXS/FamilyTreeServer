@@ -5,13 +5,14 @@ from pathlib import Path
 from zipfile import BadZipFile, ZipFile
 
 from fastapi import UploadFile, HTTPException
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.core.config import OUTPUT_PHOTOS
 from src.utils.xml_parser import XMLParser
 from src.utils.gedcom_parser import GedcomParser
 
 
-async def load_xml_service(file: UploadFile):
+async def load_xml_service(session: AsyncSession, file: UploadFile):
     if file.content_type not in ("application/xml", "text/xml", ""):
         raise HTTPException(400, f"Ожидается XML, получен: {file.content_type}")
 
@@ -20,12 +21,12 @@ async def load_xml_service(file: UploadFile):
         raise HTTPException(400, "Пустой файл")
 
     try:
-        await XMLParser().parse_and_save(raw)
+        await XMLParser().parse_and_save(session, raw)
     except Exception as e:
         raise HTTPException(422, f"Ошибка парсинга XML: {e}")
 
 
-async def load_gedcom_service(file: UploadFile):
+async def load_gedcom_service(session: AsyncSession, file: UploadFile):
     raw = await file.read()
     if not raw:
         raise HTTPException(400, "Пустой файл")
@@ -36,7 +37,7 @@ async def load_gedcom_service(file: UploadFile):
         raise HTTPException(422, "Файл должен быть в кодировке UTF-8")
 
     try:
-        msg = await GedcomParser().parse_and_save(text)
+        msg = await GedcomParser().parse_and_save(session, text)
         return msg
     except Exception as e:
         raise HTTPException(422, f"Ошибка парсинга GEDCOM: {e}")

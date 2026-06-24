@@ -1,0 +1,1072 @@
+0 HEAD
+1 SOUR AgelongTree
+2 NAME Древо Жизни
+2 VERS 6.1.9
+2 CORP Genery.com
+1 CHAR UTF-8
+1 DATE 8 JUN 2026
+1 _DBGUID 589eca02-25a7-49b6-ad0c-16a307b21c72
+1 GEDC
+2 VERS 5.5.1
+2 FORM Lineage-Linked
+1 SUBM @U0@
+0 @U0@ SUBM
+1 NAME Древо Жизни, https://genery.com/ru/
+0 @I18@ INDI
+1 _UID Dc0XMgFs4wYitoa8i/Ef4XJhE+cM
+1 NAME Абрам (Ибрагим) Петрович /Ганнибал/
+2 GIVN Абрам (Ибрагим) Петрович
+2 _MARNM Ганнибал
+1 SEX M
+1 OCCU Военный инженер
+1 BIRT
+2 DATE ABT 1696
+1 DEAT
+2 DATE 25 MAY 1781
+1 FAMS @F14@
+1 OBJE
+2 FILE test.ged.files\Gannibal_Abram_Petrovich.jpg
+3 FORM jpg
+2 TITL Gannibal_Abram_Petrovich
+2 _PRIM Y
+2 _DATE 17 MAR 2025
+2 NOTE Дата: 17.03.2025
+1 NOTE "Арап Петра Великого", африканец.
+2 CONT http://ru.wikipedia.org/wiki/Ганнибал,_Абрам_Петрович
+0 @I28@ INDI
+1 _UID Dc3+NAHA9L0AFMlEHlv6zO484zVX
+1 NAME Иван Абрамович /Ганнибал/
+2 GIVN Иван Абрамович
+2 _MARNM Ганнибал
+1 SEX M
+1 OCCU Военнослужащий
+1 BIRT
+2 DATE 16 JUN 1735
+1 FAMC @F14@
+1 DEAT
+2 DATE 24 OCT 1801
+2 PLAC Санкт-Петербург, Российская империя
+2 CAUS от горячки
+1 RESI
+2 PLAC Санкт-Петербург, Российская империя
+1 OBJE
+2 FILE test.ged.files\Gannibal_Ivan_Abramovich.jpg
+3 FORM jpg
+2 TITL Gannibal_Ivan_Abramovich
+2 _PRIM Y
+2 _DATE 17 MAR 2025
+2 NOTE Дата: 17.03.2025
+1 NOTE https://ru.wikipedia.org/wiki/Ганнибал,_Иван_Абрамович
+0 @I14@ INDI
+1 _UID Dc0XMgGMYPaYDjjMCVlf+4rDcwmH
+1 NAME Осип Абрамович /Ганнибал/
+2 GIVN Осип Абрамович
+2 _MARNM Ганнибал
+1 SEX M
+1 OCCU Капитан 2-го ранга морск. артилл.
+1 BIRT
+2 DATE 31 JAN 1744
+1 FAMC @F14@
+1 DEAT
+2 DATE 24 OCT 1806
+2 NOTE Погребен в Святогорском монастыре
+1 RESI
+2 PLAC Михайловское, Псковская губерния, Российская империя
+3 MAP
+4 LATI N57.064419
+4 LONG E28.919556
+1 FAMS @F9@
+1 NOTE Владел с. Михайловским
+2 CONT https://ru.wikipedia.org/wiki/Ганнибал,_Осип_Абрамович
+0 @I10@ INDI
+1 _UID Dc0XMgGoxnjGMBpnK4UrAa3d4Uby
+1 NAME Мария Алексеевна /Пушкина/
+2 GIVN Мария Алексеевна
+2 SURN Пушкина
+2 _MARNM Ганнибал
+1 SEX F
+1 BIRT
+2 DATE 31 JAN 1745
+1 FAMC @F8@
+1 DEAT
+2 DATE 9 JUL 1818
+1 FAMS @F9@
+0 @I29@ INDI
+1 _UID Dc3+NAHub4JliQ9d300YlI99UNAZ
+1 NAME Леонид Николаевич /Гартунг/
+2 GIVN Леонид Николаевич
+2 _MARNM Гартунг
+1 SEX M
+1 BIRT
+2 DATE 1834
+1 DEAT
+2 DATE 1877
+1 FAMS @F12@
+0 @I12@ INDI
+1 _UID Dc0XMgEQKc/Jodqxf8353NbPMAOz
+1 NAME Мария Александровна /Пушкина/
+2 GIVN Мария Александровна
+2 SURN Пушкина
+2 _MARNM Гартунг
+1 SEX F
+1 BIRT
+2 DATE 31 MAY 1832
+2 PLAC Санкт-Петербург, Российская империя
+1 FAMC @F2@
+1 DEAT
+2 DATE 7 MAR 1919
+2 PLAC Москва, РСФСР
+2 NOTE Похоронена в Донском монастыре
+1 RESI
+2 PLAC Москва, Московская губерния, Российская империя
+3 MAP
+4 LATI N55.755864
+4 LONG E37.617698
+1 FAMS @F12@
+1 OBJE
+2 FILE test.ged.files\maria.jpg
+3 FORM jpg
+2 TITL Портрет Марии Александровны Пушкиной
+2 _PRIM Y
+1 NOTE https://ru.wikipedia.org/wiki/Гартунг,_Мария_Александровна
+0 @I19@ INDI
+1 _UID Dc0XMgELAaG09HpTf9KyhmtAzdnk
+1 NAME Евдокия Ивановна /Головина/
+2 GIVN Евдокия Ивановна
+2 _MARNM Головина
+1 SEX F
+1 BIRT
+2 DATE EST 1703
+1 DEAT
+2 DATE 1725
+1 FAMS @F5@
+0 @I51@ INDI
+1 _UID Dc3+NAHT5l2aSZdY9Qqjph/w4INU
+1 NAME София Николаевна /Меренберг/
+2 GIVN София Николаевна
+2 SURN Меренберг
+2 _MARNM Де Торби
+1 SEX F
+1 BIRT
+2 DATE 1 JUN 1868
+1 FAMC @F11@
+1 DEAT
+2 DATE 14 SEP 1927
+2 PLAC Лондон, Англия
+1 RESI
+2 PLAC Лондон, Англия
+1 OBJE
+2 FILE test.ged.files\Countess_Sophie_of_Merenberg.jpg
+3 FORM jpg
+2 TITL Countess_Sophie_of_Merenberg
+2 _PRIM Y
+2 _DATE 17 MAR 2025
+2 NOTE Дата: 17.03.2025
+1 NOTE http://ru.wikipedia.org/wiki/Меренберг,_Софья_Николаевна
+0 @I49@ INDI
+1 _UID Dc3+NAHSLIyFsIBddLZRCzsThDfb
+1 NAME Леонтий Михайлович /Дубельт/
+2 GIVN Леонтий Михайлович
+2 _MARNM Дубельт
+1 SEX M
+1 BIRT
+2 DATE 1855
+1 FAMC @F10@
+1 DEAT
+2 DATE 1894
+0 @I33@ INDI
+1 _UID Dc3+NAGgMdEBqJNoBoDQ+cLn+Hxg
+1 NAME Михаил Леонтьевич /Дубельт/
+2 GIVN Михаил Леонтьевич
+2 _MARNM Дубельт
+1 SEX M
+1 OCCU военнослужащий
+1 BIRT
+2 DATE 21 FEB 1822
+1 DEAT
+2 DATE 19 APR 1900
+1 RESI
+2 PLAC Санкт-Петербург, Российская империя
+1 FAMS @F10@
+1 OBJE
+2 FILE test.ged.files\M._L._Dubelt_by_Gagarin.jpg
+3 FORM jpg
+2 TITL M._L._Dubelt_by_Gagarin
+2 _PRIM Y
+2 _DATE 18 MAR 2025
+2 NOTE Дата: 18.03.2025
+1 NOTE https://ru.wikipedia.org/wiki/Дубельт,_Михаил_Леонтьевич
+0 @I48@ INDI
+1 _UID Dc3+NAHS/HGHT4w4G0Krq4zufRpI
+1 NAME Наталья Михайловна /Дубельт/
+2 GIVN Наталья Михайловна
+2 SURN Дубельт
+2 _MARNM Дубельт-Бессель
+1 SEX F
+1 BIRT
+2 DATE 1854
+1 FAMC @F10@
+1 DEAT
+2 DATE 1925
+0 @I50@ INDI
+1 _UID Dc3+NAFDVH2RgISNqTMeUX2xQLe3
+1 NAME Анна Михайловна /Дубельт/
+2 GIVN Анна Михайловна
+2 SURN Дубельт
+2 _MARNM Дубельт-Кондырева
+1 SEX F
+1 BIRT
+2 DATE 1861
+1 FAMC @F10@
+1 DEAT
+2 DATE 1919
+0 @I31@ INDI
+1 _UID Dc3+NAEJoXxUuMaqDOnpxK2/BB9b
+1 NAME Софья Александровна /Ланская/
+2 GIVN Софья Александровна
+2 _MARNM Ланская
+1 SEX F
+1 BIRT
+2 DATE 1838
+1 DEAT
+2 DATE 1875
+1 FAMS @F6@
+0 @I52@ INDI
+1 _UID Dc3+NAFVrp6Hv+pR8sSGnx1xxZ2G
+1 NAME Александра Николаевна /Меренберг/
+2 GIVN Александра Николаевна
+2 SURN Меренберг
+1 SEX F
+1 BIRT
+2 DATE 1869
+1 FAMC @F11@
+1 DEAT
+2 DATE 1950
+0 @I53@ INDI
+1 _UID Dc3+NAHmEawtSQanOPWUwOnnua5j
+1 NAME Георгий Николаевич /Меренберг/
+2 GIVN Георгий Николаевич
+2 _MARNM Меренберг
+1 SEX M
+1 BIRT
+2 DATE 25 FEB 1871
+1 FAMC @F11@
+1 DEAT
+2 DATE 31 MAY 1948
+1 RESI
+2 PLAC Висбаден, Германия
+1 OBJE
+2 FILE test.ged.files\Merenberg_Georg-Nikolay.jpg
+3 FORM jpg
+2 TITL Merenberg_Georg-Nikolay
+2 _PRIM Y
+2 _DATE 17 MAR 2025
+2 NOTE Дата: 17.03.2025
+1 NOTE http://ru.wikipedia.org/wiki/Меренберг,_Георг-Николай
+0 @I32@ INDI
+1 _UID Dc3+NAG2ClBablae50osseTUZL2R
+1 NAME Варвара Алексеевна /Мельникова/
+2 GIVN Варвара Алексеевна
+2 SURN Мельникова
+2 _MARNM Мошкова
+1 SEX F
+1 DEAT
+2 DATE 1935
+1 FAMS @F4@
+0 @I34@ INDI
+1 _UID Dc3+NAETqI+wk15II2JYP/sMPrNj
+1 NAME Николай-Вильгельм /Нассауский/
+2 GIVN Николай-Вильгельм
+2 _MARNM Нассауский
+1 SEX M
+1 BIRT
+2 DATE 2 OCT 1832
+1 DEAT
+2 DATE 30 SEP 1905
+2 PLAC Висбаден, Германия
+1 RESI
+2 PLAC Висбаден, Германия
+1 FAMS @F11@
+1 OBJE
+2 FILE test.ged.files\NassauNicolaus.jpg
+3 FORM jpg
+2 TITL NassauNicolaus
+2 _PRIM Y
+2 _DATE 17 MAR 2025
+2 NOTE Дата: 17.03.2025
+1 NOTE http://en.wikipedia.org/wiki/Prince_Nikolaus_Wilhelm_of_Nassau
+0 @I30@ INDI
+1 _UID Dc3+NAFPm/tAgApTstDln2HH9oia
+1 NAME Мария Александровна /Павлова/
+2 GIVN Мария Александровна
+2 _MARNM Павлова
+1 SEX F
+1 BIRT
+2 DATE 1852
+1 DEAT
+2 DATE 1919
+1 FAMS @F7@
+0 @I23@ INDI
+1 _UID Dc0XMgFMsLFI8S6W0G7QlaUZElxo
+1 NAME Лукерья Васильевна /Приклонская/
+2 GIVN Лукерья Васильевна
+2 SURN Приклонская
+2 _MARNM Приклонская
+1 SEX F
+1 BIRT
+2 DATE 6 MAR 1705
+1 DEAT
+2 DATE 11 MAR 1765
+1 FAMS @F13@
+0 @I6@ INDI
+1 _UID Dc0XMgHdoSsM2jKkaQzCz5DowkMy
+1 NAME Александр Александрович /Пушкин/
+2 GIVN Александр Александрович
+2 _MARNM Пушкин
+1 SEX M
+1 OCCU Военный
+1 BIRT
+2 DATE 18 JUL 1833
+2 PLAC Санкт-Петербург, Российская империя
+1 FAMC @F2@
+1 DEAT
+2 DATE 1 AUG 1914
+2 NOTE Похоронен в Лопасне
+1 RESI
+2 PLAC Москва, Московская губерния, Российская империя
+3 MAP
+4 LATI N55.755864
+4 LONG E37.617698
+1 FAMS @F6@
+1 FAMS @F7@
+1 OBJE
+2 FILE test.ged.files\alexander.jpg
+3 FORM jpg
+2 TITL Портрет Александра Александровича Пушкина
+2 _PRIM Y
+1 NOTE http://ru.wikipedia.org/wiki/Пушкин,_Александр_Александрович
+0 @I41@ INDI
+1 _UID Dc3+NAHc5kpXtmrVNOrwnC9RDMcT
+1 NAME Александр Александрович /Пушкин/
+2 GIVN Александр Александрович
+2 _MARNM Пушкин
+1 SEX M
+1 BIRT
+2 DATE 1863
+1 FAMC @F6@
+1 DEAT
+2 DATE 1916
+0 @I5@ INDI
+1 _UID Dc0XMgHwQpYWKz+VDxIJMC24QSft
+1 NAME Александр Петрович /Пушкин/
+2 GIVN Александр Петрович
+2 _MARNM Пушкин
+1 SEX M
+1 OCCU Богатый помещик
+1 BIRT
+2 DATE AFT 1686
+1 DEAT
+2 DATE 1725
+1 FAMS @F5@
+0 @I2@ INDI
+1 _UID Dc0XMgH1sKxDoQDwWeGb2OpZO96o
+1 NAME Александр Сергеевич /Пушкин/
+2 GIVN Александр Сергеевич
+2 _MARNM Пушкин
+1 SEX M
+1 OCCU Великий поэт
+1 BIRT
+2 DATE 6 JUN 1799
+2 PLAC Москва, Московская губерния, Российская империя
+3 MAP
+4 LATI N55.755864
+4 LONG E37.617698
+1 FAMC @F3@
+1 RESI
+2 DATE FROM 1799 TO 1811
+2 PLAC Москва, Московская губерния, Российская империя
+3 MAP
+4 LATI N55.755864
+4 LONG E37.617698
+1 EVEN
+2 TYPE Поездка
+2 DATE 1 JUL 1804
+2 PLAC Имение Захарово, деревня Захарово, Московская губерния, Российская империя
+3 MAP
+4 LATI N55.646115
+4 LONG E36.969832
+1 EDUC
+2 DATE FROM 1811 TO 1817
+2 PLAC Царское село, Российская империя
+3 MAP
+4 LATI N55.772249
+4 LONG E37.672365
+2 NOTE Образовательное учреждение: Императорский Царскосельский лицей
+1 RESI
+2 DATE FROM 1817
+2 PLAC Санкт-Петербург, Российская империя
+1 EVEN
+2 TYPE Поездка
+2 DATE FROM 1818 TO 1836
+2 PLAC Михайловское, Псковская губерния, Российская империя
+3 MAP
+4 LATI N57.064419
+4 LONG E28.919556
+1 EVEN
+2 TYPE Поездка
+2 DATE 1820
+2 PLAC Крым  (Феодосия, Гурзув, Бахчисарай), Российская империя
+3 MAP
+4 LATI N45.043670
+4 LONG E35.376832
+1 EVEN
+2 TYPE Ссылка
+2 DATE FROM 1820 TO 1823
+2 PLAC Кишинёв, Бесарабия, Российская империя
+3 MAP
+4 LATI N47.024513
+4 LONG E28.832293
+1 RESI
+2 DATE FROM 1823 TO 1824
+2 PLAC Одесса, Российская империя
+3 MAP
+4 LATI N46.475907
+4 LONG E30.739628
+1 RESI
+2 DATE FROM 1826 TO 1831
+2 PLAC Москва, Московская губерния, Российская империя
+3 MAP
+4 LATI N55.755864
+4 LONG E37.617698
+1 EVEN
+2 TYPE Поездка
+2 DATE 1829
+2 PLAC Тифлис, Российская империя
+3 MAP
+4 LATI N41.693459
+4 LONG E44.801449
+1 EVEN
+2 TYPE Поездка
+2 DATE 1829
+2 PLAC Эрзурум, Турция
+3 MAP
+4 LATI N39.906319
+4 LONG E41.272770
+1 EVEN
+2 TYPE Поездка
+2 DATE 1830
+2 PLAC Болдино, Нижегородская губерния, Российская империя
+3 MAP
+4 LATI N55.000713
+4 LONG E45.310505
+1 EVEN
+2 TYPE Поездка
+2 DATE 1833
+2 PLAC Болдино, Нижегородская губерния, Российская империя
+3 MAP
+4 LATI N55.000713
+4 LONG E45.310505
+2 NOTE Вторая поездка в Болдино
+1 EVEN
+2 TYPE Поездка
+2 DATE 1 OCT 1834
+2 PLAC Болдино, Нижегородская губерния, Российская империя
+3 MAP
+4 LATI N55.000713
+4 LONG E45.310505
+2 NOTE Третья поезда в Болдино
+1 DEAT
+2 DATE 10 FEB 1837
+2 PLAC Санкт-Петербург, Российская империя
+2 CAUS Рана, полученная 27 января на дуэли с Ж. Дантесом
+2 NOTE Погребен на кладбище Святогорского монастыря (Псковскaя губерния)
+1 RESI
+2 PLAC Санкт-Петербург, Российская империя
+1 FAMS @F2@
+1 OBJE
+2 FILE test.ged.files\self.jpg
+3 FORM jpg
+2 TITL Портрет Пушкина
+2 _PRIM Y
+1 NOTE Родоначальник новой русской литературы, основоположник русского литера
+2 CONC турного языка. https://ru.wikipedia.org/wiki/Пушкин,_Александр_Сергеев
+2 CONC ич
+0 @I8@ INDI
+1 _UID Dc0XMgHc/+kAxuvyFqB1ELibASnM
+1 NAME Алексей Фёдорович /Пушкин/
+2 GIVN Алексей Фёдорович
+2 _MARNM Пушкин
+1 SEX M
+1 OCCU Помещик
+1 BIRT
+2 DATE 1717
+1 DEAT
+2 DATE 1777
+1 FAMS @F8@
+1 NOTE Помещик Переяславского, Ярославского, Воронежского и Лебедянского уезд
+2 CONC ов.
+0 @I24@ INDI
+1 _UID Dc3+NAGW96yAsZAUO6tzSNEEFHi/
+1 NAME Василий Львович /Пушкин/
+2 GIVN Василий Львович
+2 _MARNM Пушкин
+1 SEX M
+1 BIRT
+2 DATE 8 MAY 1766
+1 FAMC @F1@
+1 DEAT
+2 DATE 1 SEP 1830
+1 RESI
+2 PLAC Москва, Московская губерния, Российская империя
+3 MAP
+4 LATI N55.755864
+4 LONG E37.617698
+1 OBJE
+2 FILE test.ged.files\Pushkin_Vasiliy_Lvovich.jpg
+3 FORM jpg
+2 TITL Pushkin_Vasiliy_Lvovich
+2 _PRIM Y
+2 _DATE 17 MAR 2025
+2 NOTE Дата: 17.03.2025
+1 NOTE https://ru.wikipedia.org/wiki/Пушкин,_Василий_Львович
+0 @I4@ INDI
+1 _UID Dc0XMgFpu2vhBTI9OztDHtJ8mmei
+1 NAME Григорий Александрович /Пушкин/
+2 GIVN Григорий Александрович
+2 _MARNM Пушкин
+1 SEX M
+1 OCCU Военный
+1 BIRT
+2 DATE 26 MAY 1835
+2 PLAC Санкт-Петербург, Российская империя
+1 FAMC @F2@
+1 DEAT
+2 DATE 18 AUG 1905
+1 RESI
+2 PLAC Михайловское, Псковская губерния, Российская империя
+3 MAP
+4 LATI N57.064419
+4 LONG E28.919556
+1 FAMS @F4@
+1 OBJE
+2 FILE test.ged.files\grigorii.jpg
+3 FORM jpg
+2 TITL Портрет Григория Александровича Пушкина
+2 _PRIM Y
+1 NOTE https://ru.wikipedia.org/wiki/Пушкин,_Григорий_Александрович_(1835—190
+2 CONC 5)
+0 @I44@ INDI
+1 _UID Dc3+NAGpmMtxlZgljLYq2TjsXCGk
+1 NAME Григорий Александрович /Пушкин/
+2 GIVN Григорий Александрович
+2 _MARNM Пушкин
+1 SEX M
+1 BIRT
+2 DATE 27 SEP 1868
+1 FAMC @F6@
+1 DEAT
+2 DATE 1 SEP 1940
+2 PLAC Москва, СССР
+1 RESI
+2 PLAC Санкт-Петербург, Российская империя
+1 NOTE https://ru.wikipedia.org/wiki/Пушкин,_Григорий_Александрович_(1868—194
+2 CONC 0)
+0 @I1@ INDI
+1 _UID Dc0XMgFJQfwFxvXowRWJNo4q8ElD
+1 NAME Лев Александрович /Пушкин/
+2 GIVN Лев Александрович
+2 _MARNM Пушкин
+1 SEX M
+1 OCCU Артиллерист
+1 BIRT
+2 DATE 28 FEB 1723
+1 FAMC @F5@
+1 DEAT
+2 DATE 25 OCT 1790
+1 FAMS @F1@
+0 @I7@ INDI
+1 _UID Dc0XMgHUwhmTyMmzEwb4nwd45HQS
+1 NAME Лев Сергеевич /Пушкин/
+2 GIVN Лев Сергеевич
+2 _MARNM Пушкин
+1 SEX M
+1 OCCU военнослужащий, чиновник, таможенник
+1 BIRT
+2 DATE 21 APR 1805
+2 PLAC Москва, Московская губерния, Российская империя
+3 MAP
+4 LATI N55.755864
+4 LONG E37.617698
+1 FAMC @F3@
+1 DEAT
+2 DATE 31 JUL 1852
+1 RESI
+2 PLAC Одесса, Российская империя
+3 MAP
+4 LATI N46.475907
+4 LONG E30.739628
+1 OBJE
+2 FILE test.ged.files\lev.jpg
+3 FORM jpg
+2 TITL Портрет Льва Сергеевича Пушкина
+2 _PRIM Y
+1 NOTE https://ru.wikipedia.org/wiki/Пушкин,_Лев_Сергеевич
+0 @I35@ INDI
+1 _UID Dc3+NAGMCGtcbFtSOjreIeP868z0
+1 NAME Николай Александрович /Пушкин/
+2 GIVN Николай Александрович
+2 _MARNM Пушкин
+1 SEX M
+1 BIRT
+2 DATE 1885
+1 FAMC @F7@
+1 DEAT
+2 DATE 1964
+0 @I37@ INDI
+1 _UID Dc3+NAFJrAcqeCXgOwvO24dKMapX
+1 NAME Пётр Александрович /Пушкин/
+2 GIVN Пётр Александрович
+2 _MARNM Пушкин
+1 SEX M
+1 FAMC @F6@
+1 DEAT
+2 DATE 1870
+0 @I47@ INDI
+1 _UID Dc3+NAHv0tIRDbWsZcGI6SsOLd3Q
+1 NAME Сергей Александрович /Пушкин/
+2 GIVN Сергей Александрович
+2 _MARNM Пушкин
+1 SEX M
+1 BIRT
+2 DATE 1874
+1 FAMC @F6@
+1 DEAT
+2 DATE 1898
+2 CAUS Застрелился
+0 @I3@ INDI
+1 _UID Dc0XMgE5f69yxXawZlipqh14jzMM
+1 NAME Сергей Львович /Пушкин/
+2 GIVN Сергей Львович
+2 _MARNM Пушкин
+1 SEX M
+1 OCCU Статский советник
+1 BIRT
+2 DATE 3 JUN 1770
+2 PLAC Санкт-Петербург, Российская империя
+1 FAMC @F1@
+1 EVEN
+2 TYPE Поездка
+2 DATE 1 JUL 1804
+2 PLAC Имение Захарово, деревня Захарово, Московская губерния, Российская империя
+3 MAP
+4 LATI N55.646115
+4 LONG E36.969832
+1 DEAT
+2 DATE 10 JUL 1848
+2 PLAC Москва, Московская губерния, Российская империя
+3 MAP
+4 LATI N55.755864
+4 LONG E37.617698
+1 RESI
+2 PLAC Москва, Московская губерния, Российская империя
+3 MAP
+4 LATI N55.755864
+4 LONG E37.617698
+1 FAMS @F3@
+1 OBJE
+2 FILE test.ged.files\father.jpg
+3 FORM jpg
+2 TITL Отец Пушкина
+2 _PRIM Y
+1 NOTE С детства был записан в армию. С 1817г. в отставке. В совершенстве вла
+2 CONC дел французским языком, писал "салонные" стихи и каламбуры. https://ru
+2 CONC .wikipedia.org/wiki/Пушкин,_Сергей_Львович
+0 @I43@ INDI
+1 _UID Dc3+NAEK/xmk0LL9TME1RHQc9xqP
+1 NAME Анна Александровна /Пушкина/
+2 GIVN Анна Александровна
+2 SURN Пушкина
+2 _MARNM Пушкина
+1 SEX F
+1 BIRT
+2 DATE 1866
+1 FAMC @F6@
+1 DEAT
+2 DATE 1949
+0 @I25@ INDI
+1 _UID Dc3+NAHggbx0+vX7oWDGkblQuZyb
+1 NAME Анна Львовна /Пушкина/
+2 GIVN Анна Львовна
+2 SURN Пушкина
+2 _MARNM Пушкина
+1 SEX F
+1 BIRT
+2 DATE ABT 1765
+1 FAMC @F1@
+1 DEAT
+2 DATE ABT 1824
+0 @I13@ INDI
+1 _UID Dc0XMgHZPBl/Pa2/g5t/9K2xcil4
+1 NAME Надежда Осиповна  /Ганнибал/
+2 GIVN Надежда Осиповна
+2 SURN Ганнибал
+2 _MARNM Пушкина
+1 SEX F
+1 BIRT
+2 DATE 2 JUL 1775
+1 FAMC @F9@
+1 EVEN
+2 TYPE Поездка
+2 DATE 1 JUL 1804
+2 PLAC Имение Захарово, деревня Захарово, Московская губерния, Российская империя
+3 MAP
+4 LATI N55.646115
+4 LONG E36.969832
+1 DEAT
+2 DATE 29 MAR 1836
+2 PLAC Санкт-Петербург, Российская империя
+1 RESI
+2 PLAC Санкт-Петербург, Российская империя
+1 FAMS @F3@
+1 OBJE
+2 FILE test.ged.files\mother.jpg
+3 FORM jpg
+2 TITL Мать Пушкина
+2 _PRIM Y
+1 NOTE https://ru.wikipedia.org/wiki/Пушкина,_Надежда_Осиповна
+0 @I22@ INDI
+1 _UID Dc0XMgHy+T7/I8jQDzMi4j8q1Tff
+1 NAME Наталья Николаевна /Гончарова/
+2 GIVN Наталья Николаевна
+2 SURN Гончарова
+2 _MARNM Пушкина
+1 SEX F
+1 BIRT
+2 DATE 8 SEP 1812
+1 DEAT
+2 DATE 8 DEC 1863
+1 RESI
+2 PLAC Санкт-Петербург, Российская империя
+1 FAMS @F2@
+1 OBJE
+2 FILE test.ged.files\wife.jpg
+3 FORM jpg
+2 TITL Портрет Натальи Гончаровой
+2 _PRIM Y
+1 NOTE https://ru.wikipedia.org/wiki/Гончарова,_Наталья_Николаевна
+0 @I45@ INDI
+1 _UID Dc3+NAGLM9H/wvcGEISd/yyq2ATu
+1 NAME Надежда Александровна /Пушкина/
+2 GIVN Надежда Александровна
+2 SURN Пушкина
+2 _MARNM Пушкина
+1 SEX F
+1 BIRT
+2 DATE 1871
+1 FAMC @F6@
+1 DEAT
+2 DATE 1915
+0 @I20@ INDI
+1 _UID Dc0XMgFLx7F3OZh9ZktZfzAWRR5V
+1 NAME Сарра /Ржевская/
+2 GIVN Сарра
+2 SURN Ржевская
+2 _MARNM Пушкина
+1 SEX F
+1 BIRT
+2 DATE 1721
+1 DEAT
+2 DATE AFT 1790
+1 FAMS @F8@
+1 NOTE дочь Юрия Ржевского, нижегородского воеводы.
+0 @I39@ INDI
+1 _UID Dc3+NAG2rYdHXm6mCPc0P1X4fb5q
+1 NAME София Александровна /Пушкина/
+2 GIVN София Александровна
+2 _MARNM Пушкина
+1 SEX F
+1 BIRT
+2 DATE 1860
+1 FAMC @F6@
+1 DEAT
+2 DATE 1861
+0 @I40@ INDI
+1 _UID Dc3+NAGELjt+uD8Y79M0q+ckAmLj
+1 NAME Мария Александровна /Пушкина/
+2 GIVN Мария Александровна
+2 SURN Пушкина
+2 _MARNM Пушкина-Быкова
+1 SEX F
+1 BIRT
+2 DATE 1862
+1 FAMC @F6@
+1 DEAT
+2 DATE 1939
+0 @I38@ INDI
+1 _UID Dc3+NAFb9dzgX1bBTRU7EpNkx0JJ
+1 NAME Наталия Александровна /Пушкина/
+2 GIVN Наталия Александровна
+2 SURN Пушкина
+2 _MARNM Пушкина-Воронцова-Вельяминова
+1 SEX F
+1 BIRT
+2 DATE 17 AUG 1859
+1 FAMC @F6@
+1 DEAT
+2 DATE 18 DEC 1912
+2 CAUS Воспаление лёгких
+0 @I11@ INDI
+1 _UID Dc0XMgHMARmdQR3B7BjfCR5MMrCE
+1 NAME Наталья Александровна /Пушкина/
+2 GIVN Наталья Александровна
+2 SURN Пушкина
+2 _MARNM Пушкина-Дубельт
+1 SEX F
+1 BIRT
+2 DATE 4 JUN 1836
+2 PLAC Санкт-Петербург, Российская империя
+1 FAMC @F2@
+1 DEAT
+2 DATE 23 MAR 1913
+2 NOTE Похоронена в Висбадене (Германия)
+1 RESI
+2 PLAC Висбаден, Германия
+1 FAMS @F10@
+1 FAMS @F11@
+1 OBJE
+2 FILE test.ged.files\natalia.jpg
+3 FORM jpg
+2 TITL Портрет Натальи Александровны Пушкиной
+2 _PRIM Y
+1 NOTE http://ru.wikipedia.org/wiki/Пушкина,_Наталья_Александровна
+0 @I46@ INDI
+1 _UID Dc3+NAH2l5yYWPQnOFa96lu5AkCQ
+1 NAME Вера Александровна /Пушкина/
+2 GIVN Вера Александровна
+2 SURN Пушкина
+2 _MARNM Пушкина-Мезенцова
+1 SEX F
+1 BIRT
+2 DATE 1872
+1 FAMC @F6@
+1 DEAT
+2 DATE 1909
+0 @I9@ INDI
+1 _UID Dc0XMgHOA5tHBXxZVsk5QAOqLjJQ
+1 NAME Ольга Сергеевна /Пушкина/
+2 GIVN Ольга Сергеевна
+2 SURN Пушкина
+2 _MARNM Пушкина-Павлищева
+1 SEX F
+1 BIRT
+2 DATE 31 DEC 1797
+1 FAMC @F3@
+1 DEAT
+2 DATE 14 MAY 1868
+1 RESI
+2 PLAC Москва, Московская губерния, Российская империя
+3 MAP
+4 LATI N55.755864
+4 LONG E37.617698
+1 OBJE
+2 FILE test.ged.files\sister.jpg
+3 FORM jpg
+2 TITL Портрет Ольги Сергеевны Пушкиной-Павлищевой
+2 _PRIM Y
+1 NOTE https://ru.wikipedia.org/wiki/Павлищева,_Ольга_Сергеевна
+0 @I42@ INDI
+1 _UID Dc3+NAERvGz2ZPenJTMJc9MmcTR5
+1 NAME Ольга Александровна /Пушкина/
+2 GIVN Ольга Александровна
+2 SURN Пушкина
+2 _MARNM Пушкина-Павлова
+1 SEX F
+1 BIRT
+2 DATE 1864
+1 FAMC @F6@
+1 DEAT
+2 DATE AFT 1908
+0 @I36@ INDI
+1 _UID Dc3+NAG1e5c66J4X1ZeFQVvh6Vqd
+1 NAME Елена Александровна /Пушкина/
+2 GIVN Елена Александровна
+2 SURN Пушкина
+2 _MARNM Пушкина-Фон дер Розенмайер
+1 SEX F
+1 BIRT
+2 DATE 1890
+1 FAMC @F7@
+1 DEAT
+2 DATE 1943
+0 @I27@ INDI
+1 _UID Dc3+NAFqqBXd+9ToUKxCj+7Tu0Pc
+1 NAME Матвей Михаилович /Сонцев/
+2 GIVN Матвей Михаилович
+2 _MARNM Сонцев
+1 SEX M
+1 BIRT
+2 DATE 22 JUN 1779
+1 DEAT
+2 DATE 22 NOV 1847
+1 FAMS @F15@
+0 @I54@ INDI
+1 _UID DSr/NAF1g4pNQpyU23cGUWV/uPyp
+1 NAME Екатерина Матвеевна /Сонцева/
+2 GIVN Екатерина Матвеевна
+2 _MARNM Сонцева
+1 SEX F
+1 FAMC @F15@
+1 DEAT
+2 DATE 16 JAN 1864
+0 @I26@ INDI
+1 _UID Dc3+NAGFJ+yHyKj9SrXhtXP3Abr3
+1 NAME Елизавета Львовна /Пушкина/
+2 GIVN Елизавета Львовна
+2 SURN Пушкина
+2 _MARNM Сонцева
+1 SEX F
+1 BIRT
+2 DATE 24 AUG 1776
+1 FAMC @F1@
+1 DEAT
+2 DATE 9 OCT 1848
+1 FAMS @F15@
+0 @I15@ INDI
+1 _UID Dc0XMgG6PvD6uVpXWDBm6BXGGc+/
+1 NAME Василий Иванович /Чичерин/
+2 GIVN Василий Иванович
+2 _MARNM Чичерин
+1 SEX M
+1 BIRT
+2 DATE 28 MAR 1700
+1 DEAT
+2 DATE BET 1743 AND 1748
+1 FAMS @F13@
+0 @I16@ INDI
+1 _UID Dc0XMgHW4qkJTDAKz3WCU1KJrWSH
+1 NAME Ольга Васильевна /Чичерина/
+2 GIVN Ольга Васильевна
+2 _MARNM Чичерина
+1 SEX F
+1 BIRT
+2 DATE 16 JUN 1737
+1 FAMC @F13@
+1 DEAT
+2 DATE 3 FEB 1802
+1 FAMS @F1@
+0 @I17@ INDI
+1 _UID Dc0XMgFJnkWPJuJeTsv7bELJOsjP
+1 NAME Христина Матвеевна /Шеберг/
+2 GIVN Христина Матвеевна
+2 SURN Шеберг
+2 _MARNM Шеберг
+1 SEX F
+1 BIRT
+2 DATE ABT 1717
+1 DEAT
+2 DATE 1781
+1 FAMS @F14@
+0 @F14@ FAM
+1 HUSB @I18@
+1 WIFE @I17@
+1 CHIL @I28@
+1 CHIL @I14@
+1 MARR
+2 DATE 1736
+0 @F9@ FAM
+1 HUSB @I14@
+1 WIFE @I10@
+1 CHIL @I13@
+1 MARR Y
+0 @F8@ FAM
+1 HUSB @I8@
+1 WIFE @I20@
+1 CHIL @I10@
+1 MARR
+2 DATE 1742
+0 @F12@ FAM
+1 HUSB @I29@
+1 WIFE @I12@
+1 MARR Y
+0 @F2@ FAM
+1 HUSB @I2@
+1 WIFE @I22@
+1 CHIL @I12@
+1 CHIL @I6@
+1 CHIL @I4@
+1 CHIL @I11@
+1 MARR
+2 DATE 2 MAR 1831
+2 PLAC Санкт-Петербург, Российская империя
+0 @F5@ FAM
+1 HUSB @I5@
+1 WIFE @I19@
+1 CHIL @I1@
+1 MARR Y
+0 @F11@ FAM
+1 HUSB @I34@
+1 WIFE @I11@
+1 CHIL @I51@
+1 CHIL @I52@
+1 CHIL @I53@
+1 MARR Y
+0 @F10@ FAM
+1 HUSB @I33@
+1 WIFE @I11@
+1 CHIL @I48@
+1 CHIL @I49@
+1 CHIL @I50@
+1 MARR Y
+1 DIV Y
+0 @F6@ FAM
+1 HUSB @I6@
+1 WIFE @I31@
+1 CHIL @I37@
+1 CHIL @I38@
+1 CHIL @I39@
+1 CHIL @I40@
+1 CHIL @I41@
+1 CHIL @I42@
+1 CHIL @I43@
+1 CHIL @I44@
+1 CHIL @I45@
+1 CHIL @I46@
+1 CHIL @I47@
+1 MARR Y
+0 @F4@ FAM
+1 HUSB @I4@
+1 WIFE @I32@
+1 MARR Y
+0 @F7@ FAM
+1 HUSB @I6@
+1 WIFE @I30@
+1 CHIL @I35@
+1 CHIL @I36@
+1 MARR Y
+0 @F13@ FAM
+1 HUSB @I15@
+1 WIFE @I23@
+1 CHIL @I16@
+1 MARR Y
+0 @F3@ FAM
+1 HUSB @I3@
+1 WIFE @I13@
+1 CHIL @I9@
+1 CHIL @I2@
+1 CHIL @I7@
+1 MARR
+2 DATE 1796
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I16@
+1 CHIL @I25@
+1 CHIL @I24@
+1 CHIL @I3@
+1 CHIL @I26@
+1 MARR Y
+0 @F15@ FAM
+1 HUSB @I27@
+1 WIFE @I26@
+1 CHIL @I54@
+1 MARR Y
+0 TRLR

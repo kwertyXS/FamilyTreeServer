@@ -1,8 +1,9 @@
 from abc import ABC, abstractmethod
+from typing import AsyncGenerator
 
 from sqlalchemy import select, delete
+from sqlalchemy.ext.asyncio import AsyncSession
 
-from src.db.database import session_factory
 from src.db.tables import Base
 
 
@@ -17,17 +18,17 @@ class AbstractRepository(ABC):
 
 
 class SQLAlchemyRepository(AbstractRepository):
-    _model: Base = None
+    def __init__(self, model: Base, session: AsyncSession):
+        self._model = model
+        self._session = session
 
     async def rewrite(self, data: list):
-        async with session_factory() as session:
-            await session.execute(delete(self._model))
-            await session.commit()
-            session.add_all(data)
-            await session.commit()
+        async with self._session.begin():
+            await self._session.execute(delete(self._model))
+            # await self._session.flash()
+            self._session.add_all(data)
 
     async def get_all(self):
-        async with session_factory() as session:
-            stmt = select(self._model)
-            res = await session.execute(stmt)
-            return res.scalars().all()
+        stmt = select(self._model)
+        res = await self._session.execute(stmt)
+        return res.scalars().all()
