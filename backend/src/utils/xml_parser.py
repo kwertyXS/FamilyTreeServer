@@ -3,6 +3,7 @@ from typing import Any
 
 from lxml import etree
 from lxml.etree import _Element
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.db.tables import *
 
@@ -17,7 +18,7 @@ from src.repositories.SQLAlchemyRepositories import (
 
 
 class XMLParser:
-    async def parse_and_save(self, xml_bytes: bytes) -> None:
+    async def parse_and_save(self, session: AsyncSession, xml_bytes: bytes) -> None:
         """Парсит XML и сохраняет всё в БД. Если данные уже есть — перезаписывает."""
         root = etree.fromstring(xml_bytes)
 
@@ -29,12 +30,12 @@ class XMLParser:
             self.__person_events_and_relation_list_parse(event_map, persons_in_xml)
         )
 
-        await PlaceRepository().rewrite(places_list)
-        await FamilyRepository().rewrite(families_list)
-        await PersonRepository().rewrite(persons_list)
-        await EventRepository().rewrite(event_list)
-        await PersonEventRepository().rewrite(person_event_list)
-        await PersonRelationRepository().rewrite(relations_list)
+        await PlaceRepository(session).rewrite(places_list)
+        await FamilyRepository(session).rewrite(families_list)
+        await PersonRepository(session).rewrite(persons_list)
+        await EventRepository(session).rewrite(event_list)
+        await PersonEventRepository(session).rewrite(person_event_list)
+        await PersonRelationRepository(session).rewrite(relations_list)
 
     def __person_events_and_relation_list_parse(
         self, event_map: dict[str, EventTable], persons_in_xml: dict[str, _Element]

@@ -1,62 +1,71 @@
 from sqlalchemy import select
 from sqlalchemy.orm import joinedload
 
-from src.db.database import session_factory
-from src.db.tables import *
+from src.db.tables import (
+    EventTable,
+    FamilyTable,
+    PersonTable,
+    PersonEventTable,
+    PersonRelationTable,
+    PlaceTable,
+)
 from src.repositories.Repositories import SQLAlchemyRepository
 
 
 class EventRepository(SQLAlchemyRepository):
-    _model = EventTable
+    def __init__(self, session):
+        super().__init__(EventTable, session)
 
     async def get_all(self):
-        async with session_factory() as session:
-            stmt = (
-                select(self._model)
-                .options(joinedload(EventTable.place))
-                .order_by(EventTable.date_sort.nulls_last(), EventTable.id)
-            )
-            res = await session.execute(stmt)
-            return res.unique().scalars().all()
+        stmt = (
+            select(EventTable)
+            .options(joinedload(EventTable.place))
+            .order_by(EventTable.date_sort.nulls_last(), EventTable.id)
+        )
+        res = await self._session.execute(stmt)
+        return res.unique().scalars().all()
 
 
 class FamilyRepository(SQLAlchemyRepository):
-    _model = FamilyTable
+    def __init__(self, session):
+        super().__init__(FamilyTable, session)
 
 
 class PersonRepository(SQLAlchemyRepository):
-    _model = PersonTable
+    def __init__(self, session):
+        super().__init__(PersonTable, session)
 
     async def get_all(self):
-        async with session_factory() as session:
-            stmt = select(self._model).options(joinedload(PersonTable.family))
-            res = await session.execute(stmt)
-            return res.unique().scalars().all()
+        stmt = select(PersonTable).options(joinedload(PersonTable.family))
+        res = await self._session.execute(stmt)
+        return res.unique().scalars().all()
 
     async def get_by_id(self, person_id: str):
-        async with session_factory() as session:
-            stmt = (
-                select(self._model)
-                .options(
-                    joinedload(PersonTable.family),
-                    joinedload(PersonTable.birth_place),
-                    joinedload(PersonTable.death_place),
-                    joinedload(PersonTable.place_rel),
-                    joinedload(PersonTable.events).joinedload(EventTable.place),
-                )
-                .where(PersonTable.id == person_id)
+        stmt = (
+            select(PersonTable)
+            .options(
+                joinedload(PersonTable.family),
+                joinedload(PersonTable.birth_place),
+                joinedload(PersonTable.death_place),
+                joinedload(PersonTable.place_rel),
+                joinedload(PersonTable.events).joinedload(EventTable.place),
             )
-            res = await session.execute(stmt)
-            return res.unique().scalar_one_or_none()
+            .where(PersonTable.id == person_id)
+        )
+        res = await self._session.execute(stmt)
+        return res.unique().scalar_one_or_none()
 
 
 class PersonEventRepository(SQLAlchemyRepository):
-    _model = PersonEventTable
+    def __init__(self, session):
+        super().__init__(PersonEventTable, session)
 
 
 class PersonRelationRepository(SQLAlchemyRepository):
-    _model = PersonRelationTable
+    def __init__(self, session):
+        super().__init__(PersonRelationTable, session)
 
 
 class PlaceRepository(SQLAlchemyRepository):
-    _model = PlaceTable
+    def __init__(self, session):
+        super().__init__(PlaceTable, session)

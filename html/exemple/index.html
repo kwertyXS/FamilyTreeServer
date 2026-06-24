@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Развлекись</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+
+  <!-- ambient blobs -->
+  <div class="ambient" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+  </div>
+
+  <!-- flashlight vignette -->
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- theme toggle -->
+  <div class="theme-toggle" role="tablist" aria-label="Тема">
+    <button id="th-light" class="on" title="Светлая">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+    </button>
+    <button id="th-dark" title="Тёмная">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+
+  <!-- ═══════════ PAGE 1 — LANDING ═══════════ -->
+  <section id="landing" data-screen-label="01 Landing">
+    <div class="stack" id="stack">
+      <h1 class="brand" style="font-family: -apple-system">Развлек<span class="ampersand">и</span>сь</h1>
+
+      <p class="tagline">Найдем интересные места рядом</p>
+
+      <div class="search-big" id="searchBig">
+        <svg class="lead" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s-7-7.58-7-13a7 7 0 1 1 14 0c0 5.42-7 13-7 13z"/><circle cx="12" cy="9" r="2.5"/>
+        </svg>
+        <input id="mainSearch" type="text" placeholder="Откуда ищем? Например, Большая Никитская, 14" autocomplete="off" enterkeyhint="search">
+        <button class="geo-btn" onclick="requestGeo(event, 'main')" title="Использовать мою геолокацию" aria-label="Геолокация">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="10"/></svg>
+        </button>
+        <div class="ac-drop" id="acMain"></div>
+      </div>
+
+      <div class="hint"><span class="dot"></span> Геолокация уточнит результаты — нажмите Enter, чтобы продолжить</div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PAGE 2 — RESULTS ═══════════ -->
+  <section id="results" data-screen-label="02 Results">
+    <div class="header-frame">
+      <header class="header">
+        <div class="header-row">
+          <a class="brand-sm" href="#" onclick="goLanding(event)">Развлек<span class="ampersand">и</span>сь</a>
+          <div class="search-inline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>
+            </svg>
+            <input id="inlineSearch" type="text" placeholder="Уточнить запрос">
+            <button class="geo-btn geo-btn-sm" onclick="requestGeo(event, 'inline')" title="Использовать мою геолокацию" aria-label="Геолокация">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="10"/></svg>
+            </button>
+            <div class="ac-drop" id="acInline"></div>
+          </div>
+        </div>
+
+        <div class="tabs-row">
+          <div class="tabs" id="tabs">
+            <button class="tab on" data-cat="all">Все</button>
+            <button class="tab" data-cat="rest">Рестораны</button>
+            <button class="tab" data-cat="cafe">Кофейни</button>
+            <button class="tab" data-cat="bar">Бары</button>
+            <button class="tab" data-cat="cult">Культура</button>
+            <button class="tab" data-cat="cinema">Кино</button>
+            <button class="tab" data-cat="fun">Развлечения</button>
+            <button class="tab" data-cat="park">Парки</button>
+          </div>
+
+          <div class="filter-wrap">
+            <button class="filter-btn" id="filterBtn" onclick="toggleFilter(event)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="6" x2="20" y2="6"/><line x1="7" y1="12" x2="17" y2="12"/><line x1="10" y1="18" x2="14" y2="18"/>
+              </svg>
+              <span class="filter-label">Фильтры</span>
+              <span class="badge" id="filterBadge">1</span>
+            </button>
+
+            <div class="filter-drop" id="filterDrop">
+              <div class="drop-section">Сортировка</div>
+              <div class="drop-item on" data-sort="near">
+                <svg class="icn" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 0 0-8-8z"/></svg>
+                Ближайшие
+                <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              </div>
+              <div class="drop-item" data-sort="rating">
+                <svg class="icn" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                По рейтингу
+                <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              </div>
+              <div class="drop-item" data-sort="price">
+                <svg class="icn" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                По цене
+                <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              </div>
+              <div class="drop-sep"></div>
+              <div class="drop-section">Фильтры</div>
+              <div class="drop-item filter-toggle" data-filter="open">
+                <svg class="icn" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                Открыто сейчас
+                <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              </div>
+              <div class="drop-item filter-toggle" data-filter="walk">
+                <svg class="icn" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="1.5"/><path d="m9 20 3-6 2 1.5 1-4-3-2-3 2-2 4M14 14l3 2"/></svg>
+                Рядом — до 1 км
+                <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              </div>
+              <div class="drop-item filter-toggle" data-filter="budget">
+                <svg class="icn" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 10v4M18 10v4"/></svg>
+                Бюджетно
+                <svg class="check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="applied-row" id="appliedRow">
+          <div class="applied-pills" id="appliedPills"></div>
+          <span class="count-label">Найдено <b id="countNum">…</b> места рядом</span>
+        </div>
+      </header>
+    </div>
+
+    <div class="section-head">
+      <h2><b>Рядом с вами</b> — лучшее на сегодня</h2>
+      <div class="meta">
+        <span class="mini-tint">●</span>
+        Обновлено только что
+      </div>
+    </div>
+
+    <div class="grid-wrap">
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <!-- AI FAB -->
+  <button class="ai-fab" id="aiFab" onclick="toggleAI()" title="Спросить ассистента">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+      <circle cx="8.5" cy="12" r="1" fill="currentColor"/>
+      <circle cx="12" cy="12" r="1" fill="currentColor"/>
+      <circle cx="15.5" cy="12" r="1" fill="currentColor"/>
+    </svg>
+  </button>
+
+  <!-- AI Panel -->
+  <aside class="ai-panel" id="aiPanel">
+    <div class="ai-head">
+      <div class="ai-head-l">
+        <div class="ai-avatar"></div>
+        <div>
+          <div class="ai-head-title">Ассистент Развлекись</div>
+          <div class="ai-head-sub">Онлайн · отвечает за пару секунд</div>
+        </div>
+      </div>
+      <button class="ai-close" onclick="toggleAI()" aria-label="Закрыть">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <div class="ai-msgs" id="aiMsgs">
+      <div class="ai-bubble bot">Привет! Помогу подобрать место под настроение. Спросите про кухню, бюджет или атмосферу.</div>
+      <div class="ai-bubble bot">Если хотите — могу собрать маршрут на вечер.</div>
+    </div>
+
+    <div class="ai-quick">
+      <button onclick="quickAsk(this)">Где поужинать вдвоём?</button>
+      <button onclick="quickAsk(this)">Что-то тихое и атмосферное</button>
+      <button onclick="quickAsk(this)">Маршрут на вечер</button>
+    </div>
+
+    <div class="ai-input-row">
+      <input id="aiInput" type="text" placeholder="Спросите что-нибудь…" onkeydown="if(event.key==='Enter') sendAI()">
+      <button class="ai-send" onclick="sendAI()" aria-label="Отправить">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9z"/></svg>
+      </button>
+    </div>
+  </aside>
+
+<script src="app.js?v=3"></script>
+</body>
+</html>
