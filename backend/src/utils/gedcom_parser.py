@@ -2,6 +2,8 @@ import hashlib
 import os
 import re
 
+from sqlalchemy.ext.asyncio import AsyncSession
+
 from src.db.tables import *
 from src.repositories.SQLAlchemyRepositories import *
 
@@ -67,7 +69,7 @@ class GedcomParser:
                         parts.append(c.value or "")
             return "".join(parts).strip() or None
 
-    async def parse_and_save(self, ged_text: str) -> str:
+    async def parse_and_save(self, session: AsyncSession, ged_text: str) -> str:
         records = self.__parse_gedcom(ged_text)
 
         indis: dict = {}
@@ -266,12 +268,12 @@ class GedcomParser:
                               "Сын" if child_sex is True else "Дочь")
                     __add_rel(child, wife, "M", "Мать")
 
-        await PlaceRepository().rewrite(places_list)
-        await FamilyRepository().rewrite(families_list)
-        await PersonRepository().rewrite(persons_list)
-        await EventRepository().rewrite(event_list)
-        await PersonEventRepository().rewrite(person_event_list)
-        await PersonRelationRepository().rewrite(relations_list)
+        await PlaceRepository(session).rewrite(places_list)
+        await FamilyRepository(session).rewrite(families_list)
+        await PersonRepository(session).rewrite(persons_list)
+        await EventRepository(session).rewrite(event_list)
+        await PersonEventRepository(session).rewrite(person_event_list)
+        await PersonRelationRepository(session).rewrite(relations_list)
 
         return f"GEDCOM: {len(indis)} человек, {len(fams)} семей"
 

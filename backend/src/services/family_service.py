@@ -1,16 +1,16 @@
 from fastapi import HTTPException
-from select import select
+from sqlalchemy import select
+from sqlalchemy.ext.asyncio import AsyncSession
 
-from src.db.database import session_factory
 from src.db.tables import PersonRelationTable, PersonEventTable
 from src.repositories.SQLAlchemyRepositories import PersonRelationRepository, PersonRepository, EventRepository
 from src.schemas.family import TreeEdgeSchemaOut, TreeSchemaOut, TreeNodeSchemaOut, PersonSchemaOut, EventSchemaOut, \
     PlaceSchema, RelationSchemaOut, PersonSchema, PersonBriefSchema
 
 
-async def get_tree_service() -> TreeSchemaOut:
-    persons = await PersonRepository().get_all()
-    relations = await PersonRelationRepository().get_all()
+async def get_tree_service(session: AsyncSession) -> TreeSchemaOut:
+    persons = await PersonRepository(session).get_all()
+    relations = await PersonRelationRepository(session).get_all()
 
     nodes = [
         TreeNodeSchemaOut(
@@ -61,23 +61,22 @@ async def get_tree_service() -> TreeSchemaOut:
 
 
 
-async def get_person_service(person_id: str) -> PersonSchemaOut:
-    person = await PersonRepository().get_by_id(person_id)
+async def get_person_service(session: AsyncSession, person_id: str) -> PersonSchemaOut:
+    person = await PersonRepository(session).get_by_id(person_id)
     if person is None:
         raise HTTPException(404, "Person not found")
 
-    async with session_factory() as session:
-        relations = (await session.execute(
-            select(PersonRelationTable).where(
-                PersonRelationTable.person_id == person_id
-            )
-        )).scalars().all()
+    relations = (await session.execute(
+        select(PersonRelationTable).where(
+            PersonRelationTable.person_id == person_id
+        )
+    )).scalars().all()
 
-        person_events_participation = (await session.execute(
-            select(PersonEventTable).where(
-                PersonEventTable.person_id == person_id
-            )
-        )).scalars().all()
+    person_events_participation = (await session.execute(
+        select(PersonEventTable).where(
+            PersonEventTable.person_id == person_id
+        )
+    )).scalars().all()
 
     # События с ролью
     event_roles = {pe.event_id: pe.role for pe in person_events_participation}
@@ -121,8 +120,8 @@ async def get_person_service(person_id: str) -> PersonSchemaOut:
 
 
 
-async def get_events_service():
-    events = await EventRepository().get_all()
+async def get_events_service(session: AsyncSession) -> list[EventSchemaOut]:
+    events = await EventRepository(session).get_all()
 
     return [
         {
@@ -138,8 +137,8 @@ async def get_events_service():
     ]
 
 
-async def get_persons_service() -> list[PersonSchema]:
-    persons = await PersonRepository().get_all()
+async def get_persons_service(session: AsyncSession) -> list[PersonSchema]:
+    persons = await PersonRepository(session).get_all()
     return [
         PersonSchema(
             id=p.id,
