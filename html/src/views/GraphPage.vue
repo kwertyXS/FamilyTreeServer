@@ -114,10 +114,24 @@ function renderGraph(persons, edges) {
         data: { source: e.from_id, target: e.to_id },
         classes: 'parent',
       })
+    } else if (e.type === 'spouse') {
+      // Невидимое ребро только для раскладки — ставит супругов рядом
+      elements.push({
+        data: { source: e.from_id, target: e.to_id },
+        classes: 'spouse',
+      })
     }
   }
 
   if (cy) cy.destroy()
+
+  // Явно указываем dagre, что супруги на одном уровне
+  const spouseConstraints = []
+  for (const e of edges) {
+    if (e.type === 'spouse') {
+      spouseConstraints.push({ type: 'same', nodes: [e.from_id, e.to_id] })
+    }
+  }
 
   cy = cytoscape({
     container: container.value,
@@ -180,16 +194,28 @@ function renderGraph(persons, edges) {
         style: {
           width: 1.5,
           'line-color': '#b0b0c0',
-          'curve-style': 'bezier',
+          'curve-style': 'taxi',
+          'taxi-turn': 40,
+          'taxi-turn-min-distance': 15,
+          'taxi-direction': 'downward',
           'target-arrow-shape': 'triangle',
           'target-arrow-color': '#b0b0c0',
           'arrow-scale': 0.7,
+        },
+      },
+      {
+        selector: 'edge.spouse',
+        style: {
+          opacity: 0,
+          width: 0,
+          'target-arrow-shape': 'none',
         },
       },
     ],
     layout: {
       name: 'dagre',
       rankDir: 'TB',
+      rankConstraints: spouseConstraints.length ? spouseConstraints : undefined,
       spacingFactor: 1.4,
       nodeSep: 40,
       rankSep: 100,

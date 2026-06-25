@@ -57,7 +57,7 @@ async function fetchEvents() {
   }
 }
 
-onMounted(fetchEvents)
+
 </script>
 
 <template>
