@@ -1,0 +1,7 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+  <rect width="160" height="160" fill="#3A6BD9" />
+  <!-- Голова -->
+  <circle cx="80" cy="44" r="26" fill="#fff" opacity=".35" />
+  <!-- Плечи -->
+  <path d="M30 130 Q45 75 80 70 Q115 75 130 130" fill="#fff" opacity=".35" />
+</svg>

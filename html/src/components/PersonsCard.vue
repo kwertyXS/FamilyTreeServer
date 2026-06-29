@@ -13,7 +13,7 @@ defineProps({
     <div class="photo-wrap">
       <img
         v-if="person.photo"
-        :src="'photos/' + person.photo"
+        :src="'/photos/' + person.photo"
         :alt="person.full_name"
         class="photo"
       />

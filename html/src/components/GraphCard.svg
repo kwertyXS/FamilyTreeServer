@@ -1,0 +1,32 @@
+<svg width="200" height="260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="cardShadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000" flood-opacity="0.14"/>
+    </filter>
+    <clipPath id="photoClip">
+      <rect x="20" y="20" width="160" height="160" rx="8"/>
+    </clipPath>
+    <clipPath id="textClip">
+      <rect x="15" y="0" width="170" height="260"/>
+    </clipPath>
+  </defs>
+
+  <!-- Фон с тенью (rx нет — cytoscape сам скругляет углы через round-rectangle) -->
+  <rect width="200" height="260" fill="#fff" filter="url(#cardShadow)"/>
+
+  <!-- Фото -->
+  <image
+    href="{{photos}}"
+    x="20" y="20" width="160" height="160"
+    clip-path="url(#photoClip)"
+    preserveAspectRatio="xMidYMid slice"
+  />
+
+  <!-- Тексты (общий clip-path, чтоб длинные имена не вылезали) -->
+  <g clip-path="url(#textClip)">
+    <text x="20" y="202" font-size="15" font-weight="600" fill="#222">{{full_name}}</text>
+    <text x="20" y="220" font-size="12" fill="#666">{{family_name}}</text>
+    <text x="20" y="238" font-size="11" fill="#888">{{birth_date}} — {{death_date}}</text>
+    <text x="20" y="252" font-size="10" fill="#999">{{lifespan}}</text>
+  </g>
+</svg>
