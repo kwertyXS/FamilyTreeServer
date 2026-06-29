@@ -3,6 +3,7 @@ import PersonsPage from '@/views/PersonsPage.vue'
 import GraphPage from '@/views/GraphPage.vue'
 import EventsPage from '@/views/EventsPage.vue'
 import AdminPage from '@/views/AdminPage.vue'
+import PersonPage from "@/views/PersonPage.vue";
 
 const routes = [
   {
@@ -27,7 +28,13 @@ const routes = [
     path: '/admin',
     name: 'admin',
     component: AdminPage,
-    meta: { title: 'Администрирование' }
+    meta: {title: 'Администрирование'}
+  },
+  {
+    path: '/person/:id',
+    name: 'person',
+    component: PersonPage,
+    meta: {title: "Подробные данные"}
   }
 ]
 
