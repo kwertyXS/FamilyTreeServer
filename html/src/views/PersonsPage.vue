@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import axios from 'axios'
+import PersonsCard from '../components/PersonsCard.vue'
 
 const persons = ref([])
 const loading = ref(true)
@@ -85,40 +86,10 @@ onMounted(fetchPersons)
       <div
         v-for="person in filteredPersons"
         :key="person.id"
-        class="person-card glass"
+        class="person-card"
         @click="$router.push('/person/' + person.id)"
       >
-        <!-- Фото -->
-        <div class="photo-wrap">
-          <img
-            v-if="person.photo"
-            :src="'/photos/' + person.photo"
-            :alt="person.full_name"
-            class="photo"
-          />
-          <div v-else class="photo-placeholder">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-              <circle cx="12" cy="7" r="4"/>
-            </svg>
-          </div>
-          <span v-if="person.sex != null" class="sex-badge" :class="person.sex ? 'male' : 'female'">
-            {{ person.sex ? '♂' : '♀' }}
-          </span>
-          <span v-if="person.is_favorite" class="fav-badge">★</span>
-        </div>
-
-        <!-- Инфо -->
-        <div class="info">
-          <div class="name">{{ person.full_name }}</div>
-          <div v-if="person.family_name" class="family">{{ person.family_name }}</div>
-          <div class="dates">
-            <span>{{ person.birth_date || '…' }}</span>
-            <span class="sep">—</span>
-            <span>{{ person.death_date || '…' }}</span>
-          </div>
-          <div v-if="person.lifespan" class="lifespan">{{ person.lifespan }}</div>
-        </div>
+        <PersonsCard :person="person" />
       </div>
     </div>
   </div>
@@ -222,77 +193,12 @@ onMounted(fetchPersons)
 
 /* ─── Карточка ─── */
 .person-card {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 14px;
-  border-radius: var(--r-md);
   cursor: pointer;
+  border-radius: var(--r-md);
   transition: transform .2s var(--ease-out), box-shadow .2s var(--ease-out);
 }
 .person-card:hover {
   transform: translateY(-2px);
   box-shadow: var(--sh-lift);
 }
-
-.photo-wrap {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: var(--r-sm);
-  overflow: hidden;
-  background: var(--bg-1);
-}
-.photo {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.photo-placeholder {
-  width: 100%; height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--ink-3);
-}
-
-.sex-badge {
-  position: absolute;
-  bottom: 6px; left: 6px;
-  width: 24px; height: 24px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  background: var(--glass-thick);
-  backdrop-filter: blur(8px);
-  border: 1px solid var(--edge-hi);
-}
-.sex-badge.male   { color: #3A6BD9; }
-.sex-badge.female { color: #D94A6B; }
-
-.fav-badge {
-  position: absolute;
-  top: 6px; right: 6px;
-  color: #F5A623;
-  font-size: 18px;
-  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.25));
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.name { font-weight: 600; font-size: 14px; line-height: 1.3; color: var(--ink); }
-.family { font-size: 12px; color: var(--ink-3); }
-.dates {
-  font-size: 12px;
-  color: var(--ink-2);
-  display: flex;
-  gap: 4px;
-}
-.sep { color: var(--ink-4); }
-.lifespan { font-size: 11px; color: var(--ink-3); }
 </style>
