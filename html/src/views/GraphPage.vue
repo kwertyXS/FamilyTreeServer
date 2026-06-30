@@ -6,6 +6,7 @@ import dagre from 'cytoscape-dagre'
 import template from '../components/GraphCard.svg?raw'
 import malePlaceholder from '../components/placeholder-male.svg?raw'
 import femalePlaceholder from '../components/placeholder-female.svg?raw'
+import router from "@/router/index.js";
 cytoscape.use(dagre)
 
 const container = ref(null)
@@ -306,6 +307,10 @@ function renderGraph(persons, edges) {
   cy.on('layoutstop', () => {
     cy.fit(undefined, 80)
     // scheduleUpdate()
+  })
+
+  cy.on('tap', 'node', (evt) => {
+    router.push(`/person/${evt.target.id()}`)
   })
 
   // cy.on('zoom pan drag', scheduleUpdate)
