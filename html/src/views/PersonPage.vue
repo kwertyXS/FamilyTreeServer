@@ -2,6 +2,8 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import axios from 'axios'
+import malePlaceholder from '../components/placeholder-male.svg'
+import femalePlaceholder from '../components/placeholder-female.svg'
 
 const route = useRoute()
 const router = useRouter()
@@ -19,10 +21,8 @@ const sexLabel = computed(() => {
   return null
 })
 
-const sexEmoji = computed(() => {
-  if (person.value?.sex === true) return '♂'
-  if (person.value?.sex === false) return '♀'
-  return ''
+const placeholderSrc = computed(() => {
+  return person.value?.sex === true ? malePlaceholder : femalePlaceholder
 })
 
 const relationNameMap = computed(() => {
@@ -96,13 +96,13 @@ watch(() => route.params.id, () => {
             :alt="person.full_name"
             class="hero-photo"
           />
-          <div v-else class="hero-photo-placeholder">
-            <span class="hero-photo-placeholder-text">{{ sexEmoji }}</span>
-          </div>
+          <img
+            v-else
+            :src="placeholderSrc"
+            :alt="person.full_name"
+            class="hero-photo"
+          />
           <span v-if="person.is_favorite" class="hero-fav">★</span>
-          <span v-if="person.sex != null" class="hero-sex-badge" :class="person.sex ? 'male' : 'female'">
-            {{ person.sex ? '♂' : '♀' }}
-          </span>
         </div>
 
         <div class="hero-info">
@@ -334,18 +334,6 @@ watch(() => route.params.id, () => {
   height: 100%;
   object-fit: cover;
   display: block;
-}
-.hero-photo-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-2);
-}
-.hero-photo-placeholder-text {
-  font-size: 48px;
-  opacity: 0.4;
 }
 .hero-fav {
   position: absolute;

@@ -1,4 +1,7 @@
 <script setup>
+import malePlaceholder from './placeholder-male.svg'
+import femalePlaceholder from './placeholder-female.svg'
+
 defineProps({
   person: {
     type: Object,
@@ -17,16 +20,12 @@ defineProps({
         :alt="person.full_name"
         class="photo"
       />
-      <div v-else class="photo-placeholder">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-          <circle cx="12" cy="7" r="4"/>
-        </svg>
-      </div>
-      <!-- Пол -->
-      <span v-if="person.sex" class="sex-badge" :class="person.sex === 'М' ? 'male' : 'female'">
-        {{ person.sex === 'М' ? '♂' : '♀' }}
-      </span>
+      <img
+        v-else
+        :src="person.sex === true ? malePlaceholder : femalePlaceholder"
+        :alt="person.full_name"
+        class="photo"
+      />
       <!-- Избранное -->
       <span v-if="person.is_favorite" class="fav-badge" title="Избранный">★</span>
     </div>
@@ -34,7 +33,7 @@ defineProps({
     <!-- Инфо -->
     <div class="info">
       <div class="name">{{ person.full_name }}</div>
-      <div v-if="person.family_name" class="family">{{ person.family_name }}</div>
+      <div class="family">{{ person.family_name || '—' }}</div>
       <div class="dates">
         <template v-if="person.birth_date || person.death_date">
           <span class="date">{{ person.birth_date || '…' }}</span>
@@ -43,7 +42,7 @@ defineProps({
         </template>
         <span v-else class="no-dates">Нет данных</span>
       </div>
-      <div v-if="person.lifespan" class="lifespan">{{ person.lifespan }}</div>
+      <div class="lifespan">{{ person.lifespan || '—' }}</div>
     </div>
   </div>
 </template>
@@ -79,33 +78,6 @@ defineProps({
   object-fit: cover;
   display: block;
 }
-.photo-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--ink-3);
-}
-
-.sex-badge {
-  position: absolute;
-  bottom: 6px;
-  left: 6px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  background: var(--glass-thick);
-  backdrop-filter: blur(8px);
-  border: 1px solid var(--edge-hi);
-}
-.sex-badge.male  { color: #3A6BD9; }
-.sex-badge.female{ color: #D94A6B; }
-
 .fav-badge {
   position: absolute;
   top: 6px;
@@ -137,6 +109,7 @@ defineProps({
   display: flex;
   align-items: center;
   gap: 4px;
+  min-height: 2.5em;
 }
 .sep { color: var(--ink-4); }
 .no-dates { color: var(--ink-4); font-style: italic; }
