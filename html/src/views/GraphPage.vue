@@ -255,11 +255,6 @@ function renderGraph(persons, edges) {
           'border-color': '#F5A623',
           'border-width': 3,
           'border-opacity': 1,
-          'shadow-blur': 15,
-          'shadow-color': '#F5A623',
-          'shadow-opacity': 0.6,
-          'shadow-offset-x': 0,
-          'shadow-offset-y': 0,
         },
       },
 
@@ -297,8 +292,6 @@ function renderGraph(persons, edges) {
       rankSep: 80,
       animate: false,
     },
-
-    wheelSensitivity: 1,
     minZoom: 0.15,
     maxZoom: 2.5,
   })
@@ -312,9 +305,6 @@ function renderGraph(persons, edges) {
   cy.on('tap', 'node', (evt) => {
     router.push(`/person/${evt.target.id()}`)
   })
-
-  // cy.on('zoom pan drag', scheduleUpdate)
-  // cy.on('add remove resize', scheduleUpdate)
 }
 
 
