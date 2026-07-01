@@ -29,13 +29,13 @@ class XMLParser:
         person_event_list, relations_list = (
             self.__person_events_and_relation_list_parse(event_map, persons_in_xml)
         )
-
-        await PlaceRepository(session).rewrite(places_list)
-        await FamilyRepository(session).rewrite(families_list)
-        await PersonRepository(session).rewrite(persons_list)
-        await EventRepository(session).rewrite(event_list)
-        await PersonEventRepository(session).rewrite(person_event_list)
-        await PersonRelationRepository(session).rewrite(relations_list)
+        async with session.begin():
+            await PlaceRepository(session).rewrite(places_list)
+            await FamilyRepository(session).rewrite(families_list)
+            await PersonRepository(session).rewrite(persons_list)
+            await EventRepository(session).rewrite(event_list)
+            await PersonEventRepository(session).rewrite(person_event_list)
+            await PersonRelationRepository(session).rewrite(relations_list)
 
     def __person_events_and_relation_list_parse(
         self, event_map: dict[str, EventTable], persons_in_xml: dict[str, _Element]

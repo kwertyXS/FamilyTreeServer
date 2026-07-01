@@ -1,4 +1,3 @@
-import os
 import secrets
 import string
 import subprocess
@@ -6,7 +5,7 @@ import logging
 
 from fastapi import HTTPException
 
-from src.core.config import HTPASSWD_PATH, DEFAULT_USER
+from src.core.config import HTPASSWD_PATH
 from src.schemas.admin import ChangeAccountSchema
 
 logger = logging.getLogger(__name__)

@@ -268,12 +268,13 @@ class GedcomParser:
                               "Сын" if child_sex is True else "Дочь")
                     __add_rel(child, wife, "M", "Мать")
 
-        await PlaceRepository(session).rewrite(places_list)
-        await FamilyRepository(session).rewrite(families_list)
-        await PersonRepository(session).rewrite(persons_list)
-        await EventRepository(session).rewrite(event_list)
-        await PersonEventRepository(session).rewrite(person_event_list)
-        await PersonRelationRepository(session).rewrite(relations_list)
+        async with session.begin():
+            await PlaceRepository(session).rewrite(places_list)
+            await FamilyRepository(session).rewrite(families_list)
+            await PersonRepository(session).rewrite(persons_list)
+            await EventRepository(session).rewrite(event_list)
+            await PersonEventRepository(session).rewrite(person_event_list)
+            await PersonRelationRepository(session).rewrite(relations_list)
 
         return f"GEDCOM: {len(indis)} человек, {len(fams)} семей"
 

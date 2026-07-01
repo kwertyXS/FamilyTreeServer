@@ -1,14 +1,7 @@
 from sqlalchemy import select
 from sqlalchemy.orm import joinedload
 
-from src.db.tables import (
-    EventTable,
-    FamilyTable,
-    PersonTable,
-    PersonEventTable,
-    PersonRelationTable,
-    PlaceTable,
-)
+from src.db.tables import *
 from src.repositories.Repositories import SQLAlchemyRepository
 
 
@@ -69,3 +62,31 @@ class PersonRelationRepository(SQLAlchemyRepository):
 class PlaceRepository(SQLAlchemyRepository):
     def __init__(self, session):
         super().__init__(PlaceTable, session)
+
+class UserRepository(SQLAlchemyRepository):
+    def __init__(self, session):
+        super().__init__(UserTable, session)
+
+    async def get_by_email(self, email: str) -> UserTable | None:
+        stmt = select(UserTable).where(UserTable.email == email)
+        res = await self._session.execute(stmt)
+        return res.scalar_one_or_none()
+
+    async def check_admin_privileges(self, user_id: str) -> bool | None:
+        stmt = select(UserTable.is_admin).where(UserTable.id == user_id)
+        res = await self._session.execute(stmt)
+        return res.scalar_one_or_none()
+
+    async def check_invite_privileges(self, user_id: str) -> bool | None:
+        stmt = select(UserTable.can_invite).where(UserTable.id == user_id)
+        res = await self._session.execute(stmt)
+        return res.scalar_one_or_none()
+
+class TokenRepository(SQLAlchemyRepository):
+    def __init__(self, session):
+        super().__init__(TokenTable, session)
+
+    async def get_by_token(self, token: str):
+        stmt = select(TokenTable).where(TokenTable.refresh_token == token)
+        res = await self._session.execute(stmt)
+        return res.scalar_one_or_none()

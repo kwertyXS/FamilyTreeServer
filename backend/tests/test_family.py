@@ -73,39 +73,39 @@ async def _load_test_family_data():
 
 
 @pytest.mark.anyio
-async def test_tree_empty(client: AsyncClient):
-    resp = await client.get("/api/tree")
+async def test_tree_empty(client: AsyncClient, auth_headers: dict):
+    resp = await client.get("/api/tree", headers=auth_headers)
     assert resp.status_code == 200
     data = resp.json()
     assert data == {"persons": [], "edges": []}
 
 
 @pytest.mark.anyio
-async def test_persons_empty(client: AsyncClient):
-    resp = await client.get("/api/persons")
+async def test_persons_empty(client: AsyncClient, auth_headers: dict):
+    resp = await client.get("/api/persons", headers=auth_headers)
     assert resp.status_code == 200
     assert resp.json() == []
 
 
 @pytest.mark.anyio
-async def test_person_not_found(client: AsyncClient):
-    resp = await client.get("/api/persons/nonexistent")
+async def test_person_not_found(client: AsyncClient, auth_headers: dict):
+    resp = await client.get("/api/persons/nonexistent", headers=auth_headers)
     assert resp.status_code == 404
     assert resp.json()["detail"] == "Person not found"
 
 
 @pytest.mark.anyio
-async def test_events_empty(client: AsyncClient):
-    resp = await client.get("/api/events")
+async def test_events_empty(client: AsyncClient, auth_headers: dict):
+    resp = await client.get("/api/events", headers=auth_headers)
     assert resp.status_code == 200
     assert resp.json() == []
 
 
 @pytest.mark.anyio
-async def test_tree_with_data(client: AsyncClient):
+async def test_tree_with_data(client: AsyncClient, auth_headers: dict):
     await _load_test_family_data()
 
-    resp = await client.get("/api/tree")
+    resp = await client.get("/api/tree", headers=auth_headers)
     assert resp.status_code == 200
     data = resp.json()
 
@@ -122,10 +122,10 @@ async def test_tree_with_data(client: AsyncClient):
 
 
 @pytest.mark.anyio
-async def test_persons_list(client: AsyncClient):
+async def test_persons_list(client: AsyncClient, auth_headers: dict):
     await _load_test_family_data()
 
-    resp = await client.get("/api/persons")
+    resp = await client.get("/api/persons", headers=auth_headers)
     assert resp.status_code == 200
     data = resp.json()
     assert len(data) == 2
@@ -134,10 +134,10 @@ async def test_persons_list(client: AsyncClient):
 
 
 @pytest.mark.anyio
-async def test_person_detail(client: AsyncClient):
+async def test_person_detail(client: AsyncClient, auth_headers: dict):
     await _load_test_family_data()
 
-    resp = await client.get("/api/persons/p-1")
+    resp = await client.get("/api/persons/p-1", headers=auth_headers)
     assert resp.status_code == 200
     data = resp.json()
     assert data["id"] == "p-1"
@@ -152,10 +152,10 @@ async def test_person_detail(client: AsyncClient):
 
 
 @pytest.mark.anyio
-async def test_events_list(client: AsyncClient):
+async def test_events_list(client: AsyncClient, auth_headers: dict):
     await _load_test_family_data()
 
-    resp = await client.get("/api/events")
+    resp = await client.get("/api/events", headers=auth_headers)
     assert resp.status_code == 200
     data = resp.json()
     assert len(data) == 1

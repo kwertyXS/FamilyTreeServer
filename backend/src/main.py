@@ -1,8 +1,6 @@
 import uvicorn
-from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from src.api import main_router
-from src.db.database import engine
 
 
 app = FastAPI(

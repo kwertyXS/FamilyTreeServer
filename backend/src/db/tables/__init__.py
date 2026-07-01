@@ -7,6 +7,8 @@ from .family import FamilyTable
 from .place import PlaceTable
 from .event import EventTable
 from .person import PersonTable
+from .token import TokenTable
+from .user import UserTable
 
 __all__ = [
     "Base",
@@ -16,4 +18,6 @@ __all__ = [
     "FamilyTable",
     "PlaceTable",
     "EventTable",
+    "TokenTable",
+    "UserTable",
 ]

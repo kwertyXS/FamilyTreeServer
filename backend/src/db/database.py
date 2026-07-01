@@ -1,4 +1,4 @@
-from typing import Any, Generator, AsyncGenerator
+from typing import AsyncGenerator
 
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker, AsyncSession
 from src.core.config import DATABASE_URL

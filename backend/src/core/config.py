@@ -20,8 +20,8 @@ OUTPUT_PHOTOS = "/var/photos"
 
 HTPASSWD_PATH = os.getenv("HTPASSWD_PATH", "/app/auth/.htpasswd")
 DEFAULT_USER = os.getenv("HTPASSWD_USER", "admin")
-
-
+SECRET_KEY = os.getenv("SECRET_KEY", "secret")
+ALGORITHM = os.getenv("ALGORITHM", "HS256")
 DATABASE_URL = (
     f"postgresql+asyncpg://{POSTGRES_USER}:{POSTGRES_PASSWORD}"
     f"@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"

@@ -6,9 +6,13 @@ from src.db.tables import PersonRelationTable, PersonEventTable
 from src.repositories.SQLAlchemyRepositories import PersonRelationRepository, PersonRepository, EventRepository
 from src.schemas.family import TreeEdgeSchemaOut, TreeSchemaOut, TreeNodeSchemaOut, PersonSchemaOut, EventSchemaOut, \
     PlaceSchema, RelationSchemaOut, PersonSchema, PersonBriefSchema
+from src.utils.user_functions import check_access_token
 
 
-async def get_tree_service(session: AsyncSession) -> TreeSchemaOut:
+async def get_tree_service(session: AsyncSession, token: str) -> TreeSchemaOut:
+    if await check_access_token(token) is None:
+        raise HTTPException(401, "Token is invalid")
+
     persons = await PersonRepository(session).get_all()
     relations = await PersonRelationRepository(session).get_all()
 

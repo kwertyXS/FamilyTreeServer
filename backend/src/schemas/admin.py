@@ -1,5 +1,4 @@
-from fastapi import UploadFile, HTTPException
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, field_validator
 
 
 class ChangeAccountSchema(BaseModel):

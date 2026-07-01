@@ -14,17 +14,17 @@ XML_FILE = Path(__file__).parent.parent / "exemple" / "test.xml"
 GED_FILE = Path(__file__).parent.parent / "exemple" / "test.ged"
 
 
-async def _fetch_api_snapshot(client: AsyncClient) -> dict:
+async def _fetch_api_snapshot(client: AsyncClient, auth_headers: dict) -> dict:
     """Query all family API endpoints and return a snapshot dict."""
-    tree = (await client.get("/api/tree")).json()
-    persons = (await client.get("/api/persons")).json()
-    events = (await client.get("/api/events")).json()
+    tree = (await client.get("/api/tree", headers=auth_headers)).json()
+    persons = (await client.get("/api/persons", headers=auth_headers)).json()
+    events = (await client.get("/api/events", headers=auth_headers)).json()
     return {"tree": tree, "persons": persons, "events": events}
 
 
 
 @pytest.mark.anyio
-async def test_xml_load_and_snapshot(client: AsyncClient):
+async def test_xml_load_and_snapshot(client: AsyncClient, auth_headers: dict, admin_headers: dict):
     """Load test.xml and verify via reference snapshot.
 
     If no snapshot exists yet, creates one (run with --update-snapshots).
@@ -36,11 +36,12 @@ async def test_xml_load_and_snapshot(client: AsyncClient):
     resp = await client.post(
         "/api/admin/load_xml_file",
         files={"file": ("test.xml", xml_bytes, "application/xml")},
+        headers=admin_headers,
     )
     assert resp.status_code == 200, f"XML load failed: {resp.text}"
     assert resp.json() == {"status": "ok"}
 
-    snapshot = await _fetch_api_snapshot(client)
+    snapshot = await _fetch_api_snapshot(client, auth_headers)
 
     snapshot_path = SNAPSHOT_DIR / "xml_snapshot.json"
 
@@ -83,7 +84,7 @@ def _verify_pushkin_data(tree_persons: list, persons_list: list, events_list: li
 
 
 @pytest.mark.anyio
-async def test_gedcom_load(client: AsyncClient):
+async def test_gedcom_load(client: AsyncClient, auth_headers: dict, admin_headers: dict):
     """Load test.ged and verify basic data integrity."""
     ged_bytes = GED_FILE.read_bytes()
     assert ged_bytes, "test.ged is empty"
@@ -91,19 +92,20 @@ async def test_gedcom_load(client: AsyncClient):
     resp = await client.post(
         "/api/admin/load_gedcom",
         files={"file": ("test.ged", ged_bytes, "text/plain")},
+        headers=admin_headers,
     )
     assert resp.status_code == 200, f"GEDCOM load failed: {resp.text}"
     data = resp.json()
     assert data["status"] == "ok"
 
-    tree = (await client.get("/api/tree")).json()
+    tree = (await client.get("/api/tree", headers=auth_headers)).json()
     assert len(tree["persons"]) > 0, "No persons loaded from GEDCOM"
     assert len(tree["edges"]) > 0
 
-    persons_list = (await client.get("/api/persons")).json()
+    persons_list = (await client.get("/api/persons", headers=auth_headers)).json()
     assert len(persons_list) > 0
 
-    events = (await client.get("/api/events")).json()
+    events = (await client.get("/api/events", headers=auth_headers)).json()
     assert len(events) > 0
 
     pushkin = next(
@@ -120,16 +122,17 @@ async def test_gedcom_load(client: AsyncClient):
 
 
 @pytest.mark.anyio
-async def test_xml_snapshot_regression(client: AsyncClient):
+async def test_xml_snapshot_regression(client: AsyncClient, auth_headers: dict, admin_headers: dict):
     """Verify XML data matches the stored reference snapshot."""
     xml_bytes = XML_FILE.read_bytes()
     resp = await client.post(
         "/api/admin/load_xml_file",
         files={"file": ("test.xml", xml_bytes, "application/xml")},
+        headers=admin_headers,
     )
     assert resp.status_code == 200
 
-    snapshot = await _fetch_api_snapshot(client)
+    snapshot = await _fetch_api_snapshot(client, auth_headers)
     snapshot_path = SNAPSHOT_DIR / "xml_snapshot.json"
 
     if not snapshot_path.exists():
@@ -146,24 +149,26 @@ async def test_xml_snapshot_regression(client: AsyncClient):
 
 
 @pytest.mark.anyio
-async def test_xml_reload_idempotent(client: AsyncClient):
+async def test_xml_reload_idempotent(client: AsyncClient, auth_headers: dict, admin_headers: dict):
     """Loading XML twice should produce the same output (rewrite is idempotent)."""
     xml_bytes = XML_FILE.read_bytes()
 
     resp1 = await client.post(
         "/api/admin/load_xml_file",
         files={"file": ("test.xml", xml_bytes, "application/xml")},
+        headers=admin_headers,
     )
     assert resp1.status_code == 200
-    snap1 = await _fetch_api_snapshot(client)
+    snap1 = await _fetch_api_snapshot(client, auth_headers)
     count1 = len(snap1["tree"]["persons"])
 
     resp2 = await client.post(
         "/api/admin/load_xml_file",
         files={"file": ("test.xml", xml_bytes, "application/xml")},
+        headers=admin_headers,
     )
     assert resp2.status_code == 200
-    snap2 = await _fetch_api_snapshot(client)
+    snap2 = await _fetch_api_snapshot(client, auth_headers)
     count2 = len(snap2["tree"]["persons"])
 
     assert count1 == count2, f"Person count changed after reload: {count1} → {count2}"
