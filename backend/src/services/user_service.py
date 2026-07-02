@@ -18,12 +18,12 @@ async def register_service(session, body: AuthSchemas):
     table = UserTable(email=body.email, password_hash=password_hash)
     await UserRepository(session).add(table)
     await session.commit()
-    refresh_token = await get_refresh_token(session, table.id)
+    refresh_data = await get_refresh_token(session, table.id)
     access_token = await get_access_token(session, table.id)
 
     return {
         "status": "ok",
-        "refresh_token": refresh_token,
+        "refresh_token": refresh_data["refresh_token"],
         "access_token": access_token,
     }
 
@@ -38,12 +38,12 @@ async def login_service(session, body: AuthSchemas):
     except Exception:
         raise HTTPException(status_code=401, detail="Invalid email or password")
 
-    refresh_token = await get_refresh_token(session, user.id)
+    refresh_data = await get_refresh_token(session, user.id)
     access_token = await get_access_token(session, user.id)
 
     return {
         "status": "ok",
-        "refresh_token": refresh_token,
+        "refresh_token": refresh_data["refresh_token"],
         "access_token": access_token,
     }
 

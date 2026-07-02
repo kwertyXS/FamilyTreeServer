@@ -1,11 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { isAuthenticated } from '@/auth.js'
 import PersonsPage from '@/views/PersonsPage.vue'
 import GraphPage from '@/views/GraphPage.vue'
 import EventsPage from '@/views/EventsPage.vue'
 import AdminPage from '@/views/AdminPage.vue'
-import PersonPage from "@/views/PersonPage.vue";
+import PersonPage from "@/views/PersonPage.vue"
+import LoginPage from "@/views/LoginPage.vue"
 
 const routes = [
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginPage,
+    meta: { title: 'Вход', public: true }
+  },
   {
     path: '/',
     name: 'graph',
@@ -41,6 +49,16 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes
+})
+
+router.beforeEach((to, _from, next) => {
+  if (to.meta.public) {
+    return next()
+  }
+  if (!isAuthenticated()) {
+    return next('/login')
+  }
+  next()
 })
 
 export default router

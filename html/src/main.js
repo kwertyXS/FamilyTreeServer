@@ -1,4 +1,5 @@
 import './styles/tokens.css'
+import './api.js'  // настраивает глобальные axios interceptors (Bearer + refresh)
 
 import { createApp } from 'vue'
 import App from './App.vue'
