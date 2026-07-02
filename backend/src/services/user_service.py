@@ -2,7 +2,9 @@ from datetime import datetime, timezone
 
 from argon2 import PasswordHasher
 from fastapi import HTTPException
+from sqlalchemy.ext.asyncio import AsyncSession
 
+from src.api.dependencies import UserDep
 from src.db.tables import UserTable
 from src.repositories.SQLAlchemyRepositories import UserRepository
 from src.schemas.user import AuthSchemas
@@ -64,3 +66,13 @@ async def refresh_service(session, refresh_token: str):
     }
 
 
+
+async def accept_elua_service(session: AsyncSession, user_id):
+    table = await UserRepository(session).get_by_id(user_id)
+    if table is None:
+        raise HTTPException(status_code=401, detail="Auth Error")
+    table.elua = True
+    await session.commit()
+    return {
+        "status": "ok"
+    }

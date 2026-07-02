@@ -82,6 +82,11 @@ class UserRepository(SQLAlchemyRepository):
         res = await self._session.execute(stmt)
         return res.scalar_one_or_none()
 
+    async def check_verification_status(self, user_id: str) -> tuple[bool, bool] | None:
+        stmt = select(UserTable.elua, UserTable.email_confirm).where(UserTable.id == user_id)
+        res = await self._session.execute(stmt)
+        return res.one_or_none()
+
 class TokenRepository(SQLAlchemyRepository):
     def __init__(self, session):
         super().__init__(TokenTable, session)

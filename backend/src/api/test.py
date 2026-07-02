@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from src.api.dependencies import UserDep, AdminDep
+from src.api.dependencies import UserVerifiedDep, AdminVerifiedDep
 
 router = APIRouter()
 
@@ -10,11 +10,11 @@ async def test():
     return {"status": "ok"}
 
 @router.get("/check_register")
-async def check_register(user_id: UserDep):
+async def check_register(user_id: UserVerifiedDep):
     return {"status": "ok"}
 
 @router.get("/check_admin_privileges")
-async def check_admin_privileges(user_id: AdminDep):
+async def check_admin_privileges(user_id: AdminVerifiedDep):
     return {"status": "ok"}
 
 @router.get("/can_register")

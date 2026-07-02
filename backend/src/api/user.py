@@ -3,9 +3,10 @@ from typing import Annotated
 from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from src.api.dependencies import UserDep
 from src.db.database import get_session
 from src.schemas.user import AuthSchemas, RefreshSchema
-from src.services.user_service import register_service, login_service, refresh_service
+from src.services.user_service import register_service, login_service, refresh_service, accept_elua_service
 
 router = APIRouter(prefix="/auth")
 
@@ -25,5 +26,11 @@ async def login(body: AuthSchemas, session: sessionDep):
 @router.post("/refresh")
 async def refresh(body: RefreshSchema, session: sessionDep):
     return await refresh_service(session, body.refresh_token)
+
+
+
+@router.post("/accept_elua")
+async def accept_elua(session: sessionDep, user_id: UserDep):
+    return await accept_elua_service(session, user_id)
 
 
