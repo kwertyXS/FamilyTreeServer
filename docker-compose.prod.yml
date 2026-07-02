@@ -37,8 +37,7 @@ services:
       - /var/lib/familytree/auth:/auth:ro
       - /var/lib/familytree/photos:/var/photos:ro
       - ./html/dist:/usr/share/nginx/html:ro
-      - /var/lib/familytree/certbot/www:/var/www/certbot:ro
-      - /var/lib/familytree/certbot/conf:/etc/letsencrypt:ro
+      - /var/lib/familytree/ssl_cert:/ssl_cert:ro
     depends_on:
       backend:
         condition: service_started
