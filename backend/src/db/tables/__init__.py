@@ -9,6 +9,7 @@ from .event import EventTable
 from .person import PersonTable
 from .token import TokenTable
 from .user import UserTable
+from .confirm_code import ConfirmCodeTable
 
 __all__ = [
     "Base",
@@ -20,4 +21,5 @@ __all__ = [
     "EventTable",
     "TokenTable",
     "UserTable",
+    "ConfirmCodeTable",
 ]

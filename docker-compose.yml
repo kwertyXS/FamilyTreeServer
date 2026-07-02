@@ -1,4 +1,16 @@
 services:
+  smtp-relay:
+    image: ghcr.io/mirawara/smtp-relay:latest
+    container_name: smtp-relay
+    restart: unless-stopped
+    ports:
+      - "587:587"
+    env_file:
+      - .env
+    environment:
+      RELAY_PORT: 587
+      INCOMING_AUTH_METHOD: starttls
+      RELAY_AUTH_METHOD: starttls
   frontend-build:
     image: node:20
     working_dir: /html

@@ -8,3 +8,7 @@ class AuthSchemas(BaseModel):
 
 class RefreshSchema(BaseModel):
     refresh_token: str
+
+
+class VerifyCodeSchema(BaseModel):
+    code: str = Field(min_length=6, max_length=6, description="6-digit confirmation code")

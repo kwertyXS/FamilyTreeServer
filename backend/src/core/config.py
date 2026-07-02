@@ -27,4 +27,8 @@ DATABASE_URL = (
     f"@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
 )
 
+RELAY_HOST = os.getenv("RELAY_HOST", "relay")
+RELAY_USERNAME = os.getenv("RELAY_USERNAME", "relay")
+RELAY_PASSWORD = os.getenv("RELAY_PASSWORD", "")
 
+MAIL_FROM = os.getenv("MAIL_FROM", "noreply@familytree.local")

@@ -95,3 +95,19 @@ class TokenRepository(SQLAlchemyRepository):
         stmt = select(TokenTable).where(TokenTable.refresh_token == token)
         res = await self._session.execute(stmt)
         return res.scalar_one_or_none()
+
+
+class ConfirmCodeRepository(SQLAlchemyRepository):
+    def __init__(self, session):
+        super().__init__(ConfirmCodeTable, session)
+
+    async def get_by_email(self, email: str) -> ConfirmCodeTable | None:
+        stmt = select(ConfirmCodeTable).where(ConfirmCodeTable.email == email)
+        res = await self._session.execute(stmt)
+        return res.scalar_one_or_none()
+
+    async def delete_by_email(self, email: str):
+        stmt = select(ConfirmCodeTable).where(ConfirmCodeTable.email == email)
+        res = await self._session.execute(stmt)
+        for row in res.scalars().all():
+            await self._session.delete(row)
