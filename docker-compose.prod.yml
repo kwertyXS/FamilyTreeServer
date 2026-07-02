@@ -7,8 +7,7 @@ services:
       - "587:587"
     volumes:
       - /var/lib/familytree/dkim/sikk.su:/etc/opendkim/keys:ro
-      - /var/lib/familytree/ssl_cert/fullchain.pem:/etc/ssl/certs/mail.crt:ro
-      - /var/lib/familytree/ssl_cert/privkey.pem:/etc/ssl/private/mail.key:ro
+      - /var/lib/familytree/ssl_cert:/ssl_cert:ro
     environment:
       HOSTNAME: mail.sikk.su
       DOMAIN: sikk.su
@@ -16,8 +15,8 @@ services:
       DKIM_DOMAINS: sikk.su
       ENABLE_DKIM: 1
       ENABLE_TLS: 1
-      TLS_KEY: /etc/ssl/private/mail.key
-      TLS_CERT: /etc/ssl/certs/mail.crt
+      TLS_KEY: /ssl_cert/privkey.pem
+      TLS_CERT: /ssl_cert/fullchain.pem
       SMTP_USER: noreply@sikk.su|${RELAY_PASSWORD:?RELAY_PASSWORD not set}
       RELAY_NETWORKS: 172.0.0.0/8
       FORCE_HELO: 1
