@@ -92,7 +92,7 @@ async def send_confirm_code_service(session: AsyncSession, user_id: str):
 
     code = f"{randbelow(1_000_000):06d}"
     code_hash = sha256(code.encode()).hexdigest()
-    expires_at = datetime.now(timezone.utc) + timedelta(minutes=10)
+    expires_at = datetime.utcnow() + timedelta(minutes=10)
 
     # удаляем старые коды для этого email
     await ConfirmCodeRepository(session).delete_by_email(user.email)
@@ -142,7 +142,7 @@ async def verify_confirm_code_service(session: AsyncSession, user_id: str, body:
     if record.code_hash != code_hash:
         raise HTTPException(status_code=400, detail="Invalid code")
 
-    if record.expires_at.replace(tzinfo=timezone.utc) < datetime.now(timezone.utc):
+    if record.expires_at < datetime.utcnow():
         await session.delete(record)
         await session.commit()
         raise HTTPException(status_code=400, detail="Code expired")
