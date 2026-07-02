@@ -12,20 +12,26 @@ class AsyncSMTPClient:
             port: int = 587,
             username: str | None = None,
             password: str | None = None,
-            use_tls: bool = False
+            use_tls: bool = False,
+            validate_certs: bool = False,
             ):
         self.host = host
         self.port = port
         self.username = username
         self.password = password
         self.use_tls = use_tls
-        self.client = aiosmtplib.SMTP(hostname=self.host, port=self.port)
+        self.validate_certs = validate_certs
+        self.client = aiosmtplib.SMTP(
+            hostname=self.host,
+            port=self.port,
+            validate_certs=validate_certs,
+        )
 
     async def connect(self):
         await self.client.connect()
 
         if self.use_tls:
-            await self.client.starttls()
+            await self.client.starttls(validate_certs=self.validate_certs)
 
         if self.username and self.password:
             await self.client.login(self.username, self.password)

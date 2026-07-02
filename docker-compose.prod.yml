@@ -6,7 +6,7 @@ services:
     ports:
       - "587:587"
     volumes:
-      - /var/lib/familytree/dkim/sikk.su:/etc/opendkim/keys:ro
+      - /var/lib/familytree/dkim/sikk.su/default.private:/etc/opendkim/keys/sikk.su.private:ro
       - /var/lib/familytree/ssl_cert:/ssl_cert:ro
     environment:
       HOSTNAME: mail.sikk.su
